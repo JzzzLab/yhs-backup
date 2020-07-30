@@ -1,0 +1,37 @@
+name: Build and Deploy
+
+on:
+  schedule:
+    - cron: '13 6 * * *'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Build 🔧
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Setup Git Environment
+        run: |
+          git config --global user.name $(git log -1 --format='%an')
+          git config --global user.email $(git log -1 --format='%ae')
+
+      - name: Run Python Script
+        run: |
+          make install
+          make
+
+      - name: Deploy 🚀
+        run: |
+          headid=$(git rev-parse --short HEAD)
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "${headid} commits $(date +%F) pages"
+          git push

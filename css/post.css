@@ -1,0 +1,85 @@
+/* stock_wd.css */
+
+.up {
+    color: #f00;
+}
+
+.down {
+    color: #090;
+}
+
+.ceil {
+    color: #f00;
+}
+
+.floor {
+    color: #090;
+}
+
+.flat {
+    color: black;
+}
+
+
+/* css_1960_min.css */
+
+.highend {
+    color: #f00;
+    text-align: center
+}
+
+.highend_reverse {
+    background-color: #f00;
+    color: #fff;
+    text-align: center
+}
+
+.lowend {
+    color: #090;
+    text-align: center
+}
+
+.lowend_reverse {
+    background-color: #090;
+    color: #fff;
+    text-align: center
+}
+
+.high {
+    color: #f00;
+    text-align: center
+}
+
+.low {
+    color: #090;
+    text-align: center
+}
+
+.equal {
+    color: #000;
+    text-align: center
+}
+
+.tt {
+    font-family: "·s²Ó©úÅé", "PMingliu";
+    color: #000;
+    font-style: normal;
+    font-size: 10pt;
+    vertical-align: middle;
+    line-height: 16pt
+}
+
+.ttt {
+    font-family: "·s²Ó©úÅé", "PMingliu";
+    color: #000;
+    font-style: normal;
+    font-size: 12pt;
+    vertical-align: middle;
+    line-height: 18pt
+}
+
+BODY A {
+    text-decoration: none;
+    color: #00f;
+    pointer-events: none;
+}
