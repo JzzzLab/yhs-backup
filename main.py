@@ -63,45 +63,52 @@ def createTodayIndex():
 
 def splitToDict(s):
     return {
-        'ym': s[:6], #10901
-        'y': s[:3],  #109
-        'm': s[4:6], #01
-        'd': s[7:]   #02
+        'ym': s[:6], #109/01
+        'y': s[:3]   #109
     }
 
-def removeTailFileAndDir(tail, prev):   #109/01/02
-    tail = str(tail)
-    tailDict = splitToDict(tail)
+def removeYearOrMonthDir(yORm, tail, prev):
+    if(int(tail.replace('/', '')) >= int(prev.replace('/', ''))):
+        return
+    else:
+        rmtree(f'./src/{tail}/')
+        print(f'[DEBUG]remove tail {yORm} dir')
+
+def removeTailFileAndDir(soup):   #109/01/02
+    tail = soup.select('#d9')[0].string
+    prev = soup.select('#d8')[0].string
+    tailDict = splitToDict(str(tail))
     prevDict = splitToDict(str(prev))
 
     #remove file(day dir)
-    if(tail == 'None'):
-        return
-    else:
+    if(str(tail) != 'None'):
         rmtree(f'./src/{tail}/', ignore_errors=True)
         print('[DEBUG]remove tail day dir')
-
+    else:
+        return
     #remove month dir
-    if(int(tailDict['ym']) >= int(prevDict['ym'])):
-        return
-    else:
-        rmtree(f'./src/{tailDict["ym"]}/')
-        print('[DEBUG]remove tail month dir')
-
+    removeYearOrMonthDir('month', tailDict['ym'], prevDict['ym'])
     #remove year dir
-    if(int(tailDict['y']) >= int(prevDict['y'])):
-        return
-    else:
-        rmtree(f'./src/{tailDict["y"]}/')
-        print('[DEBUG]remove tail year dir')
+    removeYearOrMonthDir('year', tailDict['y'], prevDict['y'])
 
 def assignTagAttr(tag, string, href):
     tag['href'] = href
     if(str(string) != 'None'):
         tag.string = str(string)
 
-def renewSrcIndex(today):
-    path = f'./{today}/index.html'
+def renewSrcIndex(soup, path):
+    #id="1~9"
+    for i in range(9, 1-1, -1):
+        prevTag = soup.select(f'#d{i-1}')[0]
+        thisTag = soup.select(f'#d{i}')[0]
+        assignTagAttr(thisTag, prevTag.string, prevTag['href'])
+    #id="0"
+    assignTagAttr(soup.select('#d0')[0], today, path)
+    #id="today"
+    assignTagAttr(soup.select('#today')[0], today, path)
+    return soup
+
+def renewSrcIndexAndSubdir(today):
     srcIndex = './src/index.html'
     soup = BeautifulSoup(loadFile(srcIndex), 'lxml')
     d0Tag = soup.select('#d0')[0]
@@ -111,17 +118,8 @@ def renewSrcIndex(today):
         print(f'[DEBUG]avoid duplicate renew {srcIndex}')
         return
 
-    #id="1~9"
-    for i in range(9, 1-1, -1):
-        prevTag = soup.select(f'#d{i-1}')[0]
-        thisTag = soup.select(f'#d{i}')[0]
-        if(i == 9):
-            removeTailFileAndDir(thisTag.string, prevTag.string)
-        assignTagAttr(thisTag, prevTag.string, prevTag['href'])
-    #id="0"
-    assignTagAttr(d0Tag, today, path)
-    #id="today"
-    assignTagAttr(soup.select('#today')[0], today, path)
+    removeTailFileAndDir(soup)
+    soup = renewSrcIndex(soup, f'./{today}/index.html')
 
     #override
     with open(srcIndex, 'w', encoding='utf-8', newline='') as file:
@@ -138,4 +136,4 @@ if __name__ == '__main__':
     get('otc')
 
     createTodayIndex()
-    renewSrcIndex(today)
+    renewSrcIndexAndSubdir(today)
