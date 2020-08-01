@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 import sys
 from os import makedirs
 from shutil import rmtree
-from os.path import isfile
 
 
 url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
@@ -57,9 +56,6 @@ def get(tseORotc):
 
 def createTodayIndex():
     todayHTML = f'{todayPath}/index.html'
-    if(isfile(todayHTML)):
-        return
-
     index = loadFile('./posts/index.html')
     with open(todayHTML, 'w', encoding='utf-8', newline='') as file:
         file.write(index.format(title=today))
