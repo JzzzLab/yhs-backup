@@ -2,12 +2,6 @@
 function getHref() {
     var ghURL = new URL(window.location.href);
     var params = ghURL.searchParams;
-
-    //只要存在"UCCU"參數就好
-    //post.html?UCCU
-    //post.html?UCCU=
-    //post.html?UCCU=1
-    //post.html?UCCU=true
     if (params.has('UCCU')) {
         document.getElementById("main").style.display = "";
     }
@@ -16,4 +10,11 @@ function getHref() {
 //press any key to display.
 function keyPress() {
     document.getElementById("main").style.display = "";
+}
+
+function removeHref() {
+    var aList = document.getElementsByTagName("a");
+    for (var i = 0; i < aList.length; i++) {
+        aList[i].removeAttribute("href");
+    }
 }
