@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import sys
 from os import makedirs
 from shutil import rmtree
 from os.path import isfile
@@ -33,7 +34,7 @@ def mkdirs(path):
     except FileNotFoundError as e:
         print(f'[WARN]{e}')
     except FileExistsError:
-        print(f"[WARN]{path}/ already exists.")
+        sys.exit(f"[WARN]{path}/ already exists.")
 
 def loadFile(path):
     with open(path, 'r', encoding='utf-8', newline='') as file:
