@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from os import makedirs
+from shutil import rmtree
 from os.path import isfile
 
 
@@ -63,6 +64,40 @@ def createTodayIndex():
         file.write(index.format(title=today))
     print(f'[DEBUG]create {todayHTML}')
 
+def splitToDict(s):
+    return {
+        'ym': s[:6], #10901
+        'y': s[:3],  #109
+        'm': s[4:6], #01
+        'd': s[7:]   #02
+    }
+
+def removeTailFileAndDir(tail, prev):   #109/01/02
+    tail = str(tail)
+    tailDict = splitToDict(tail)
+    prevDict = splitToDict(str(prev))
+
+    #remove file(day dir)
+    if(tail == 'None'):
+        return
+    else:
+        rmtree(f'./src/{tail}/', ignore_errors=True)
+        print('[DEBUG]remove tail day dir')
+
+    #remove month dir
+    if(int(tailDict['ym']) >= int(prevDict['ym'])):
+        return
+    else:
+        rmtree(f'./src/{tailDict["ym"]}/')
+        print('[DEBUG]remove tail month dir')
+
+    #remove year dir
+    if(int(tailDict['y']) >= int(prevDict['y'])):
+        return
+    else:
+        rmtree(f'./src/{tailDict["y"]}/')
+        print('[DEBUG]remove tail year dir')
+
 def assignTagAttr(tag, string, href):
     tag['href'] = href
     if(str(string) != 'None'):
@@ -83,6 +118,8 @@ def renewSrcIndex(today):
     for i in range(9, 1-1, -1):
         prevTag = soup.select(f'#d{i-1}')[0]
         thisTag = soup.select(f'#d{i}')[0]
+        if(i == 9):
+            removeTailFileAndDir(thisTag.string, prevTag.string)
         assignTagAttr(thisTag, prevTag.string, prevTag['href'])
     #id="0"
     assignTagAttr(d0Tag, today, path)
