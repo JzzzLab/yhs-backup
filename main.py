@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from os import makedirs
 from shutil import rmtree
-from os import _exit as os_exit
+
 
 url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
@@ -37,7 +37,8 @@ def mkdirs(path):
     except FileNotFoundError as e:
         print(f'[WARN]{e}')
     except FileExistsError:
-        os_exit(f"[WARN]{path}/ already exists.")
+        print(f"[WARN]{path}/ already exists.")
+        exit(0)
 
 def loadFile(path):
     with open(path, 'r', encoding='utf-8', newline='') as file:
