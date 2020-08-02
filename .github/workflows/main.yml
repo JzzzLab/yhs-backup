@@ -27,7 +27,7 @@ jobs:
       - name: Run Python Script
         run: |
           make install
-          make
+          python ./main.py
 
       - name: Deploy 🚀
         run: |
