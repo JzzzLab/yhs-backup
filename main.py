@@ -21,7 +21,12 @@ def getToday(): #'109/01/01'
     request = requests.get(path, headers=headers)
     return BeautifulSoup(request.text, 'lxml').select('table')[2].text[10:23].replace(" ", '')
 
-def rank100(tType, tseORotc):
+def rank100(tType, tseORotc, isTest=False):
+    if(isTest):
+        request = ''
+        with open('./test/test-file.html', 'r', encoding='utf-8') as f:
+            request = f.read()
+        return str(BeautifulSoup(request, 'lxml').select('table')[2])
     request = requests.get(url.format(tType, tseORotc), headers=headers)
     request.encoding = 'Big5-hkscs'
     return str(BeautifulSoup(request.text, 'lxml').select('table')[2])
