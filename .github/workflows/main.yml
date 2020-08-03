@@ -32,7 +32,7 @@ jobs:
       - name: Run Python Script
         run: |
           make install
-          python ./main.py
+          make
 
       - name: Deploy 🚀
         run: |
