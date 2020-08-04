@@ -22,8 +22,10 @@ install:
 
 .PHONY: gitEnv
 gitEnv:
-	git config --global user.name $(git log -1 --format='%an')
-	git config --global user.email $(git log -1 --format='%ae')
+	userName=$(git log -1 --format='%an')
+	userMail=$(git log -1 --format='%ae')
+	git config --global user.name ${userName}
+	git config --global user.email ${userMail}
 
 .PHONY: deploy
 deploy:
