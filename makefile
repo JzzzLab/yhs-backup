@@ -20,13 +20,6 @@ run:
 install:
 	pip install -r requirements.txt
 
-.PHONY: gitEnv
-gitEnv:
-	userName=$(git log -1 --format='%an')
-	userMail=$(git log -1 --format='%ae')
-	git config --global user.name ${userName}
-	git config --global user.email ${userMail}
-
 .PHONY: deploy
 deploy:
 	headid=$(git rev-parse --short HEAD)
