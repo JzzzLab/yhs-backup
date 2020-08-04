@@ -12,9 +12,25 @@ GH_MSG = First commit: branch 'gh-pages'
 MASTER_MSG = First commit: branch 'master'
 REPO = git@github.com:JzzzLab/yhs-backup.git
 
-.SILENT: all
-all:
+.SILENT: run
+run:
 	python ./main.py
+
+.PHONY: install
+install:
+	pip install -r requirements.txt
+
+.PHONY: gitEnv
+gitEnv:
+	git config --global user.name $(git log -1 --format='%an')
+	git config --global user.email $(git log -1 --format='%ae')
+
+.PHONY: deploy
+deploy:
+	headid=$(git rev-parse --short HEAD)
+	git add -A
+	git diff-index --quiet HEAD || git commit -m "${headid} commits $(date +%F) pages"
+	git push
 
 .PHONY: init
 init:
@@ -47,10 +63,6 @@ testinit:
 	git remote add origin $(REPO)
 	git push -u origin master
 	git push -u origin gh-pages
-
-.PHONY: install
-install:
-	pip install -r requirements.txt
 
 .PHONY: rmgitdir
 rmgitdir:
