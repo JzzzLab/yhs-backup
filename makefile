@@ -50,7 +50,7 @@ testinit:
 
 .PHONY: install
 install:
-	pip install -r requirements.txt
+	pip install --disable-pip-version-check -r requirements.txt
 
 .PHONY: rmgitdir
 rmgitdir:
