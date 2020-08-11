@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 from os import makedirs
-from shutil import rmtree
+from shutil import rmtree, copytree
 
 
 url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
@@ -72,6 +72,12 @@ def splitToDict(s):
         'y': s[:3]   #109
     }
 
+def copyDirToArchives(targetDir):
+    srcPath = f'./src/{targetDir}/'
+    dstPath = f'./archives/{targetDir}/'
+    copytree(srcPath, dstPath)
+    print(f'[DEBUG]copy tail dir {srcPath} to archives dir')
+
 def removeYearOrMonthDir(yORm, tail, prev):
     if(int(tail.replace('/', '')) >= int(prev.replace('/', ''))):
         return
@@ -85,8 +91,10 @@ def removeTailFileAndDir(soup):   #109/01/02
     tailDict = splitToDict(str(tail))
     prevDict = splitToDict(str(prev))
 
-    #remove file(day dir)
     if(str(tail) != 'None'):
+        #copy tail dir to archives dir
+        copyDirToArchives(tail)
+        #remove file(day dir)
         rmtree(f'./src/{tail}/', ignore_errors=True)
         print('[DEBUG]remove tail day dir')
     else:
