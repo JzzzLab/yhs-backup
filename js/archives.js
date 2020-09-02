@@ -15,18 +15,29 @@ function keyUpInput() {
 }
 
 function checkURL(today) {
-    //var urlSrc = "https://jzzzlab.github.io/yhs-backup/src/109/09/01/index.html";
-    //var urlArc = "https://jzzzlab.github.io/yhs-backup/archives/109/08/05/index.html";
-    //1.read status.json
-    //2.if today is SRC
+    var urlAch = `https://jzzzlab.github.io/yhs-backup/archives/${today}/index.html`;
     var urlSrc = `https://jzzzlab.github.io/yhs-backup/src/${today}/index.html`;
-    return urlSrc;
-    //3.elif today is ARC
-    //var urlArc = `https://jzzzlab.github.io/yhs-backup/archives/${today}/index.html`;
-    //return urlArc;
-    //4.else return
-    //window.alert("日期輸入錯誤或無當天資料");
-    //return '';
+
+    fetch(urlAch).then(
+        function(response) {
+            if(response.status == 200){     //在archives
+                window.open(urlAch);
+            }
+            else {
+                fetch(urlSrc).then(
+                    function(response) {
+                        if(response.status == 200){     //在src
+                            window.open(urlSrc)
+                        }
+                        else{       //都不在
+                            window.alert("日期輸入錯誤或無當天資料");
+                        }
+                    }
+                )
+            }
+        }
+    )
+
 }
 
 function redirect() {
@@ -34,6 +45,5 @@ function redirect() {
     var mm = String(document.getElementById("month").value).padStart(2, '0');
     var yyy = document.getElementById("year").value;
     var today = yyy + "/" + mm + "/" + dd;
-    var url = checkURL(today);
-    window.alert(url);
+    checkURL(today);
 }
