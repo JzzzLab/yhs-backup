@@ -19,17 +19,17 @@ function checkURL(today) {
     var urlSrc = `https://jzzzlab.github.io/yhs-backup/src/${today}/index.html`;
 
     fetch(urlAch).then(
-        function(response) {
-            if(response.status == 200){     //在archives
+        function (response) {
+            if (response.status == 200) {     //在archives
                 window.open(urlAch);
             }
             else {
                 fetch(urlSrc).then(
-                    function(response) {
-                        if(response.status == 200){     //在src
-                            window.open(urlSrc)
+                    function (response) {
+                        if (response.status == 200) {     //在src
+                            window.open(urlSrc);
                         }
-                        else{       //都不在
+                        else {       //都不在
                             window.alert("日期輸入錯誤或無當天資料");
                         }
                     }
@@ -37,7 +37,6 @@ function checkURL(today) {
             }
         }
     )
-
 }
 
 function redirect() {
