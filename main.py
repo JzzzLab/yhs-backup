@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from os import makedirs
 from shutil import rmtree, copytree
+import json
 
 
 url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
@@ -121,6 +122,19 @@ def renewSrcIndex(soup, path):
     assignTagAttr(soup.select('#today')[0], today, path)
     return soup
 
+def renewStatusJson(arcDay):
+    dDayList = [today, "src"]
+    
+    with open("./status.json", 'r') as file:
+        jf = json.load(file)
+        dayList  = [i[0] for i in jf['raw']]
+        ixe = dayList.index(arcDay)
+
+    with open("./status.json", 'w') as file:
+        jf[raw].append(dDayList)
+        jf[raw][ixe][1] = 'arcives'
+        file.write(json.dumps(jf, sort_keys=True, indent=4))
+
 def renewSrcIndexAndSubdir(today):
     srcIndex = './src/index.html'
     soup = BeautifulSoup(loadFile(srcIndex), 'lxml')
@@ -132,6 +146,7 @@ def renewSrcIndexAndSubdir(today):
         return
 
     removeTailFileAndDir(soup)
+    renewStatusJson(soup.select('d9')[0].string)
     soup = renewSrcIndex(soup, f'./{today}/index.html')
 
     #override
