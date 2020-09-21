@@ -131,9 +131,11 @@ def renewStatusJson(arcDay):
         ixe = dayList.index(arcDay)
 
     with open("./status.json", 'w') as file:
-        jf[raw].append(dDayList)
-        jf[raw][ixe][1] = 'arcives'
+        jf['raw'].append(dDayList)
+        jf['raw'][ixe][1] = 'archives'
         file.write(json.dumps(jf, sort_keys=True, indent=4))
+
+    print('[DEBUG]renew status.json')
 
 def renewSrcIndexAndSubdir(today):
     srcIndex = './src/index.html'
@@ -146,7 +148,7 @@ def renewSrcIndexAndSubdir(today):
         return
 
     removeTailFileAndDir(soup)
-    renewStatusJson(soup.select('d9')[0].string)
+    renewStatusJson(soup.select('#d9')[0].string)
     soup = renewSrcIndex(soup, f'./{today}/index.html')
 
     #override
