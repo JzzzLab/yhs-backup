@@ -1,0 +1,5605 @@
+<!doctype html>
+<!--../../../../
+../../../../-->
+<html>
+
+<head>
+    <title>tse</title>
+    <link rel="stylesheet" type="text/css" href="../../../../css/post.css">
+    <script src="../../../../js/post.js"></script>
+    <script>
+        document.onkeydown = keyPress;
+    </script>
+</head>
+
+<body onload="getHref();removeHref();">
+    <div id="main" style="display:none">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr bgcolor="#fec003">
+<td colspan="2">
+<table border="0" cellpadding="2" height="23" width="100%">
+<tbody><tr>
+<td class="tt" width="205">資料日期：110 / 01 / 05   14 : 00</td><td align="center" class="ttt" width="205">上市熱門股排行</td>
+<td width="205">
+<div align="right" class="tt"><a href="?t=vol&amp;e=TWO&amp;n=100">上櫃熱門股排行</a></div>
+</td></tr>
+</tbody></table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#fff0c1"><th nowrap="nowrap">名次</th><th nowrap="nowrap">股票代號/名稱</th><th nowrap="nowrap">成交價</th><th nowrap="nowrap">  漲跌  </th><th nowrap="nowrap"> 漲跌幅 </th><th nowrap="nowrap">最高</th><th nowrap="nowrap">最低</th><th nowrap="nowrap">價差</th><th nowrap="nowrap">成交張數</th><th nowrap="nowrap">成交值(億)</th></tr><tr align="right" bgcolor="#ffffff">
+<td align="center">1</td>
+<td align="center" class="name"><a href="/q/bc?s=2603">2603 長榮</a></td>
+<td>45.50</td>
+<td class="up" style="text-align:center">△0.75</td>
+<td>+1.68%</td>
+<td class="high">45.50</td>
+<td class="low">43.15</td>
+<td align="center">2.35</td>
+<td>532,105</td>
+<td>236.7825</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">2</td>
+<td align="center" class="name"><a href="/q/bc?s=2014">2014 中鴻</a></td>
+<td>17.80</td>
+<td class="up" style="text-align:center">△1.30</td>
+<td>+7.88%</td>
+<td class="highend_reverse">18.15</td>
+<td class="high">16.75</td>
+<td align="center">1.40</td>
+<td>237,401</td>
+<td>42.1482</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">3</td>
+<td align="center" class="name"><a href="/q/bc?s=2317">2317 鴻海</a></td>
+<td>104.00</td>
+<td class="up" style="text-align:center">△4.10</td>
+<td>+4.10%</td>
+<td class="high">105.00</td>
+<td class="high">101.00</td>
+<td align="center">4.00</td>
+<td>231,444</td>
+<td>238.9451</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">4</td>
+<td align="center" class="name"><a href="/q/bc?s=00677U">00677U 富邦VIX</a></td>
+<td>4.03</td>
+<td class="up" style="text-align:center">△0.07</td>
+<td>+1.77%</td>
+<td class="high">4.12</td>
+<td class="high">4.00</td>
+<td align="center">0.12</td>
+<td>230,915</td>
+<td>9.3980</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">5</td>
+<td align="center" class="name"><a href="/q/bc?s=3481">3481 群創</a></td>
+<td>14.00</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.44%</td>
+<td class="high">14.50</td>
+<td class="low">13.90</td>
+<td align="center">0.60</td>
+<td>212,823</td>
+<td>29.9433</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">6</td>
+<td align="center" class="name"><a href="/q/bc?s=2303">2303 聯電</a></td>
+<td>46.35</td>
+<td class="up" style="text-align:center">△0.80</td>
+<td>+1.76%</td>
+<td class="high">46.35</td>
+<td class="low">44.55</td>
+<td align="center">1.80</td>
+<td>201,963</td>
+<td>91.4640</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">7</td>
+<td align="center" class="name"><a href="/q/bc?s=2002">2002 中鋼</a></td>
+<td>26.00</td>
+<td class="up" style="text-align:center">△1.05</td>
+<td>+4.21%</td>
+<td class="high">26.40</td>
+<td class="high">25.10</td>
+<td align="center">1.30</td>
+<td>183,687</td>
+<td>47.5646</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">8</td>
+<td align="center" class="name"><a href="/q/bc?s=2344">2344 華邦電</a></td>
+<td>28.45</td>
+<td class="up" style="text-align:center">△0.45</td>
+<td>+1.61%</td>
+<td class="high">28.85</td>
+<td class="high">28.10</td>
+<td align="center">0.75</td>
+<td>145,892</td>
+<td>41.4590</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">9</td>
+<td align="center" class="name"><a href="/q/bc?s=1314">1314 中石化</a></td>
+<td>11.60</td>
+<td class="up" style="text-align:center">△0.05</td>
+<td>+0.43%</td>
+<td class="high">12.10</td>
+<td class="low">11.50</td>
+<td align="center">0.60</td>
+<td>132,347</td>
+<td>15.6275</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">10</td>
+<td align="center" class="name"><a href="/q/bc?s=2409">2409 友達</a></td>
+<td>14.00</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-1.41%</td>
+<td class="equal">14.20</td>
+<td class="low">13.80</td>
+<td align="center">0.40</td>
+<td>105,790</td>
+<td>14.7423</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">11</td>
+<td align="center" class="name"><a href="/q/bc?s=00632R">00632R 元大台灣50反1</a></td>
+<td>6.87</td>
+<td class="down" style="text-align:center">▽0.02</td>
+<td>-0.29%</td>
+<td class="high">6.92</td>
+<td class="low">6.87</td>
+<td align="center">0.05</td>
+<td>105,148</td>
+<td>7.2474</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">12</td>
+<td align="center" class="name"><a href="/q/bc?s=2615">2615 萬海</a></td>
+<td>54.60</td>
+<td class="down" style="text-align:center">▽2.50</td>
+<td>-4.38%</td>
+<td class="high">57.30</td>
+<td class="low">53.80</td>
+<td align="center">3.50</td>
+<td>89,912</td>
+<td>49.6443</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">13</td>
+<td align="center" class="name"><a href="/q/bc?s=1447">1447 力鵬</a></td>
+<td>10.15</td>
+<td class="up" style="text-align:center">△0.25</td>
+<td>+2.53%</td>
+<td class="high">10.65</td>
+<td class="high">9.97</td>
+<td align="center">0.68</td>
+<td>84,545</td>
+<td>8.6432</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">14</td>
+<td align="center" class="name"><a href="/q/bc?s=3037">3037 欣興</a></td>
+<td>94.30</td>
+<td class="up" style="text-align:center">△3.80</td>
+<td>+4.20%</td>
+<td class="high">94.30</td>
+<td class="low">88.50</td>
+<td align="center">5.80</td>
+<td>80,272</td>
+<td>73.8754</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">15</td>
+<td align="center" class="name"><a href="/q/bc?s=2610">2610 華航</a></td>
+<td>11.35</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.99%</td>
+<td class="equal">11.70</td>
+<td class="low">11.15</td>
+<td align="center">0.55</td>
+<td>75,038</td>
+<td>8.5104</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">16</td>
+<td align="center" class="name"><a href="/q/bc?s=1802">1802 台玻</a></td>
+<td>20.60</td>
+<td class="down" style="text-align:center">▽0.85</td>
+<td>-3.96%</td>
+<td class="high">21.65</td>
+<td class="low">20.05</td>
+<td align="center">1.60</td>
+<td>65,011</td>
+<td>13.5932</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">17</td>
+<td align="center" class="name"><a href="/q/bc?s=00637L">00637L 元大滬深300正2</a></td>
+<td>28.97</td>
+<td class="up" style="text-align:center">△0.46</td>
+<td>+1.61%</td>
+<td class="high">28.98</td>
+<td class="low">28.12</td>
+<td align="center">0.86</td>
+<td>63,428</td>
+<td>18.1226</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">18</td>
+<td align="center" class="name"><a href="/q/bc?s=00715L">00715L 街口布蘭特油正2</a></td>
+<td>4.52</td>
+<td class="down" style="text-align:center">▽0.14</td>
+<td>-3.00%</td>
+<td class="low">4.56</td>
+<td class="low">4.47</td>
+<td align="center">0.09</td>
+<td>58,537</td>
+<td>2.6468</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">19</td>
+<td align="center" class="name"><a href="/q/bc?s=2393">2393 億光</a></td>
+<td>48.70</td>
+<td class="up" style="text-align:center">△2.30</td>
+<td>+4.96%</td>
+<td class="high">49.90</td>
+<td class="high">46.85</td>
+<td align="center">3.05</td>
+<td>57,472</td>
+<td>27.8178</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">20</td>
+<td align="center" class="name"><a href="/q/bc?s=2023">2023 燁輝</a></td>
+<td>14.00</td>
+<td class="up" style="text-align:center">△0.15</td>
+<td>+1.08%</td>
+<td class="high">14.60</td>
+<td class="low">13.80</td>
+<td align="center">0.80</td>
+<td>52,567</td>
+<td>7.4751</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">21</td>
+<td align="center" class="name"><a href="/q/bc?s=6116">6116 彩晶</a></td>
+<td>12.15</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-1.62%</td>
+<td class="equal">12.35</td>
+<td class="low">11.95</td>
+<td align="center">0.40</td>
+<td>48,963</td>
+<td>5.9145</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">22</td>
+<td align="center" class="name"><a href="/q/bc?s=2609">2609 陽明</a></td>
+<td>32.00</td>
+<td class="down" style="text-align:center">▽0.15</td>
+<td>-0.47%</td>
+<td class="low">32.00</td>
+<td class="low">30.00</td>
+<td align="center">2.00</td>
+<td>48,783</td>
+<td>15.1396</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">23</td>
+<td align="center" class="name"><a href="/q/bc?s=2888">2888 新光金</a></td>
+<td>8.77</td>
+<td class="up" style="text-align:center">△0.07</td>
+<td>+0.80%</td>
+<td class="high">8.81</td>
+<td class="low">8.67</td>
+<td align="center">0.14</td>
+<td>46,935</td>
+<td>4.1051</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">24</td>
+<td align="center" class="name"><a href="/q/bc?s=5243">5243 乙盛-KY</a></td>
+<td>69.60</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">75.50</td>
+<td class="equal">69.60</td>
+<td align="center">5.90</td>
+<td>46,897</td>
+<td>34.0350</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">25</td>
+<td align="center" class="name"><a href="/q/bc?s=3711">3711 日月光投控</a></td>
+<td>86.60</td>
+<td class="up" style="text-align:center">△2.70</td>
+<td>+3.22%</td>
+<td class="high">87.00</td>
+<td class="low">83.60</td>
+<td align="center">3.40</td>
+<td>44,448</td>
+<td>38.0155</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">26</td>
+<td align="center" class="name"><a href="/q/bc?s=3437">3437 榮創</a></td>
+<td>36.60</td>
+<td class="ceil" style="text-align:center">▲3.30</td>
+<td>+9.91%</td>
+<td class="highend_reverse">36.60</td>
+<td class="high">35.00</td>
+<td align="center">1.60</td>
+<td>42,286</td>
+<td>15.3166</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">27</td>
+<td align="center" class="name"><a href="/q/bc?s=2337">2337 旺宏</a></td>
+<td>40.50</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-0.98%</td>
+<td class="high">41.25</td>
+<td class="low">40.20</td>
+<td align="center">1.05</td>
+<td>40,912</td>
+<td>16.6147</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">28</td>
+<td align="center" class="name"><a href="/q/bc?s=00881">00881 國泰台灣5G+</a></td>
+<td>15.77</td>
+<td class="up" style="text-align:center">△0.16</td>
+<td>+1.02%</td>
+<td class="high">15.77</td>
+<td class="low">15.58</td>
+<td align="center">0.19</td>
+<td>40,863</td>
+<td>6.4100</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">29</td>
+<td align="center" class="name"><a href="/q/bc?s=8046">8046 南電</a></td>
+<td>209.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+4.50%</td>
+<td class="high">216.50</td>
+<td class="low">197.00</td>
+<td align="center">19.50</td>
+<td>40,181</td>
+<td>83.4136</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">30</td>
+<td align="center" class="name"><a href="/q/bc?s=2324">2324 仁寶</a></td>
+<td>21.55</td>
+<td class="up" style="text-align:center">△0.75</td>
+<td>+3.61%</td>
+<td class="high">21.80</td>
+<td class="equal">20.80</td>
+<td align="center">1.00</td>
+<td>38,596</td>
+<td>8.2478</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">31</td>
+<td align="center" class="name"><a href="/q/bc?s=2883">2883 開發金</a></td>
+<td>9.24</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="equal">9.24</td>
+<td class="low">9.20</td>
+<td align="center">0.04</td>
+<td>38,349</td>
+<td>3.5359</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">32</td>
+<td align="center" class="name"><a href="/q/bc?s=4906">4906 正文</a></td>
+<td>32.50</td>
+<td class="up" style="text-align:center">△1.80</td>
+<td>+5.86%</td>
+<td class="high">33.30</td>
+<td class="high">30.85</td>
+<td align="center">2.45</td>
+<td>38,257</td>
+<td>12.2776</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">33</td>
+<td align="center" class="name"><a href="/q/bc?s=2340">2340 光磊</a></td>
+<td>25.75</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-7.37%</td>
+<td class="low">26.60</td>
+<td class="low">25.65</td>
+<td align="center">0.95</td>
+<td>37,282</td>
+<td>9.7131</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">34</td>
+<td align="center" class="name"><a href="/q/bc?s=4956">4956 光鋐</a></td>
+<td>25.45</td>
+<td class="up" style="text-align:center">△1.40</td>
+<td>+5.82%</td>
+<td class="high">26.15</td>
+<td class="high">24.50</td>
+<td align="center">1.65</td>
+<td>36,025</td>
+<td>9.1084</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">35</td>
+<td align="center" class="name"><a href="/q/bc?s=2353">2353 宏碁</a></td>
+<td>24.15</td>
+<td class="up" style="text-align:center">△0.40</td>
+<td>+1.68%</td>
+<td class="high">24.40</td>
+<td class="low">23.70</td>
+<td align="center">0.70</td>
+<td>35,192</td>
+<td>8.4919</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">36</td>
+<td align="center" class="name"><a href="/q/bc?s=2330">2330 台積電</a></td>
+<td>542.00</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+1.12%</td>
+<td class="high">542.00</td>
+<td class="low">535.00</td>
+<td align="center">7.00</td>
+<td>34,234</td>
+<td>184.3484</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">37</td>
+<td align="center" class="name"><a href="/q/bc?s=2034">2034 允強</a></td>
+<td>29.30</td>
+<td class="up" style="text-align:center">△1.10</td>
+<td>+3.90%</td>
+<td class="high">29.70</td>
+<td class="low">28.10</td>
+<td align="center">1.60</td>
+<td>33,599</td>
+<td>9.8484</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">38</td>
+<td align="center" class="name"><a href="/q/bc?s=6288">6288 聯嘉</a></td>
+<td>35.50</td>
+<td class="up" style="text-align:center">△0.40</td>
+<td>+1.14%</td>
+<td class="high">37.40</td>
+<td class="high">35.30</td>
+<td align="center">2.10</td>
+<td>33,407</td>
+<td>12.0504</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">39</td>
+<td align="center" class="name"><a href="/q/bc?s=1444">1444 力麗</a></td>
+<td>13.20</td>
+<td class="down" style="text-align:center">▽0.25</td>
+<td>-1.86%</td>
+<td class="high">13.85</td>
+<td class="low">13.15</td>
+<td align="center">0.70</td>
+<td>32,985</td>
+<td>4.4456</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">40</td>
+<td align="center" class="name"><a href="/q/bc?s=0056">0056 元大高股息</a></td>
+<td>30.02</td>
+<td class="up" style="text-align:center">△0.08</td>
+<td>+0.27%</td>
+<td class="high">30.04</td>
+<td class="low">29.87</td>
+<td align="center">0.17</td>
+<td>32,183</td>
+<td>9.6532</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">41</td>
+<td align="center" class="name"><a href="/q/bc?s=8011">8011 台通</a></td>
+<td>28.20</td>
+<td class="up" style="text-align:center">△1.20</td>
+<td>+4.44%</td>
+<td class="high">29.10</td>
+<td class="high">27.05</td>
+<td align="center">2.05</td>
+<td>32,153</td>
+<td>9.0556</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">42</td>
+<td align="center" class="name"><a href="/q/bc?s=2332">2332 友訊</a></td>
+<td>28.85</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-1.37%</td>
+<td class="high">30.65</td>
+<td class="low">28.55</td>
+<td align="center">2.10</td>
+<td>32,133</td>
+<td>9.4917</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">43</td>
+<td align="center" class="name"><a href="/q/bc?s=6209">6209 今國光</a></td>
+<td>40.55</td>
+<td class="up" style="text-align:center">△1.45</td>
+<td>+3.71%</td>
+<td class="high">42.45</td>
+<td class="low">39.00</td>
+<td align="center">3.45</td>
+<td>31,795</td>
+<td>12.8533</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">44</td>
+<td align="center" class="name"><a href="/q/bc?s=3062">3062 建漢</a></td>
+<td>19.85</td>
+<td class="down" style="text-align:center">▽0.05</td>
+<td>-0.25%</td>
+<td class="high">20.60</td>
+<td class="low">19.60</td>
+<td align="center">1.00</td>
+<td>31,696</td>
+<td>6.3701</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">45</td>
+<td align="center" class="name"><a href="/q/bc?s=2355">2355 敬鵬</a></td>
+<td>36.55</td>
+<td class="up" style="text-align:center">△1.70</td>
+<td>+4.88%</td>
+<td class="high">37.85</td>
+<td class="high">35.10</td>
+<td align="center">2.75</td>
+<td>31,380</td>
+<td>11.4621</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">46</td>
+<td align="center" class="name"><a href="/q/bc?s=6168">6168 宏齊</a></td>
+<td>21.00</td>
+<td class="up" style="text-align:center">△1.60</td>
+<td>+8.25%</td>
+<td class="high">21.20</td>
+<td class="high">20.10</td>
+<td align="center">1.10</td>
+<td>30,029</td>
+<td>6.2271</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">47</td>
+<td align="center" class="name"><a href="/q/bc?s=2367">2367 燿華</a></td>
+<td>23.95</td>
+<td class="up" style="text-align:center">△0.95</td>
+<td>+4.13%</td>
+<td class="high">24.20</td>
+<td class="low">22.65</td>
+<td align="center">1.55</td>
+<td>28,683</td>
+<td>6.8171</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">48</td>
+<td align="center" class="name"><a href="/q/bc?s=1409">1409 新纖</a></td>
+<td>16.30</td>
+<td class="ceil" style="text-align:center">▲1.45</td>
+<td>+9.76%</td>
+<td class="highend_reverse">16.30</td>
+<td class="high">16.00</td>
+<td align="center">0.30</td>
+<td>28,570</td>
+<td>4.6471</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">49</td>
+<td align="center" class="name"><a href="/q/bc?s=1718">1718 中纖</a></td>
+<td>10.80</td>
+<td class="down" style="text-align:center">▽0.05</td>
+<td>-0.46%</td>
+<td class="high">11.10</td>
+<td class="low">10.75</td>
+<td align="center">0.35</td>
+<td>28,344</td>
+<td>3.0847</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">50</td>
+<td align="center" class="name"><a href="/q/bc?s=2408">2408 南亞科</a></td>
+<td>90.50</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-0.22%</td>
+<td class="high">94.50</td>
+<td class="low">88.80</td>
+<td align="center">5.70</td>
+<td>28,096</td>
+<td>25.8779</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">51</td>
+<td align="center" class="name"><a href="/q/bc?s=8215">8215 明基材</a></td>
+<td>30.70</td>
+<td class="ceil" style="text-align:center">▲2.75</td>
+<td>+9.84%</td>
+<td class="highend_reverse">30.70</td>
+<td class="high">28.35</td>
+<td align="center">2.35</td>
+<td>27,404</td>
+<td>8.1871</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">52</td>
+<td align="center" class="name"><a href="/q/bc?s=2201">2201 裕隆</a></td>
+<td>48.85</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-4.03%</td>
+<td class="equal">50.90</td>
+<td class="low">48.30</td>
+<td align="center">2.60</td>
+<td>27,178</td>
+<td>13.4516</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">53</td>
+<td align="center" class="name"><a href="/q/bc?s=2371">2371 大同</a></td>
+<td>26.15</td>
+<td class="down" style="text-align:center">▽0.65</td>
+<td>-2.43%</td>
+<td class="low">26.75</td>
+<td class="low">26.00</td>
+<td align="center">0.75</td>
+<td>26,978</td>
+<td>7.0693</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">54</td>
+<td align="center" class="name"><a href="/q/bc?s=1909">1909 榮成</a></td>
+<td>22.40</td>
+<td class="down" style="text-align:center">▽0.60</td>
+<td>-2.61%</td>
+<td class="equal">23.00</td>
+<td class="low">22.00</td>
+<td align="center">1.00</td>
+<td>26,578</td>
+<td>5.9555</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">55</td>
+<td align="center" class="name"><a href="/q/bc?s=4961">4961 天鈺</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+5.93%</td>
+<td class="high">144.00</td>
+<td class="low">133.00</td>
+<td align="center">11.00</td>
+<td>26,034</td>
+<td>36.0953</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">56</td>
+<td align="center" class="name"><a href="/q/bc?s=1312">1312 國喬</a></td>
+<td>24.30</td>
+<td class="up" style="text-align:center">△0.20</td>
+<td>+0.83%</td>
+<td class="high">24.85</td>
+<td class="low">23.95</td>
+<td align="center">0.90</td>
+<td>25,685</td>
+<td>6.2823</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">57</td>
+<td align="center" class="name"><a href="/q/bc?s=2891">2891 中信金</a></td>
+<td>19.60</td>
+<td class="up" style="text-align:center">△0.05</td>
+<td>+0.26%</td>
+<td class="high">19.70</td>
+<td class="low">19.45</td>
+<td align="center">0.25</td>
+<td>25,662</td>
+<td>5.0316</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">58</td>
+<td align="center" class="name"><a href="/q/bc?s=6257">6257 矽格</a></td>
+<td>48.25</td>
+<td class="up" style="text-align:center">△2.15</td>
+<td>+4.66%</td>
+<td class="high">48.30</td>
+<td class="equal">46.10</td>
+<td align="center">2.20</td>
+<td>25,091</td>
+<td>11.8692</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">59</td>
+<td align="center" class="name"><a href="/q/bc?s=1513">1513 中興電</a></td>
+<td>48.65</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-0.92%</td>
+<td class="high">49.80</td>
+<td class="low">48.10</td>
+<td align="center">1.70</td>
+<td>24,953</td>
+<td>12.2345</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">60</td>
+<td align="center" class="name"><a href="/q/bc?s=1536">1536 和大</a></td>
+<td>120.50</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+5.24%</td>
+<td class="high">125.00</td>
+<td class="high">118.00</td>
+<td align="center">7.00</td>
+<td>24,272</td>
+<td>29.4083</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">61</td>
+<td align="center" class="name"><a href="/q/bc?s=2618">2618 長榮航</a></td>
+<td>12.95</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.77%</td>
+<td class="equal">13.05</td>
+<td class="low">12.80</td>
+<td align="center">0.25</td>
+<td>24,049</td>
+<td>3.1098</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">62</td>
+<td align="center" class="name"><a href="/q/bc?s=2027">2027 大成鋼</a></td>
+<td>30.90</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.32%</td>
+<td class="high">31.80</td>
+<td class="low">30.80</td>
+<td align="center">1.00</td>
+<td>23,559</td>
+<td>7.3705</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">63</td>
+<td align="center" class="name"><a href="/q/bc?s=2478">2478 大毅</a></td>
+<td>89.40</td>
+<td class="up" style="text-align:center">△5.40</td>
+<td>+6.43%</td>
+<td class="high">91.60</td>
+<td class="low">83.70</td>
+<td align="center">7.90</td>
+<td>23,035</td>
+<td>20.4970</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">64</td>
+<td align="center" class="name"><a href="/q/bc?s=2606">2606 裕民</a></td>
+<td>37.15</td>
+<td class="up" style="text-align:center">△0.45</td>
+<td>+1.23%</td>
+<td class="high">38.25</td>
+<td class="equal">36.70</td>
+<td align="center">1.55</td>
+<td>21,731</td>
+<td>8.1189</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">65</td>
+<td align="center" class="name"><a href="/q/bc?s=6251">6251 定穎</a></td>
+<td>19.45</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.51%</td>
+<td class="high">20.20</td>
+<td class="low">19.35</td>
+<td align="center">0.85</td>
+<td>21,318</td>
+<td>4.2070</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">66</td>
+<td align="center" class="name"><a href="/q/bc?s=2885">2885 元大金</a></td>
+<td>20.55</td>
+<td class="up" style="text-align:center">△0.10</td>
+<td>+0.49%</td>
+<td class="high">20.60</td>
+<td class="low">20.35</td>
+<td align="center">0.25</td>
+<td>20,934</td>
+<td>4.2872</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">67</td>
+<td align="center" class="name"><a href="/q/bc?s=2605">2605 新興</a></td>
+<td>22.85</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-2.14%</td>
+<td class="low">23.20</td>
+<td class="low">22.25</td>
+<td align="center">0.95</td>
+<td>20,658</td>
+<td>4.6839</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">68</td>
+<td align="center" class="name"><a href="/q/bc?s=3006">3006 晶豪科</a></td>
+<td>63.40</td>
+<td class="down" style="text-align:center">▽2.60</td>
+<td>-3.94%</td>
+<td class="low">65.80</td>
+<td class="low">63.20</td>
+<td align="center">2.60</td>
+<td>20,110</td>
+<td>12.9488</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">69</td>
+<td align="center" class="name"><a href="/q/bc?s=2515">2515 中工</a></td>
+<td>10.05</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-1.95%</td>
+<td class="low">10.15</td>
+<td class="low">10.00</td>
+<td align="center">0.15</td>
+<td>19,956</td>
+<td>2.0056</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">70</td>
+<td align="center" class="name"><a href="/q/bc?s=2368">2368 金像電</a></td>
+<td>52.90</td>
+<td class="up" style="text-align:center">△1.00</td>
+<td>+1.93%</td>
+<td class="high">53.20</td>
+<td class="low">51.20</td>
+<td align="center">2.00</td>
+<td>19,943</td>
+<td>10.4607</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">71</td>
+<td align="center" class="name"><a href="/q/bc?s=2601">2601 益航</a></td>
+<td>11.20</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-3.45%</td>
+<td class="equal">11.60</td>
+<td class="low">11.15</td>
+<td align="center">0.45</td>
+<td>19,899</td>
+<td>2.2477</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">72</td>
+<td align="center" class="name"><a href="/q/bc?s=3704">3704 合勤控</a></td>
+<td>40.35</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-0.98%</td>
+<td class="low">40.55</td>
+<td class="low">39.25</td>
+<td align="center">1.30</td>
+<td>19,567</td>
+<td>7.7999</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">73</td>
+<td align="center" class="name"><a href="/q/bc?s=4938">4938 和碩</a></td>
+<td>66.80</td>
+<td class="down" style="text-align:center">▽1.20</td>
+<td>-1.76%</td>
+<td class="low">67.90</td>
+<td class="low">66.60</td>
+<td align="center">1.30</td>
+<td>19,373</td>
+<td>12.9722</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">74</td>
+<td align="center" class="name"><a href="/q/bc?s=2006">2006 東和鋼鐵</a></td>
+<td>37.75</td>
+<td class="up" style="text-align:center">△0.80</td>
+<td>+2.17%</td>
+<td class="high">37.90</td>
+<td class="low">36.60</td>
+<td align="center">1.30</td>
+<td>19,369</td>
+<td>7.2572</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">75</td>
+<td align="center" class="name"><a href="/q/bc?s=3576">3576 聯合再生</a></td>
+<td>14.25</td>
+<td class="up" style="text-align:center">△0.05</td>
+<td>+0.35%</td>
+<td class="high">14.55</td>
+<td class="equal">14.20</td>
+<td align="center">0.35</td>
+<td>19,304</td>
+<td>2.7722</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">76</td>
+<td align="center" class="name"><a href="/q/bc?s=1309">1309 台達化</a></td>
+<td>37.50</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-2.98%</td>
+<td class="high">39.50</td>
+<td class="low">37.25</td>
+<td align="center">2.25</td>
+<td>19,227</td>
+<td>7.3254</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">77</td>
+<td align="center" class="name"><a href="/q/bc?s=2329">2329 華泰</a></td>
+<td>16.10</td>
+<td class="up" style="text-align:center">△0.75</td>
+<td>+4.89%</td>
+<td class="high">16.15</td>
+<td class="low">15.05</td>
+<td align="center">1.10</td>
+<td>19,111</td>
+<td>3.0221</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">78</td>
+<td align="center" class="name"><a href="/q/bc?s=00642U">00642U 元大S&amp;P石油</a></td>
+<td>8.22</td>
+<td class="down" style="text-align:center">▽0.19</td>
+<td>-2.26%</td>
+<td class="low">8.26</td>
+<td class="low">8.19</td>
+<td align="center">0.07</td>
+<td>18,214</td>
+<td>1.4981</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">79</td>
+<td align="center" class="name"><a href="/q/bc?s=3443">3443 創意</a></td>
+<td>399.50</td>
+<td class="up" style="text-align:center">△27.00</td>
+<td>+7.25%</td>
+<td class="high">402.50</td>
+<td class="low">370.00</td>
+<td align="center">32.50</td>
+<td>18,191</td>
+<td>70.9927</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">80</td>
+<td align="center" class="name"><a href="/q/bc?s=2313">2313 華通</a></td>
+<td>44.95</td>
+<td class="up" style="text-align:center">△0.35</td>
+<td>+0.78%</td>
+<td class="high">45.30</td>
+<td class="low">44.05</td>
+<td align="center">1.25</td>
+<td>17,965</td>
+<td>8.0504</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">81</td>
+<td align="center" class="name"><a href="/q/bc?s=2308">2308 台達電</a></td>
+<td>276.50</td>
+<td class="up" style="text-align:center">△11.50</td>
+<td>+4.34%</td>
+<td class="high">283.00</td>
+<td class="high">269.50</td>
+<td align="center">13.50</td>
+<td>17,956</td>
+<td>49.7485</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">82</td>
+<td align="center" class="name"><a href="/q/bc?s=020022">020022 元大電動車N</a></td>
+<td>5.26</td>
+<td class="up" style="text-align:center">△0.01</td>
+<td>+0.19%</td>
+<td class="high">5.30</td>
+<td class="low">5.21</td>
+<td align="center">0.09</td>
+<td>17,841</td>
+<td>0.9384</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">83</td>
+<td align="center" class="name"><a href="/q/bc?s=3189">3189 景碩</a></td>
+<td>85.80</td>
+<td class="up" style="text-align:center">△0.80</td>
+<td>+0.94%</td>
+<td class="high">86.60</td>
+<td class="low">83.80</td>
+<td align="center">2.80</td>
+<td>17,682</td>
+<td>15.1518</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">84</td>
+<td align="center" class="name"><a href="/q/bc?s=3605">3605 宏致</a></td>
+<td>46.70</td>
+<td class="up" style="text-align:center">△0.25</td>
+<td>+0.54%</td>
+<td class="high">48.85</td>
+<td class="low">45.40</td>
+<td align="center">3.45</td>
+<td>17,671</td>
+<td>8.3620</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">85</td>
+<td align="center" class="name"><a href="/q/bc?s=2890">2890 永豐金</a></td>
+<td>11.45</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">11.50</td>
+<td class="low">11.40</td>
+<td align="center">0.10</td>
+<td>16,913</td>
+<td>1.9397</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">86</td>
+<td align="center" class="name"><a href="/q/bc?s=4960">4960 誠美材</a></td>
+<td>11.35</td>
+<td class="up" style="text-align:center">△0.25</td>
+<td>+2.25%</td>
+<td class="high">11.70</td>
+<td class="low">11.05</td>
+<td align="center">0.65</td>
+<td>16,910</td>
+<td>1.9301</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">87</td>
+<td align="center" class="name"><a href="/q/bc?s=2382">2382 廣達</a></td>
+<td>84.70</td>
+<td class="up" style="text-align:center">△3.60</td>
+<td>+4.44%</td>
+<td class="high">84.80</td>
+<td class="high">81.20</td>
+<td align="center">3.60</td>
+<td>16,895</td>
+<td>14.1129</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">88</td>
+<td align="center" class="name"><a href="/q/bc?s=2882">2882 國泰金</a></td>
+<td>42.10</td>
+<td class="up" style="text-align:center">△0.05</td>
+<td>+0.12%</td>
+<td class="high">42.20</td>
+<td class="low">41.80</td>
+<td align="center">0.40</td>
+<td>16,621</td>
+<td>6.9917</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">89</td>
+<td align="center" class="name"><a href="/q/bc?s=2352">2352 佳世達</a></td>
+<td>29.20</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.34%</td>
+<td class="high">29.50</td>
+<td class="low">28.80</td>
+<td align="center">0.70</td>
+<td>16,559</td>
+<td>4.8357</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">90</td>
+<td align="center" class="name"><a href="/q/bc?s=1101">1101 台泥</a></td>
+<td>43.10</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.23%</td>
+<td class="high">43.40</td>
+<td class="low">43.00</td>
+<td align="center">0.40</td>
+<td>16,544</td>
+<td>7.1369</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">91</td>
+<td align="center" class="name"><a href="/q/bc?s=2884">2884 玉山金</a></td>
+<td>25.30</td>
+<td class="down" style="text-align:center">▽0.05</td>
+<td>-0.20%</td>
+<td class="equal">25.35</td>
+<td class="low">25.15</td>
+<td align="center">0.20</td>
+<td>16,383</td>
+<td>4.1370</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">92</td>
+<td align="center" class="name"><a href="/q/bc?s=2354">2354 鴻準</a></td>
+<td>56.10</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.90%</td>
+<td class="high">56.70</td>
+<td class="equal">55.60</td>
+<td align="center">1.10</td>
+<td>16,173</td>
+<td>9.0806</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">93</td>
+<td align="center" class="name"><a href="/q/bc?s=2481">2481 強茂</a></td>
+<td>54.70</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">55.10</td>
+<td class="low">52.90</td>
+<td align="center">2.20</td>
+<td>16,152</td>
+<td>8.7190</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">94</td>
+<td align="center" class="name"><a href="/q/bc?s=2017">2017 官田鋼</a></td>
+<td>12.50</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">13.50</td>
+<td class="low">12.30</td>
+<td align="center">1.20</td>
+<td>16,105</td>
+<td>2.0858</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">95</td>
+<td align="center" class="name"><a href="/q/bc?s=2028">2028 威致</a></td>
+<td>26.35</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-1.68%</td>
+<td class="high">29.40</td>
+<td class="low">26.20</td>
+<td align="center">3.20</td>
+<td>15,297</td>
+<td>4.2676</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">96</td>
+<td align="center" class="name"><a href="/q/bc?s=2611">2611 志信</a></td>
+<td>14.30</td>
+<td class="ceil" style="text-align:center">▲1.30</td>
+<td>+10.00%</td>
+<td class="highend_reverse">14.30</td>
+<td class="high">13.80</td>
+<td align="center">0.50</td>
+<td>15,188</td>
+<td>2.1573</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">97</td>
+<td align="center" class="name"><a href="/q/bc?s=2328">2328 廣宇</a></td>
+<td>31.00</td>
+<td class="ceil" style="text-align:center">▲2.80</td>
+<td>+9.93%</td>
+<td class="highend_reverse">31.00</td>
+<td class="highend_reverse">31.00</td>
+<td align="center">0.00</td>
+<td>15,073</td>
+<td>4.6726</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">98</td>
+<td align="center" class="name"><a href="/q/bc?s=3545">3545 敦泰</a></td>
+<td>87.90</td>
+<td class="down" style="text-align:center">▽2.80</td>
+<td>-3.09%</td>
+<td class="high">91.50</td>
+<td class="low">86.30</td>
+<td align="center">5.20</td>
+<td>14,670</td>
+<td>12.9663</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">99</td>
+<td align="center" class="name"><a href="/q/bc?s=3231">3231 緯創</a></td>
+<td>30.50</td>
+<td class="down" style="text-align:center">▽0.30</td>
+<td>-0.97%</td>
+<td class="low">30.75</td>
+<td class="low">30.30</td>
+<td align="center">0.45</td>
+<td>14,638</td>
+<td>4.4567</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">100</td>
+<td align="center" class="name"><a href="/q/bc?s=00878">00878 國泰永續高股息</a></td>
+<td>16.21</td>
+<td class="up" style="text-align:center">△0.01</td>
+<td>+0.06%</td>
+<td class="high">16.22</td>
+<td class="low">16.11</td>
+<td align="center">0.11</td>
+<td>14,316</td>
+<td>2.3159</td>
+</tr></tbody></table>
+</td></tr>
+</tbody></table>
+<hr><table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr bgcolor="#fec003">
+<td colspan="2">
+<table border="0" cellpadding="2" height="23" width="100%">
+<tbody><tr>
+<td class="tt" width="205">資料日期：59 / 01 / 01   08 : 00</td><td align="center" class="ttt" width="205">上市漲幅排行</td>
+<td width="205">
+<div align="right" class="tt"><a href="?t=up&amp;e=TWO&amp;n=100">上櫃漲幅排行</a></div>
+</td></tr>
+</tbody></table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#fff0c1"><th nowrap="nowrap">名次</th><th nowrap="nowrap">股票代號/名稱</th><th nowrap="nowrap">成交價</th><th nowrap="nowrap">  漲跌  </th><th nowrap="nowrap"> 漲跌幅 </th><th nowrap="nowrap">最高</th><th nowrap="nowrap">最低</th><th nowrap="nowrap">價差</th><th nowrap="nowrap">成交張數</th><th nowrap="nowrap">成交值(億)</th></tr></tbody></table>
+</td></tr>
+</tbody></table>
+<hr><table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr bgcolor="#fec003">
+<td colspan="2">
+<table border="0" cellpadding="2" height="23" width="100%">
+<tbody><tr>
+<td class="tt" width="205">資料日期：110 / 01 / 05   14 : 00</td><td align="center" class="ttt" width="205">上市跌幅排行</td>
+<td width="205">
+<div align="right" class="tt"><a href="?t=down&amp;e=TWO&amp;n=100">上櫃跌幅排行</a></div>
+</td></tr>
+</tbody></table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#fff0c1"><th nowrap="nowrap">名次</th><th nowrap="nowrap">股票代號/名稱</th><th nowrap="nowrap">成交價</th><th nowrap="nowrap">  漲跌  </th><th nowrap="nowrap"> 漲跌幅 </th><th nowrap="nowrap">最高</th><th nowrap="nowrap">最低</th><th nowrap="nowrap">價差</th><th nowrap="nowrap">成交張數</th><th nowrap="nowrap">成交值(億)</th></tr><tr align="right" bgcolor="#ffffff">
+<td align="center">1</td>
+<td align="center" class="name"><a href="/q/bc?s=2380">2380 虹光</a></td>
+<td>8.40</td>
+<td class="down" style="text-align:center">▽0.92</td>
+<td>-9.87%</td>
+<td class="low">9.10</td>
+<td class="low">8.40</td>
+<td align="center">0.70</td>
+<td>6,507</td>
+<td>0.5594</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">2</td>
+<td align="center" class="name"><a href="/q/bc?s=1475">1475 業旺</a></td>
+<td>34.00</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-9.33%</td>
+<td class="low">34.20</td>
+<td class="low">33.80</td>
+<td align="center">0.40</td>
+<td>9</td>
+<td>0.0031</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">3</td>
+<td align="center" class="name"><a href="/q/bc?s=6205">6205 詮欣</a></td>
+<td>48.35</td>
+<td class="down" style="text-align:center">▽4.25</td>
+<td>-8.08%</td>
+<td class="high">55.00</td>
+<td class="low">47.50</td>
+<td align="center">7.50</td>
+<td>13,567</td>
+<td>6.9380</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">4</td>
+<td align="center" class="name"><a href="/q/bc?s=2302">2302 麗正</a></td>
+<td>24.30</td>
+<td class="down" style="text-align:center">▽2.00</td>
+<td>-7.60%</td>
+<td class="low">26.10</td>
+<td class="low">24.20</td>
+<td align="center">1.90</td>
+<td>3,714</td>
+<td>0.9242</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">5</td>
+<td align="center" class="name"><a href="/q/bc?s=2340">2340 光磊</a></td>
+<td>25.75</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-7.37%</td>
+<td class="low">26.60</td>
+<td class="low">25.65</td>
+<td align="center">0.95</td>
+<td>37,282</td>
+<td>9.7131</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">6</td>
+<td align="center" class="name"><a href="/q/bc?s=8488">8488 吉源-KY</a></td>
+<td>14.85</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-7.19%</td>
+<td class="high">16.30</td>
+<td class="low">14.80</td>
+<td align="center">1.50</td>
+<td>206</td>
+<td>0.0312</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">7</td>
+<td align="center" class="name"><a href="/q/bc?s=4934">4934 太極</a></td>
+<td>30.30</td>
+<td class="down" style="text-align:center">▽1.70</td>
+<td>-5.31%</td>
+<td class="low">31.50</td>
+<td class="low">29.65</td>
+<td align="center">1.85</td>
+<td>6,706</td>
+<td>2.0450</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">8</td>
+<td align="center" class="name"><a href="/q/bc?s=5285">5285 界霖</a></td>
+<td>72.00</td>
+<td class="down" style="text-align:center">▽3.80</td>
+<td>-5.01%</td>
+<td class="high">77.10</td>
+<td class="low">71.00</td>
+<td align="center">6.10</td>
+<td>4,649</td>
+<td>3.4016</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">9</td>
+<td align="center" class="name"><a href="/q/bc?s=3025">3025 星通</a></td>
+<td>39.25</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-4.96%</td>
+<td class="high">41.40</td>
+<td class="low">39.15</td>
+<td align="center">2.25</td>
+<td>3,066</td>
+<td>1.2208</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">10</td>
+<td align="center" class="name"><a href="/q/bc?s=8104">8104 錸寶</a></td>
+<td>56.30</td>
+<td class="down" style="text-align:center">▽2.90</td>
+<td>-4.90%</td>
+<td class="low">58.90</td>
+<td class="low">55.60</td>
+<td align="center">3.30</td>
+<td>3,022</td>
+<td>1.7286</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">11</td>
+<td align="center" class="name"><a href="/q/bc?s=2204">2204 中華</a></td>
+<td>50.80</td>
+<td class="down" style="text-align:center">▽2.50</td>
+<td>-4.69%</td>
+<td class="equal">53.30</td>
+<td class="low">50.40</td>
+<td align="center">2.90</td>
+<td>2,843</td>
+<td>1.4657</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">12</td>
+<td align="center" class="name"><a href="/q/bc?s=2465">2465 麗臺</a></td>
+<td>21.50</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-4.44%</td>
+<td class="low">22.30</td>
+<td class="low">21.50</td>
+<td align="center">0.80</td>
+<td>3,000</td>
+<td>0.6516</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">13</td>
+<td align="center" class="name"><a href="/q/bc?s=2106">2106 建大</a></td>
+<td>33.45</td>
+<td class="down" style="text-align:center">▽1.55</td>
+<td>-4.43%</td>
+<td class="low">34.85</td>
+<td class="low">33.45</td>
+<td align="center">1.40</td>
+<td>5,578</td>
+<td>1.8875</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">14</td>
+<td align="center" class="name"><a href="/q/bc?s=3257">3257 虹冠電</a></td>
+<td>82.60</td>
+<td class="down" style="text-align:center">▽3.80</td>
+<td>-4.40%</td>
+<td class="low">86.20</td>
+<td class="low">81.90</td>
+<td align="center">4.30</td>
+<td>3,641</td>
+<td>3.0311</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">15</td>
+<td align="center" class="name"><a href="/q/bc?s=2615">2615 萬海</a></td>
+<td>54.60</td>
+<td class="down" style="text-align:center">▽2.50</td>
+<td>-4.38%</td>
+<td class="high">57.30</td>
+<td class="low">53.80</td>
+<td align="center">3.50</td>
+<td>89,912</td>
+<td>49.6443</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">16</td>
+<td align="center" class="name"><a href="/q/bc?s=2613">2613 中櫃</a></td>
+<td>22.60</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-4.24%</td>
+<td class="low">23.45</td>
+<td class="low">22.50</td>
+<td align="center">0.95</td>
+<td>2,288</td>
+<td>0.5213</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">17</td>
+<td align="center" class="name"><a href="/q/bc?s=2461">2461 光群雷</a></td>
+<td>18.90</td>
+<td class="down" style="text-align:center">▽0.80</td>
+<td>-4.06%</td>
+<td class="equal">19.70</td>
+<td class="low">18.70</td>
+<td align="center">1.00</td>
+<td>2,469</td>
+<td>0.4716</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">18</td>
+<td align="center" class="name"><a href="/q/bc?s=2201">2201 裕隆</a></td>
+<td>48.85</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-4.03%</td>
+<td class="equal">50.90</td>
+<td class="low">48.30</td>
+<td align="center">2.60</td>
+<td>27,178</td>
+<td>13.4516</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">19</td>
+<td align="center" class="name"><a href="/q/bc?s=1802">1802 台玻</a></td>
+<td>20.60</td>
+<td class="down" style="text-align:center">▽0.85</td>
+<td>-3.96%</td>
+<td class="high">21.65</td>
+<td class="low">20.05</td>
+<td align="center">1.60</td>
+<td>65,011</td>
+<td>13.5932</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">20</td>
+<td align="center" class="name"><a href="/q/bc?s=3006">3006 晶豪科</a></td>
+<td>63.40</td>
+<td class="down" style="text-align:center">▽2.60</td>
+<td>-3.94%</td>
+<td class="low">65.80</td>
+<td class="low">63.20</td>
+<td align="center">2.60</td>
+<td>20,110</td>
+<td>12.9488</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">21</td>
+<td align="center" class="name"><a href="/q/bc?s=6152">6152 百一</a></td>
+<td>13.55</td>
+<td class="down" style="text-align:center">▽0.55</td>
+<td>-3.90%</td>
+<td class="low">13.80</td>
+<td class="low">13.45</td>
+<td align="center">0.35</td>
+<td>2,775</td>
+<td>0.3766</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">22</td>
+<td align="center" class="name"><a href="/q/bc?s=2105">2105 正新</a></td>
+<td>42.80</td>
+<td class="down" style="text-align:center">▽1.60</td>
+<td>-3.60%</td>
+<td class="low">44.15</td>
+<td class="low">42.80</td>
+<td align="center">1.35</td>
+<td>13,024</td>
+<td>5.6212</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">23</td>
+<td align="center" class="name"><a href="/q/bc?s=6235">6235 華孚</a></td>
+<td>19.45</td>
+<td class="down" style="text-align:center">▽0.70</td>
+<td>-3.47%</td>
+<td class="low">19.85</td>
+<td class="low">19.20</td>
+<td align="center">0.65</td>
+<td>4,150</td>
+<td>0.8084</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">24</td>
+<td align="center" class="name"><a href="/q/bc?s=2607">2607 榮運</a></td>
+<td>19.50</td>
+<td class="down" style="text-align:center">▽0.70</td>
+<td>-3.47%</td>
+<td class="low">20.10</td>
+<td class="low">19.40</td>
+<td align="center">0.70</td>
+<td>11,990</td>
+<td>2.3557</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">25</td>
+<td align="center" class="name"><a href="/q/bc?s=2601">2601 益航</a></td>
+<td>11.20</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-3.45%</td>
+<td class="equal">11.60</td>
+<td class="low">11.15</td>
+<td align="center">0.45</td>
+<td>19,899</td>
+<td>2.2477</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">26</td>
+<td align="center" class="name"><a href="/q/bc?s=2405">2405 浩鑫</a></td>
+<td>12.65</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-3.44%</td>
+<td class="high">13.15</td>
+<td class="low">12.50</td>
+<td align="center">0.65</td>
+<td>4,968</td>
+<td>0.6327</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">27</td>
+<td align="center" class="name"><a href="/q/bc?s=1525">1525 江申</a></td>
+<td>70.20</td>
+<td class="down" style="text-align:center">▽2.50</td>
+<td>-3.44%</td>
+<td class="low">72.60</td>
+<td class="low">70.00</td>
+<td align="center">2.60</td>
+<td>590</td>
+<td>0.4185</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">28</td>
+<td align="center" class="name"><a href="/q/bc?s=3041">3041 揚智</a></td>
+<td>32.35</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-3.43%</td>
+<td class="low">33.35</td>
+<td class="low">32.10</td>
+<td align="center">1.25</td>
+<td>11,100</td>
+<td>3.6271</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">29</td>
+<td align="center" class="name"><a href="/q/bc?s=1711">1711 永光</a></td>
+<td>16.90</td>
+<td class="down" style="text-align:center">▽0.60</td>
+<td>-3.43%</td>
+<td class="equal">17.50</td>
+<td class="low">16.85</td>
+<td align="center">0.65</td>
+<td>3,722</td>
+<td>0.6344</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">30</td>
+<td align="center" class="name"><a href="/q/bc?s=2939">2939 凱羿-KY</a></td>
+<td>33.80</td>
+<td class="down" style="text-align:center">▽1.20</td>
+<td>-3.43%</td>
+<td class="low">34.50</td>
+<td class="low">33.60</td>
+<td align="center">0.90</td>
+<td>60</td>
+<td>0.0204</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">31</td>
+<td align="center" class="name"><a href="/q/bc?s=3229">3229 晟鈦</a></td>
+<td>5.65</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-3.42%</td>
+<td class="low">5.80</td>
+<td class="low">5.65</td>
+<td align="center">0.15</td>
+<td>40</td>
+<td>0.0023</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">32</td>
+<td align="center" class="name"><a href="/q/bc?s=1417">1417 嘉裕</a></td>
+<td>11.30</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-3.42%</td>
+<td class="high">11.85</td>
+<td class="low">11.30</td>
+<td align="center">0.55</td>
+<td>1,554</td>
+<td>0.1795</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">33</td>
+<td align="center" class="name"><a href="/q/bc?s=5531">5531 鄉林</a></td>
+<td>15.60</td>
+<td class="down" style="text-align:center">▽0.55</td>
+<td>-3.41%</td>
+<td class="low">16.10</td>
+<td class="low">15.25</td>
+<td align="center">0.85</td>
+<td>6,570</td>
+<td>1.0279</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">34</td>
+<td align="center" class="name"><a href="/q/bc?s=1530">1530 亞崴</a></td>
+<td>34.20</td>
+<td class="down" style="text-align:center">▽1.20</td>
+<td>-3.39%</td>
+<td class="high">35.80</td>
+<td class="low">33.90</td>
+<td align="center">1.90</td>
+<td>279</td>
+<td>0.0965</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">35</td>
+<td align="center" class="name"><a href="/q/bc?s=3545">3545 敦泰</a></td>
+<td>87.90</td>
+<td class="down" style="text-align:center">▽2.80</td>
+<td>-3.09%</td>
+<td class="high">91.50</td>
+<td class="low">86.30</td>
+<td align="center">5.20</td>
+<td>14,670</td>
+<td>12.9663</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">36</td>
+<td align="center" class="name"><a href="/q/bc?s=1907">1907 永豐餘</a></td>
+<td>28.40</td>
+<td class="down" style="text-align:center">▽0.90</td>
+<td>-3.07%</td>
+<td class="equal">29.30</td>
+<td class="low">28.05</td>
+<td align="center">1.25</td>
+<td>8,036</td>
+<td>2.2841</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">37</td>
+<td align="center" class="name"><a href="/q/bc?s=2426">2426 鼎元</a></td>
+<td>17.60</td>
+<td class="down" style="text-align:center">▽0.55</td>
+<td>-3.03%</td>
+<td class="equal">18.15</td>
+<td class="low">17.35</td>
+<td align="center">0.80</td>
+<td>8,588</td>
+<td>1.5121</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">38</td>
+<td align="center" class="name"><a href="/q/bc?s=6491">6491 晶碩</a></td>
+<td>273.50</td>
+<td class="down" style="text-align:center">▽8.50</td>
+<td>-3.01%</td>
+<td class="low">280.00</td>
+<td class="low">266.50</td>
+<td align="center">13.50</td>
+<td>1,288</td>
+<td>3.5052</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">39</td>
+<td align="center" class="name"><a href="/q/bc?s=00715L">00715L 街口布蘭特油正2</a></td>
+<td>4.52</td>
+<td class="down" style="text-align:center">▽0.14</td>
+<td>-3.00%</td>
+<td class="low">4.56</td>
+<td class="low">4.47</td>
+<td align="center">0.09</td>
+<td>58,537</td>
+<td>2.6468</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">40</td>
+<td align="center" class="name"><a href="/q/bc?s=2610">2610 華航</a></td>
+<td>11.35</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.99%</td>
+<td class="equal">11.70</td>
+<td class="low">11.15</td>
+<td align="center">0.55</td>
+<td>75,038</td>
+<td>8.5104</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">41</td>
+<td align="center" class="name"><a href="/q/bc?s=1309">1309 台達化</a></td>
+<td>37.50</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-2.98%</td>
+<td class="high">39.50</td>
+<td class="low">37.25</td>
+<td align="center">2.25</td>
+<td>19,227</td>
+<td>7.3254</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">42</td>
+<td align="center" class="name"><a href="/q/bc?s=6226">6226 光鼎</a></td>
+<td>11.50</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.95%</td>
+<td class="high">11.95</td>
+<td class="low">11.20</td>
+<td align="center">0.75</td>
+<td>8,009</td>
+<td>0.9228</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">43</td>
+<td align="center" class="name"><a href="/q/bc?s=1905">1905 華紙</a></td>
+<td>11.55</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.94%</td>
+<td class="high">12.00</td>
+<td class="low">11.45</td>
+<td align="center">0.55</td>
+<td>9,644</td>
+<td>1.1198</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">44</td>
+<td align="center" class="name"><a href="/q/bc?s=3557">3557 嘉威</a></td>
+<td>99.00</td>
+<td class="down" style="text-align:center">▽3.00</td>
+<td>-2.94%</td>
+<td class="equal">102.00</td>
+<td class="low">98.60</td>
+<td align="center">3.40</td>
+<td>597</td>
+<td>0.5945</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">45</td>
+<td align="center" class="name"><a href="/q/bc?s=1713">1713 國化</a></td>
+<td>21.60</td>
+<td class="down" style="text-align:center">▽0.65</td>
+<td>-2.92%</td>
+<td class="equal">22.25</td>
+<td class="low">21.40</td>
+<td align="center">0.85</td>
+<td>351</td>
+<td>0.0757</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">46</td>
+<td align="center" class="name"><a href="/q/bc?s=3356">3356 奇偶</a></td>
+<td>31.85</td>
+<td class="down" style="text-align:center">▽0.95</td>
+<td>-2.90%</td>
+<td class="high">33.35</td>
+<td class="low">31.35</td>
+<td align="center">2.00</td>
+<td>2,421</td>
+<td>0.7764</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">47</td>
+<td align="center" class="name"><a href="/q/bc?s=2399">2399 映泰</a></td>
+<td>17.00</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-2.86%</td>
+<td class="equal">17.50</td>
+<td class="low">16.75</td>
+<td align="center">0.75</td>
+<td>7,875</td>
+<td>1.3437</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">48</td>
+<td align="center" class="name"><a href="/q/bc?s=00647L">00647L 元大S&amp;P500正2</a></td>
+<td>48.70</td>
+<td class="down" style="text-align:center">▽1.40</td>
+<td>-2.79%</td>
+<td class="low">49.09</td>
+<td class="low">48.55</td>
+<td align="center">0.54</td>
+<td>405</td>
+<td>0.1979</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">49</td>
+<td align="center" class="name"><a href="/q/bc?s=6225">6225 天瀚</a></td>
+<td>3.20</td>
+<td class="down" style="text-align:center">▽0.09</td>
+<td>-2.74%</td>
+<td class="low">3.20</td>
+<td class="low">3.14</td>
+<td align="center">0.06</td>
+<td>36</td>
+<td>0.0011</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">50</td>
+<td align="center" class="name"><a href="/q/bc?s=2206">2206 三陽工業</a></td>
+<td>35.60</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-2.73%</td>
+<td class="low">36.50</td>
+<td class="low">35.45</td>
+<td align="center">1.05</td>
+<td>5,624</td>
+<td>2.0131</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">51</td>
+<td align="center" class="name"><a href="/q/bc?s=2331">2331 精英</a></td>
+<td>25.25</td>
+<td class="down" style="text-align:center">▽0.70</td>
+<td>-2.70%</td>
+<td class="high">26.05</td>
+<td class="low">24.90</td>
+<td align="center">1.15</td>
+<td>8,780</td>
+<td>2.2274</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">52</td>
+<td align="center" class="name"><a href="/q/bc?s=3494">3494 誠研</a></td>
+<td>5.04</td>
+<td class="down" style="text-align:center">▽0.14</td>
+<td>-2.70%</td>
+<td class="low">5.17</td>
+<td class="low">4.95</td>
+<td align="center">0.22</td>
+<td>1,267</td>
+<td>0.0637</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">53</td>
+<td align="center" class="name"><a href="/q/bc?s=00670L">00670L 富邦NASDAQ正2</a></td>
+<td>79.65</td>
+<td class="down" style="text-align:center">▽2.20</td>
+<td>-2.69%</td>
+<td class="low">80.10</td>
+<td class="low">79.40</td>
+<td align="center">0.70</td>
+<td>1,057</td>
+<td>0.8441</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">54</td>
+<td align="center" class="name"><a href="/q/bc?s=1472">1472 三洋紡</a></td>
+<td>10.90</td>
+<td class="down" style="text-align:center">▽0.30</td>
+<td>-2.68%</td>
+<td class="high">11.25</td>
+<td class="low">10.90</td>
+<td align="center">0.35</td>
+<td>38</td>
+<td>0.0042</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">55</td>
+<td align="center" class="name"><a href="/q/bc?s=3017">3017 奇鋐</a></td>
+<td>65.70</td>
+<td class="down" style="text-align:center">▽1.80</td>
+<td>-2.67%</td>
+<td class="low">66.70</td>
+<td class="low">65.00</td>
+<td align="center">1.70</td>
+<td>9,805</td>
+<td>6.4366</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">56</td>
+<td align="center" class="name"><a href="/q/bc?s=2102">2102 泰豐</a></td>
+<td>18.50</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-2.63%</td>
+<td class="low">18.95</td>
+<td class="low">18.40</td>
+<td align="center">0.55</td>
+<td>3,165</td>
+<td>0.5877</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">57</td>
+<td align="center" class="name"><a href="/q/bc?s=00852L">00852L 國泰美國道瓊正2</a></td>
+<td>15.95</td>
+<td class="down" style="text-align:center">▽0.43</td>
+<td>-2.63%</td>
+<td class="low">16.08</td>
+<td class="low">15.90</td>
+<td align="center">0.18</td>
+<td>4,476</td>
+<td>0.7162</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">58</td>
+<td align="center" class="name"><a href="/q/bc?s=2377">2377 微星</a></td>
+<td>130.00</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-2.62%</td>
+<td class="low">132.50</td>
+<td class="low">129.50</td>
+<td align="center">3.00</td>
+<td>3,836</td>
+<td>5.0060</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">59</td>
+<td align="center" class="name"><a href="/q/bc?s=1909">1909 榮成</a></td>
+<td>22.40</td>
+<td class="down" style="text-align:center">▽0.60</td>
+<td>-2.61%</td>
+<td class="equal">23.00</td>
+<td class="low">22.00</td>
+<td align="center">1.00</td>
+<td>26,578</td>
+<td>5.9555</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">60</td>
+<td align="center" class="name"><a href="/q/bc?s=9918">9918 欣天然</a></td>
+<td>37.50</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-2.60%</td>
+<td class="low">38.20</td>
+<td class="low">37.50</td>
+<td align="center">0.70</td>
+<td>4</td>
+<td>0.0015</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">61</td>
+<td align="center" class="name"><a href="/q/bc?s=3043">3043 科風</a></td>
+<td>4.88</td>
+<td class="down" style="text-align:center">▽0.13</td>
+<td>-2.59%</td>
+<td class="equal">5.01</td>
+<td class="low">4.88</td>
+<td align="center">0.13</td>
+<td>389</td>
+<td>0.0192</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">62</td>
+<td align="center" class="name"><a href="/q/bc?s=1445">1445 大宇</a></td>
+<td>11.30</td>
+<td class="down" style="text-align:center">▽0.30</td>
+<td>-2.59%</td>
+<td class="low">11.50</td>
+<td class="low">11.25</td>
+<td align="center">0.25</td>
+<td>449</td>
+<td>0.0508</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">63</td>
+<td align="center" class="name"><a href="/q/bc?s=6196">6196 帆宣</a></td>
+<td>113.50</td>
+<td class="down" style="text-align:center">▽3.00</td>
+<td>-2.58%</td>
+<td class="low">116.00</td>
+<td class="low">113.50</td>
+<td align="center">2.50</td>
+<td>1,620</td>
+<td>1.8561</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">64</td>
+<td align="center" class="name"><a href="/q/bc?s=1471">1471 首利</a></td>
+<td>5.69</td>
+<td class="down" style="text-align:center">▽0.15</td>
+<td>-2.57%</td>
+<td class="low">5.83</td>
+<td class="low">5.63</td>
+<td align="center">0.20</td>
+<td>453</td>
+<td>0.0258</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">65</td>
+<td align="center" class="name"><a href="/q/bc?s=2417">2417 圓剛</a></td>
+<td>47.40</td>
+<td class="down" style="text-align:center">▽1.25</td>
+<td>-2.57%</td>
+<td class="high">49.05</td>
+<td class="low">47.35</td>
+<td align="center">1.70</td>
+<td>4,646</td>
+<td>2.2321</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">66</td>
+<td align="center" class="name"><a href="/q/bc?s=2108">2108 南帝</a></td>
+<td>57.60</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-2.54%</td>
+<td class="low">59.00</td>
+<td class="low">57.20</td>
+<td align="center">1.80</td>
+<td>5,083</td>
+<td>2.9321</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">67</td>
+<td align="center" class="name"><a href="/q/bc?s=6278">6278 台表科</a></td>
+<td>134.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-2.54%</td>
+<td class="equal">138.00</td>
+<td class="low">133.00</td>
+<td align="center">5.00</td>
+<td>10,893</td>
+<td>14.6559</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">68</td>
+<td align="center" class="name"><a href="/q/bc?s=1449">1449 佳和</a></td>
+<td>28.90</td>
+<td class="down" style="text-align:center">▽0.75</td>
+<td>-2.53%</td>
+<td class="high">29.70</td>
+<td class="low">28.90</td>
+<td align="center">0.80</td>
+<td>247</td>
+<td>0.0724</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">69</td>
+<td align="center" class="name"><a href="/q/bc?s=1906">1906 寶隆</a></td>
+<td>17.40</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-2.52%</td>
+<td class="equal">17.85</td>
+<td class="low">17.25</td>
+<td align="center">0.60</td>
+<td>875</td>
+<td>0.1524</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">70</td>
+<td align="center" class="name"><a href="/q/bc?s=8427">8427 基勝-KY</a></td>
+<td>45.00</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-2.49%</td>
+<td class="low">45.00</td>
+<td class="low">45.00</td>
+<td align="center">0.00</td>
+<td>3</td>
+<td>0.0014</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">71</td>
+<td align="center" class="name"><a href="/q/bc?s=2617">2617 台航</a></td>
+<td>21.60</td>
+<td class="down" style="text-align:center">▽0.55</td>
+<td>-2.48%</td>
+<td class="low">22.10</td>
+<td class="low">21.30</td>
+<td align="center">0.80</td>
+<td>4,935</td>
+<td>1.0658</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">72</td>
+<td align="center" class="name"><a href="/q/bc?s=6605">6605 帝寶</a></td>
+<td>68.00</td>
+<td class="down" style="text-align:center">▽1.70</td>
+<td>-2.44%</td>
+<td class="high">72.60</td>
+<td class="low">67.10</td>
+<td align="center">5.50</td>
+<td>4,663</td>
+<td>3.2627</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">73</td>
+<td align="center" class="name"><a href="/q/bc?s=3481">3481 群創</a></td>
+<td>14.00</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.44%</td>
+<td class="high">14.50</td>
+<td class="low">13.90</td>
+<td align="center">0.60</td>
+<td>212,823</td>
+<td>29.9433</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">74</td>
+<td align="center" class="name"><a href="/q/bc?s=2401">2401 凌陽</a></td>
+<td>18.05</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-2.43%</td>
+<td class="equal">18.50</td>
+<td class="low">17.90</td>
+<td align="center">0.60</td>
+<td>12,716</td>
+<td>2.3038</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">75</td>
+<td align="center" class="name"><a href="/q/bc?s=2371">2371 大同</a></td>
+<td>26.15</td>
+<td class="down" style="text-align:center">▽0.65</td>
+<td>-2.43%</td>
+<td class="low">26.75</td>
+<td class="low">26.00</td>
+<td align="center">0.75</td>
+<td>26,978</td>
+<td>7.0693</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">76</td>
+<td align="center" class="name"><a href="/q/bc?s=3149">3149 正達</a></td>
+<td>26.45</td>
+<td class="down" style="text-align:center">▽0.65</td>
+<td>-2.40%</td>
+<td class="high">27.50</td>
+<td class="low">26.00</td>
+<td align="center">1.50</td>
+<td>8,136</td>
+<td>2.1700</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">77</td>
+<td align="center" class="name"><a href="/q/bc?s=3022">3022 威強電</a></td>
+<td>53.20</td>
+<td class="down" style="text-align:center">▽1.30</td>
+<td>-2.39%</td>
+<td class="equal">54.50</td>
+<td class="low">52.90</td>
+<td align="center">1.60</td>
+<td>739</td>
+<td>0.3958</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">78</td>
+<td align="center" class="name"><a href="/q/bc?s=1473">1473 台南</a></td>
+<td>18.45</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-2.38%</td>
+<td class="equal">18.90</td>
+<td class="low">18.40</td>
+<td align="center">0.50</td>
+<td>405</td>
+<td>0.0751</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">79</td>
+<td align="center" class="name"><a href="/q/bc?s=3050">3050 鈺德</a></td>
+<td>18.65</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-2.36%</td>
+<td class="high">19.25</td>
+<td class="low">18.35</td>
+<td align="center">0.90</td>
+<td>3,153</td>
+<td>0.5920</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">80</td>
+<td align="center" class="name"><a href="/q/bc?s=2457">2457 飛宏</a></td>
+<td>16.55</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-2.36%</td>
+<td class="high">17.15</td>
+<td class="low">16.50</td>
+<td align="center">0.65</td>
+<td>11,865</td>
+<td>1.9853</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">81</td>
+<td align="center" class="name"><a href="/q/bc?s=3682">3682 亞太電</a></td>
+<td>10.35</td>
+<td class="down" style="text-align:center">▽0.25</td>
+<td>-2.36%</td>
+<td class="low">10.55</td>
+<td class="low">10.30</td>
+<td align="center">0.25</td>
+<td>11,755</td>
+<td>1.2221</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">82</td>
+<td align="center" class="name"><a href="/q/bc?s=2104">2104 國際中橡</a></td>
+<td>24.90</td>
+<td class="down" style="text-align:center">▽0.60</td>
+<td>-2.35%</td>
+<td class="low">25.40</td>
+<td class="low">24.80</td>
+<td align="center">0.60</td>
+<td>6,537</td>
+<td>1.6312</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">83</td>
+<td align="center" class="name"><a href="/q/bc?s=1568">1568 倉佑</a></td>
+<td>23.00</td>
+<td class="down" style="text-align:center">▽0.55</td>
+<td>-2.34%</td>
+<td class="high">24.70</td>
+<td class="low">23.00</td>
+<td align="center">1.70</td>
+<td>4,507</td>
+<td>1.0778</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">84</td>
+<td align="center" class="name"><a href="/q/bc?s=2413">2413 環科</a></td>
+<td>25.35</td>
+<td class="down" style="text-align:center">▽0.60</td>
+<td>-2.31%</td>
+<td class="high">26.60</td>
+<td class="low">25.05</td>
+<td align="center">1.55</td>
+<td>1,922</td>
+<td>0.4950</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">85</td>
+<td align="center" class="name"><a href="/q/bc?s=3419">3419 譁裕</a></td>
+<td>21.10</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-2.31%</td>
+<td class="high">21.90</td>
+<td class="low">21.00</td>
+<td align="center">0.90</td>
+<td>3,889</td>
+<td>0.8277</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">86</td>
+<td align="center" class="name"><a href="/q/bc?s=6655">6655 科定</a></td>
+<td>48.65</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-2.31%</td>
+<td class="high">50.00</td>
+<td class="low">48.40</td>
+<td align="center">1.60</td>
+<td>26</td>
+<td>0.0128</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">87</td>
+<td align="center" class="name"><a href="/q/bc?s=2208">2208 台船</a></td>
+<td>27.60</td>
+<td class="down" style="text-align:center">▽0.65</td>
+<td>-2.30%</td>
+<td class="low">28.20</td>
+<td class="low">27.55</td>
+<td align="center">0.65</td>
+<td>3,300</td>
+<td>0.9154</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">88</td>
+<td align="center" class="name"><a href="/q/bc?s=3058">3058 立德</a></td>
+<td>9.92</td>
+<td class="down" style="text-align:center">▽0.23</td>
+<td>-2.27%</td>
+<td class="high">10.20</td>
+<td class="low">9.92</td>
+<td align="center">0.28</td>
+<td>1,991</td>
+<td>0.1990</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">89</td>
+<td align="center" class="name"><a href="/q/bc?s=6409">6409 旭隼</a></td>
+<td>1080.00</td>
+<td class="down" style="text-align:center">▽25.00</td>
+<td>-2.26%</td>
+<td class="equal">1105.00</td>
+<td class="low">1060.00</td>
+<td align="center">45.00</td>
+<td>129</td>
+<td>1.3858</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">90</td>
+<td align="center" class="name"><a href="/q/bc?s=00642U">00642U 元大S&amp;P石油</a></td>
+<td>8.22</td>
+<td class="down" style="text-align:center">▽0.19</td>
+<td>-2.26%</td>
+<td class="low">8.26</td>
+<td class="low">8.19</td>
+<td align="center">0.07</td>
+<td>18,214</td>
+<td>1.4981</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">91</td>
+<td align="center" class="name"><a href="/q/bc?s=4739">4739 康普</a></td>
+<td>69.90</td>
+<td class="down" style="text-align:center">▽1.60</td>
+<td>-2.24%</td>
+<td class="high">72.70</td>
+<td class="low">69.00</td>
+<td align="center">3.70</td>
+<td>1,505</td>
+<td>1.0626</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">92</td>
+<td align="center" class="name"><a href="/q/bc?s=2486">2486 一詮</a></td>
+<td>19.65</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-2.24%</td>
+<td class="high">20.45</td>
+<td class="low">19.60</td>
+<td align="center">0.85</td>
+<td>6,596</td>
+<td>1.3112</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">93</td>
+<td align="center" class="name"><a href="/q/bc?s=6525">6525 捷敏-KY</a></td>
+<td>67.80</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-2.16%</td>
+<td class="equal">69.30</td>
+<td class="low">66.90</td>
+<td align="center">2.40</td>
+<td>761</td>
+<td>0.5163</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">94</td>
+<td align="center" class="name"><a href="/q/bc?s=2605">2605 新興</a></td>
+<td>22.85</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-2.14%</td>
+<td class="low">23.20</td>
+<td class="low">22.25</td>
+<td align="center">0.95</td>
+<td>20,658</td>
+<td>4.6839</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">95</td>
+<td align="center" class="name"><a href="/q/bc?s=02001R">02001R 富邦蘋果反一N</a></td>
+<td>3.24</td>
+<td class="down" style="text-align:center">▽0.07</td>
+<td>-2.11%</td>
+<td class="low">3.26</td>
+<td class="low">3.23</td>
+<td align="center">0.03</td>
+<td>25</td>
+<td>0.0008</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">96</td>
+<td align="center" class="name"><a href="/q/bc?s=2484">2484 希華</a></td>
+<td>23.50</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-2.08%</td>
+<td class="equal">24.00</td>
+<td class="low">23.40</td>
+<td align="center">0.60</td>
+<td>2,445</td>
+<td>0.5782</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">97</td>
+<td align="center" class="name"><a href="/q/bc?s=1219">1219 福壽</a></td>
+<td>21.20</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-2.08%</td>
+<td class="high">21.75</td>
+<td class="low">21.05</td>
+<td align="center">0.70</td>
+<td>1,214</td>
+<td>0.2598</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">98</td>
+<td align="center" class="name"><a href="/q/bc?s=3016">3016 嘉晶</a></td>
+<td>71.10</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-2.07%</td>
+<td class="equal">72.60</td>
+<td class="low">70.60</td>
+<td align="center">2.00</td>
+<td>3,491</td>
+<td>2.4843</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">99</td>
+<td align="center" class="name"><a href="/q/bc?s=3588">3588 通嘉</a></td>
+<td>67.60</td>
+<td class="down" style="text-align:center">▽1.40</td>
+<td>-2.03%</td>
+<td class="high">69.90</td>
+<td class="low">65.50</td>
+<td align="center">4.40</td>
+<td>3,842</td>
+<td>2.5905</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">100</td>
+<td align="center" class="name"><a href="/q/bc?s=6582">6582 申豐</a></td>
+<td>145.00</td>
+<td class="down" style="text-align:center">▽3.00</td>
+<td>-2.03%</td>
+<td class="low">147.50</td>
+<td class="low">145.00</td>
+<td align="center">2.50</td>
+<td>646</td>
+<td>0.9416</td>
+</tr></tbody></table>
+</td></tr>
+</tbody></table>
+<hr><table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr bgcolor="#fec003">
+<td colspan="2">
+<table border="0" cellpadding="2" height="23" width="100%">
+<tbody><tr>
+<td class="tt" width="205">資料日期：110 / 01 / 05   14 : 00</td><td align="center" class="ttt" width="205">上市價差排行</td>
+<td width="205">
+<div align="right" class="tt"><a href="?t=pdis&amp;e=TWO&amp;n=100">上櫃價差排行</a></div>
+</td></tr>
+</tbody></table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#fff0c1"><th nowrap="nowrap">名次</th><th nowrap="nowrap">股票代號/名稱</th><th nowrap="nowrap">成交價</th><th nowrap="nowrap">  漲跌  </th><th nowrap="nowrap"> 漲跌幅 </th><th nowrap="nowrap">最高</th><th nowrap="nowrap">最低</th><th nowrap="nowrap">價差</th><th nowrap="nowrap">成交張數</th><th nowrap="nowrap">成交值(億)</th></tr><tr align="right" bgcolor="#ffffff">
+<td align="center">1</td>
+<td align="center" class="name"><a href="/q/bc?s=3008">3008 大立光</a></td>
+<td>3315.00</td>
+<td class="down" style="text-align:center">▽35.00</td>
+<td>-1.04%</td>
+<td class="high">3360.00</td>
+<td class="low">3270.00</td>
+<td align="center">90.00</td>
+<td>786</td>
+<td>26.0180</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">2</td>
+<td align="center" class="name"><a href="/q/bc?s=5269">5269 祥碩</a></td>
+<td>1715.00</td>
+<td class="up" style="text-align:center">△90.00</td>
+<td>+5.54%</td>
+<td class="high">1715.00</td>
+<td class="high">1635.00</td>
+<td align="center">80.00</td>
+<td>1,341</td>
+<td>22.5019</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">3</td>
+<td align="center" class="name"><a href="/q/bc?s=6415">6415 矽力-KY</a></td>
+<td>2405.00</td>
+<td class="down" style="text-align:center">▽5.00</td>
+<td>-0.21%</td>
+<td class="high">2460.00</td>
+<td class="low">2390.00</td>
+<td align="center">70.00</td>
+<td>275</td>
+<td>6.6555</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">4</td>
+<td align="center" class="name"><a href="/q/bc?s=3661">3661 世芯-KY</a></td>
+<td>726.00</td>
+<td class="up" style="text-align:center">△43.00</td>
+<td>+6.30%</td>
+<td class="high">738.00</td>
+<td class="low">669.00</td>
+<td align="center">69.00</td>
+<td>11,120</td>
+<td>78.6169</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">5</td>
+<td align="center" class="name"><a href="/q/bc?s=6409">6409 旭隼</a></td>
+<td>1080.00</td>
+<td class="down" style="text-align:center">▽25.00</td>
+<td>-2.26%</td>
+<td class="equal">1105.00</td>
+<td class="low">1060.00</td>
+<td align="center">45.00</td>
+<td>129</td>
+<td>1.3858</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">6</td>
+<td align="center" class="name"><a href="/q/bc?s=1590">1590 亞德客-KY</a></td>
+<td>923.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+0.98%</td>
+<td class="high">943.00</td>
+<td class="low">909.00</td>
+<td align="center">34.00</td>
+<td>937</td>
+<td>8.6692</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">7</td>
+<td align="center" class="name"><a href="/q/bc?s=3443">3443 創意</a></td>
+<td>399.50</td>
+<td class="up" style="text-align:center">△27.00</td>
+<td>+7.25%</td>
+<td class="high">402.50</td>
+<td class="low">370.00</td>
+<td align="center">32.50</td>
+<td>18,191</td>
+<td>70.9927</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">8</td>
+<td align="center" class="name"><a href="/q/bc?s=6756">6756 威鋒電子</a></td>
+<td>286.50</td>
+<td class="up" style="text-align:center">△25.00</td>
+<td>+9.56%</td>
+<td class="highend_reverse">287.50</td>
+<td class="low">257.00</td>
+<td align="center">30.50</td>
+<td>2,613</td>
+<td>7.1850</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">9</td>
+<td align="center" class="name"><a href="/q/bc?s=2454">2454 聯發科</a></td>
+<td>797.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+0.63%</td>
+<td class="high">804.00</td>
+<td class="low">775.00</td>
+<td align="center">29.00</td>
+<td>9,166</td>
+<td>72.6304</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">10</td>
+<td align="center" class="name"><a href="/q/bc?s=6533">6533 晶心科</a></td>
+<td>364.50</td>
+<td class="up" style="text-align:center">△12.00</td>
+<td>+3.40%</td>
+<td class="high">364.50</td>
+<td class="low">336.00</td>
+<td align="center">28.50</td>
+<td>4,343</td>
+<td>15.1453</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">11</td>
+<td align="center" class="name"><a href="/q/bc?s=3533">3533 嘉澤</a></td>
+<td>483.50</td>
+<td class="down" style="text-align:center">▽7.00</td>
+<td>-1.43%</td>
+<td class="high">505.00</td>
+<td class="low">478.00</td>
+<td align="center">27.00</td>
+<td>934</td>
+<td>4.5393</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">12</td>
+<td align="center" class="name"><a href="/q/bc?s=2049">2049 上銀</a></td>
+<td>413.00</td>
+<td class="up" style="text-align:center">△29.00</td>
+<td>+7.55%</td>
+<td class="high">420.00</td>
+<td class="high">396.00</td>
+<td align="center">24.00</td>
+<td>7,200</td>
+<td>29.5802</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">13</td>
+<td align="center" class="name"><a href="/q/bc?s=6531">6531 愛普</a></td>
+<td>437.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+1.16%</td>
+<td class="high">450.00</td>
+<td class="low">426.00</td>
+<td align="center">24.00</td>
+<td>3,599</td>
+<td>15.7817</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">14</td>
+<td align="center" class="name"><a href="/q/bc?s=4968">4968 立積</a></td>
+<td>423.50</td>
+<td class="up" style="text-align:center">△18.00</td>
+<td>+4.44%</td>
+<td class="high">423.50</td>
+<td class="low">400.50</td>
+<td align="center">23.00</td>
+<td>7,601</td>
+<td>31.5431</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">15</td>
+<td align="center" class="name"><a href="/q/bc?s=8046">8046 南電</a></td>
+<td>209.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+4.50%</td>
+<td class="high">216.50</td>
+<td class="low">197.00</td>
+<td align="center">19.50</td>
+<td>40,181</td>
+<td>83.4136</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">16</td>
+<td align="center" class="name"><a href="/q/bc?s=2327">2327 國巨</a></td>
+<td>528.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+1.54%</td>
+<td class="high">537.00</td>
+<td class="low">518.00</td>
+<td align="center">19.00</td>
+<td>12,967</td>
+<td>68.5421</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">17</td>
+<td align="center" class="name"><a href="/q/bc?s=2308">2308 台達電</a></td>
+<td>276.50</td>
+<td class="up" style="text-align:center">△11.50</td>
+<td>+4.34%</td>
+<td class="high">283.00</td>
+<td class="high">269.50</td>
+<td align="center">13.50</td>
+<td>17,956</td>
+<td>49.7485</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">18</td>
+<td align="center" class="name"><a href="/q/bc?s=6491">6491 晶碩</a></td>
+<td>273.50</td>
+<td class="down" style="text-align:center">▽8.50</td>
+<td>-3.01%</td>
+<td class="low">280.00</td>
+<td class="low">266.50</td>
+<td align="center">13.50</td>
+<td>1,288</td>
+<td>3.5052</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">19</td>
+<td align="center" class="name"><a href="/q/bc?s=3530">3530 晶相光</a></td>
+<td>139.00</td>
+<td class="ceil" style="text-align:center">▲12.50</td>
+<td>+9.88%</td>
+<td class="highend_reverse">139.00</td>
+<td class="low">125.50</td>
+<td align="center">13.50</td>
+<td>10,463</td>
+<td>14.1589</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">20</td>
+<td align="center" class="name"><a href="/q/bc?s=3665">3665 貿聯-KY</a></td>
+<td>265.50</td>
+<td class="down" style="text-align:center">▽2.00</td>
+<td>-0.75%</td>
+<td class="high">277.50</td>
+<td class="low">264.00</td>
+<td align="center">13.50</td>
+<td>7,399</td>
+<td>20.1229</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">21</td>
+<td align="center" class="name"><a href="/q/bc?s=6230">6230 超眾</a></td>
+<td>223.50</td>
+<td class="up" style="text-align:center">△9.50</td>
+<td>+4.44%</td>
+<td class="high">229.50</td>
+<td class="high">217.00</td>
+<td align="center">12.50</td>
+<td>1,438</td>
+<td>3.2340</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">22</td>
+<td align="center" class="name"><a href="/q/bc?s=4551">4551 智伸科</a></td>
+<td>186.00</td>
+<td class="up" style="text-align:center">△5.50</td>
+<td>+3.05%</td>
+<td class="high">190.50</td>
+<td class="low">179.00</td>
+<td align="center">11.50</td>
+<td>2,742</td>
+<td>5.0989</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">23</td>
+<td align="center" class="name"><a href="/q/bc?s=3653">3653 健策</a></td>
+<td>261.50</td>
+<td class="up" style="text-align:center">△8.50</td>
+<td>+3.36%</td>
+<td class="high">263.50</td>
+<td class="low">252.00</td>
+<td align="center">11.50</td>
+<td>2,886</td>
+<td>7.4786</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">24</td>
+<td align="center" class="name"><a href="/q/bc?s=4961">4961 天鈺</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+5.93%</td>
+<td class="high">144.00</td>
+<td class="low">133.00</td>
+<td align="center">11.00</td>
+<td>26,034</td>
+<td>36.0953</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">25</td>
+<td align="center" class="name"><a href="/q/bc?s=6669">6669 緯穎</a></td>
+<td>694.00</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.14%</td>
+<td class="high">699.00</td>
+<td class="low">688.00</td>
+<td align="center">11.00</td>
+<td>701</td>
+<td>4.8539</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">26</td>
+<td align="center" class="name"><a href="/q/bc?s=2395">2395 研華</a></td>
+<td>343.50</td>
+<td class="down" style="text-align:center">▽5.50</td>
+<td>-1.58%</td>
+<td class="high">349.50</td>
+<td class="low">339.00</td>
+<td align="center">10.50</td>
+<td>1,376</td>
+<td>4.7122</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">27</td>
+<td align="center" class="name"><a href="/q/bc?s=2428">2428 興勤</a></td>
+<td>172.50</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+4.86%</td>
+<td class="high">174.00</td>
+<td class="equal">164.50</td>
+<td align="center">9.50</td>
+<td>2,687</td>
+<td>4.5739</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">28</td>
+<td align="center" class="name"><a href="/q/bc?s=6743">6743 安普新</a></td>
+<td>133.00</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+4.72%</td>
+<td class="high">135.00</td>
+<td class="low">126.00</td>
+<td align="center">9.00</td>
+<td>1,676</td>
+<td>2.2026</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">29</td>
+<td align="center" class="name"><a href="/q/bc?s=2492">2492 華新科</a></td>
+<td>233.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+1.30%</td>
+<td class="high">236.50</td>
+<td class="low">228.00</td>
+<td align="center">8.50</td>
+<td>11,625</td>
+<td>27.1166</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">30</td>
+<td align="center" class="name"><a href="/q/bc?s=2723">2723 美食-KY</a></td>
+<td>146.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+2.10%</td>
+<td class="high">149.50</td>
+<td class="low">141.00</td>
+<td align="center">8.50</td>
+<td>1,793</td>
+<td>2.6188</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">31</td>
+<td align="center" class="name"><a href="/q/bc?s=9921">9921 巨大</a></td>
+<td>276.00</td>
+<td class="up" style="text-align:center">△1.00</td>
+<td>+0.36%</td>
+<td class="high">282.00</td>
+<td class="low">273.50</td>
+<td align="center">8.50</td>
+<td>1,214</td>
+<td>3.3716</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">32</td>
+<td align="center" class="name"><a href="/q/bc?s=3406">3406 玉晶光</a></td>
+<td>574.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+0.53%</td>
+<td class="high">577.00</td>
+<td class="low">569.00</td>
+<td align="center">8.00</td>
+<td>1,872</td>
+<td>10.7298</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">33</td>
+<td align="center" class="name"><a href="/q/bc?s=1476">1476 儒鴻</a></td>
+<td>421.00</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+0.60%</td>
+<td class="high">423.00</td>
+<td class="low">415.00</td>
+<td align="center">8.00</td>
+<td>1,046</td>
+<td>4.3809</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">34</td>
+<td align="center" class="name"><a href="/q/bc?s=6414">6414 樺漢</a></td>
+<td>258.00</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+1.57%</td>
+<td class="high">261.00</td>
+<td class="low">253.00</td>
+<td align="center">8.00</td>
+<td>2,244</td>
+<td>5.7815</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">35</td>
+<td align="center" class="name"><a href="/q/bc?s=8464">8464 億豐</a></td>
+<td>325.50</td>
+<td class="up" style="text-align:center">△3.50</td>
+<td>+1.09%</td>
+<td class="high">327.50</td>
+<td class="low">319.50</td>
+<td align="center">8.00</td>
+<td>495</td>
+<td>1.6013</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">36</td>
+<td align="center" class="name"><a href="/q/bc?s=2478">2478 大毅</a></td>
+<td>89.40</td>
+<td class="up" style="text-align:center">△5.40</td>
+<td>+6.43%</td>
+<td class="high">91.60</td>
+<td class="low">83.70</td>
+<td align="center">7.90</td>
+<td>23,035</td>
+<td>20.4970</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">37</td>
+<td align="center" class="name"><a href="/q/bc?s=2345">2345 智邦</a></td>
+<td>297.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-1.16%</td>
+<td class="high">302.50</td>
+<td class="low">295.00</td>
+<td align="center">7.50</td>
+<td>3,841</td>
+<td>11.4324</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">38</td>
+<td align="center" class="name"><a href="/q/bc?s=2239">2239 英利-KY</a></td>
+<td>119.50</td>
+<td class="ceil" style="text-align:center">▲10.50</td>
+<td>+9.63%</td>
+<td class="highend_reverse">119.50</td>
+<td class="high">112.00</td>
+<td align="center">7.50</td>
+<td>2,369</td>
+<td>2.7640</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">39</td>
+<td align="center" class="name"><a href="/q/bc?s=3138">3138 耀登</a></td>
+<td>189.50</td>
+<td class="ceil" style="text-align:center">▲17.00</td>
+<td>+9.86%</td>
+<td class="highend_reverse">189.50</td>
+<td class="high">182.00</td>
+<td align="center">7.50</td>
+<td>3,134</td>
+<td>5.8736</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">40</td>
+<td align="center" class="name"><a href="/q/bc?s=6213">6213 聯茂</a></td>
+<td>145.50</td>
+<td class="up" style="text-align:center">△5.50</td>
+<td>+3.93%</td>
+<td class="high">147.50</td>
+<td class="equal">140.00</td>
+<td align="center">7.50</td>
+<td>5,844</td>
+<td>8.4656</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">41</td>
+<td align="center" class="name"><a href="/q/bc?s=6205">6205 詮欣</a></td>
+<td>48.35</td>
+<td class="down" style="text-align:center">▽4.25</td>
+<td>-8.08%</td>
+<td class="high">55.00</td>
+<td class="low">47.50</td>
+<td align="center">7.50</td>
+<td>13,567</td>
+<td>6.9380</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">42</td>
+<td align="center" class="name"><a href="/q/bc?s=6668">6668 中揚光</a></td>
+<td>64.50</td>
+<td class="ceil" style="text-align:center">▲5.80</td>
+<td>+9.88%</td>
+<td class="highend_reverse">64.50</td>
+<td class="low">57.30</td>
+<td align="center">7.20</td>
+<td>2,305</td>
+<td>1.4130</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">43</td>
+<td align="center" class="name"><a href="/q/bc?s=2330">2330 台積電</a></td>
+<td>542.00</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+1.12%</td>
+<td class="high">542.00</td>
+<td class="low">535.00</td>
+<td align="center">7.00</td>
+<td>34,234</td>
+<td>184.3484</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">44</td>
+<td align="center" class="name"><a href="/q/bc?s=3034">3034 聯詠</a></td>
+<td>359.50</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-1.10%</td>
+<td class="low">362.00</td>
+<td class="low">355.00</td>
+<td align="center">7.00</td>
+<td>4,028</td>
+<td>14.4045</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">45</td>
+<td align="center" class="name"><a href="/q/bc?s=3454">3454 晶睿</a></td>
+<td>94.30</td>
+<td class="up" style="text-align:center">△2.90</td>
+<td>+3.17%</td>
+<td class="high">98.00</td>
+<td class="low">91.00</td>
+<td align="center">7.00</td>
+<td>1,169</td>
+<td>1.1056</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">46</td>
+<td align="center" class="name"><a href="/q/bc?s=1536">1536 和大</a></td>
+<td>120.50</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+5.24%</td>
+<td class="high">125.00</td>
+<td class="high">118.00</td>
+<td align="center">7.00</td>
+<td>24,272</td>
+<td>29.4083</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">47</td>
+<td align="center" class="name"><a href="/q/bc?s=5288">5288 豐祥-KY</a></td>
+<td>117.00</td>
+<td class="up" style="text-align:center">△5.50</td>
+<td>+4.93%</td>
+<td class="high">118.50</td>
+<td class="equal">111.50</td>
+<td align="center">7.00</td>
+<td>419</td>
+<td>0.4821</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">48</td>
+<td align="center" class="name"><a href="/q/bc?s=6271">6271 同欣電</a></td>
+<td>193.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+2.66%</td>
+<td class="high">193.00</td>
+<td class="low">186.00</td>
+<td align="center">7.00</td>
+<td>6,525</td>
+<td>12.4110</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">49</td>
+<td align="center" class="name"><a href="/q/bc?s=8454">8454 富邦媒</a></td>
+<td>648.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+0.47%</td>
+<td class="high">652.00</td>
+<td class="equal">645.00</td>
+<td align="center">7.00</td>
+<td>168</td>
+<td>1.0890</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">50</td>
+<td align="center" class="name"><a href="/q/bc?s=2351">2351 順德</a></td>
+<td>96.70</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-1.02%</td>
+<td class="high">102.00</td>
+<td class="low">95.40</td>
+<td align="center">6.60</td>
+<td>7,506</td>
+<td>7.3729</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">51</td>
+<td align="center" class="name"><a href="/q/bc?s=4576">4576 大銀微系統</a></td>
+<td>93.00</td>
+<td class="up" style="text-align:center">△2.40</td>
+<td>+2.65%</td>
+<td class="high">98.00</td>
+<td class="high">91.40</td>
+<td align="center">6.60</td>
+<td>1,351</td>
+<td>1.2754</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">52</td>
+<td align="center" class="name"><a href="/q/bc?s=2360">2360 致茂</a></td>
+<td>180.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+1.69%</td>
+<td class="high">180.00</td>
+<td class="low">173.50</td>
+<td align="center">6.50</td>
+<td>911</td>
+<td>1.6177</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">53</td>
+<td align="center" class="name"><a href="/q/bc?s=3708">3708 上緯投控</a></td>
+<td>157.50</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+1.29%</td>
+<td class="high">163.00</td>
+<td class="high">156.50</td>
+<td align="center">6.50</td>
+<td>4,323</td>
+<td>6.8596</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">54</td>
+<td align="center" class="name"><a href="/q/bc?s=8341">8341 日友</a></td>
+<td>233.50</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.21%</td>
+<td class="high">236.00</td>
+<td class="low">229.50</td>
+<td align="center">6.50</td>
+<td>232</td>
+<td>0.5406</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">55</td>
+<td align="center" class="name"><a href="/q/bc?s=4943">4943 康控-KY</a></td>
+<td>92.30</td>
+<td class="up" style="text-align:center">△4.80</td>
+<td>+5.49%</td>
+<td class="high">93.90</td>
+<td class="equal">87.50</td>
+<td align="center">6.40</td>
+<td>3,406</td>
+<td>3.1142</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">56</td>
+<td align="center" class="name"><a href="/q/bc?s=4571">4571 鈞興-KY</a></td>
+<td>82.10</td>
+<td class="ceil" style="text-align:center">▲7.40</td>
+<td>+9.91%</td>
+<td class="highend_reverse">82.10</td>
+<td class="high">75.80</td>
+<td align="center">6.30</td>
+<td>389</td>
+<td>0.3148</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">57</td>
+<td align="center" class="name"><a href="/q/bc?s=5285">5285 界霖</a></td>
+<td>72.00</td>
+<td class="down" style="text-align:center">▽3.80</td>
+<td>-5.01%</td>
+<td class="high">77.10</td>
+<td class="low">71.00</td>
+<td align="center">6.10</td>
+<td>4,649</td>
+<td>3.4016</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">58</td>
+<td align="center" class="name"><a href="/q/bc?s=2207">2207 和泰車</a></td>
+<td>642.00</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-0.62%</td>
+<td class="equal">646.00</td>
+<td class="low">640.00</td>
+<td align="center">6.00</td>
+<td>232</td>
+<td>1.4895</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">59</td>
+<td align="center" class="name"><a href="/q/bc?s=5243">5243 乙盛-KY</a></td>
+<td>69.60</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">75.50</td>
+<td class="equal">69.60</td>
+<td align="center">5.90</td>
+<td>46,897</td>
+<td>34.0350</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">60</td>
+<td align="center" class="name"><a href="/q/bc?s=3037">3037 欣興</a></td>
+<td>94.30</td>
+<td class="up" style="text-align:center">△3.80</td>
+<td>+4.20%</td>
+<td class="high">94.30</td>
+<td class="low">88.50</td>
+<td align="center">5.80</td>
+<td>80,272</td>
+<td>73.8754</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">61</td>
+<td align="center" class="name"><a href="/q/bc?s=2408">2408 南亞科</a></td>
+<td>90.50</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-0.22%</td>
+<td class="high">94.50</td>
+<td class="low">88.80</td>
+<td align="center">5.70</td>
+<td>28,096</td>
+<td>25.8779</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">62</td>
+<td align="center" class="name"><a href="/q/bc?s=6698">6698 旭暉應材</a></td>
+<td>49.80</td>
+<td class="up" style="text-align:center">△1.15</td>
+<td>+2.36%</td>
+<td class="high">52.90</td>
+<td class="low">47.20</td>
+<td align="center">5.70</td>
+<td>5,655</td>
+<td>2.8520</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">63</td>
+<td align="center" class="name"><a href="/q/bc?s=6605">6605 帝寶</a></td>
+<td>68.00</td>
+<td class="down" style="text-align:center">▽1.70</td>
+<td>-2.44%</td>
+<td class="high">72.60</td>
+<td class="low">67.10</td>
+<td align="center">5.50</td>
+<td>4,663</td>
+<td>3.2627</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">64</td>
+<td align="center" class="name"><a href="/q/bc?s=2231">2231 為升</a></td>
+<td>206.00</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+0.73%</td>
+<td class="high">210.00</td>
+<td class="equal">204.50</td>
+<td align="center">5.50</td>
+<td>1,173</td>
+<td>2.4258</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">65</td>
+<td align="center" class="name"><a href="/q/bc?s=8081">8081 致新</a></td>
+<td>164.50</td>
+<td class="up" style="text-align:center">△4.50</td>
+<td>+2.81%</td>
+<td class="high">165.50</td>
+<td class="equal">160.00</td>
+<td align="center">5.50</td>
+<td>991</td>
+<td>1.6201</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">66</td>
+<td align="center" class="name"><a href="/q/bc?s=2727">2727 王品</a></td>
+<td>129.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+4.03%</td>
+<td class="high">130.00</td>
+<td class="high">124.50</td>
+<td align="center">5.50</td>
+<td>1,217</td>
+<td>1.5545</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">67</td>
+<td align="center" class="name"><a href="/q/bc?s=3545">3545 敦泰</a></td>
+<td>87.90</td>
+<td class="down" style="text-align:center">▽2.80</td>
+<td>-3.09%</td>
+<td class="high">91.50</td>
+<td class="low">86.30</td>
+<td align="center">5.20</td>
+<td>14,670</td>
+<td>12.9663</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">68</td>
+<td align="center" class="name"><a href="/q/bc?s=2455">2455 全新</a></td>
+<td>120.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+1.69%</td>
+<td class="high">121.00</td>
+<td class="low">116.00</td>
+<td align="center">5.00</td>
+<td>8,036</td>
+<td>9.4860</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">69</td>
+<td align="center" class="name"><a href="/q/bc?s=6456">6456 GIS-KY</a></td>
+<td>121.50</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+3.40%</td>
+<td class="high">121.50</td>
+<td class="low">116.50</td>
+<td align="center">5.00</td>
+<td>8,360</td>
+<td>9.9892</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">70</td>
+<td align="center" class="name"><a href="/q/bc?s=6451">6451 訊芯-KY</a></td>
+<td>136.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">138.50</td>
+<td class="low">133.50</td>
+<td align="center">5.00</td>
+<td>4,244</td>
+<td>5.7795</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">71</td>
+<td align="center" class="name"><a href="/q/bc?s=6706">6706 惠特</a></td>
+<td>170.00</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.58%</td>
+<td class="equal">171.00</td>
+<td class="low">166.00</td>
+<td align="center">5.00</td>
+<td>1,224</td>
+<td>2.0659</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">72</td>
+<td align="center" class="name"><a href="/q/bc?s=8016">8016 矽創</a></td>
+<td>167.00</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+2.45%</td>
+<td class="high">167.50</td>
+<td class="low">162.50</td>
+<td align="center">5.00</td>
+<td>5,773</td>
+<td>9.5660</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">73</td>
+<td align="center" class="name"><a href="/q/bc?s=6278">6278 台表科</a></td>
+<td>134.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-2.54%</td>
+<td class="equal">138.00</td>
+<td class="low">133.00</td>
+<td align="center">5.00</td>
+<td>10,893</td>
+<td>14.6559</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">74</td>
+<td align="center" class="name"><a href="/q/bc?s=9914">9914 美利達</a></td>
+<td>242.00</td>
+<td class="up" style="text-align:center">△4.50</td>
+<td>+1.89%</td>
+<td class="high">242.00</td>
+<td class="low">237.00</td>
+<td align="center">5.00</td>
+<td>1,185</td>
+<td>2.8474</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">75</td>
+<td align="center" class="name"><a href="/q/bc?s=2458">2458 義隆</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+2.14%</td>
+<td class="high">143.50</td>
+<td class="low">139.00</td>
+<td align="center">4.50</td>
+<td>7,607</td>
+<td>10.7894</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">76</td>
+<td align="center" class="name"><a href="/q/bc?s=2379">2379 瑞昱</a></td>
+<td>387.00</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-0.39%</td>
+<td class="low">387.50</td>
+<td class="low">383.00</td>
+<td align="center">4.50</td>
+<td>3,773</td>
+<td>14.5172</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">77</td>
+<td align="center" class="name"><a href="/q/bc?s=3588">3588 通嘉</a></td>
+<td>67.60</td>
+<td class="down" style="text-align:center">▽1.40</td>
+<td>-2.03%</td>
+<td class="high">69.90</td>
+<td class="low">65.50</td>
+<td align="center">4.40</td>
+<td>3,842</td>
+<td>2.5905</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">78</td>
+<td align="center" class="name"><a href="/q/bc?s=2241">2241 艾姆勒</a></td>
+<td>60.80</td>
+<td class="up" style="text-align:center">△3.30</td>
+<td>+5.74%</td>
+<td class="high">61.20</td>
+<td class="low">56.80</td>
+<td align="center">4.40</td>
+<td>1,305</td>
+<td>0.7799</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">79</td>
+<td align="center" class="name"><a href="/q/bc?s=3257">3257 虹冠電</a></td>
+<td>82.60</td>
+<td class="down" style="text-align:center">▽3.80</td>
+<td>-4.40%</td>
+<td class="low">86.20</td>
+<td class="low">81.90</td>
+<td align="center">4.30</td>
+<td>3,641</td>
+<td>3.0311</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">80</td>
+<td align="center" class="name"><a href="/q/bc?s=2317">2317 鴻海</a></td>
+<td>104.00</td>
+<td class="up" style="text-align:center">△4.10</td>
+<td>+4.10%</td>
+<td class="high">105.00</td>
+<td class="high">101.00</td>
+<td align="center">4.00</td>
+<td>231,444</td>
+<td>238.9451</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">81</td>
+<td align="center" class="name"><a href="/q/bc?s=3023">3023 信邦</a></td>
+<td>220.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+0.92%</td>
+<td class="high">221.00</td>
+<td class="low">217.00</td>
+<td align="center">4.00</td>
+<td>566</td>
+<td>1.2414</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">82</td>
+<td align="center" class="name"><a href="/q/bc?s=2456">2456 奇力新</a></td>
+<td>111.00</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.45%</td>
+<td class="high">113.00</td>
+<td class="low">109.00</td>
+<td align="center">4.00</td>
+<td>6,429</td>
+<td>7.1568</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">83</td>
+<td align="center" class="name"><a href="/q/bc?s=2383">2383 台光電</a></td>
+<td>159.00</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+1.60%</td>
+<td class="high">160.50</td>
+<td class="equal">156.50</td>
+<td align="center">4.00</td>
+<td>4,136</td>
+<td>6.5778</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">84</td>
+<td align="center" class="name"><a href="/q/bc?s=3413">3413 京鼎</a></td>
+<td>218.50</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.46%</td>
+<td class="low">218.50</td>
+<td class="low">214.50</td>
+<td align="center">4.00</td>
+<td>1,646</td>
+<td>3.5657</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">85</td>
+<td align="center" class="name"><a href="/q/bc?s=4540">4540 全球傳動</a></td>
+<td>57.50</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.88%</td>
+<td class="high">60.40</td>
+<td class="low">56.50</td>
+<td align="center">3.90</td>
+<td>2,279</td>
+<td>1.3394</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">86</td>
+<td align="center" class="name"><a href="/q/bc?s=4739">4739 康普</a></td>
+<td>69.90</td>
+<td class="down" style="text-align:center">▽1.60</td>
+<td>-2.24%</td>
+<td class="high">72.70</td>
+<td class="low">69.00</td>
+<td align="center">3.70</td>
+<td>1,505</td>
+<td>1.0626</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">87</td>
+<td align="center" class="name"><a href="/q/bc?s=2375">2375 凱美</a></td>
+<td>97.70</td>
+<td class="up" style="text-align:center">△0.20</td>
+<td>+0.21%</td>
+<td class="high">99.50</td>
+<td class="low">95.80</td>
+<td align="center">3.70</td>
+<td>7,811</td>
+<td>7.6288</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">88</td>
+<td align="center" class="name"><a href="/q/bc?s=2450">2450 神腦</a></td>
+<td>39.00</td>
+<td class="down" style="text-align:center">▽0.05</td>
+<td>-0.13%</td>
+<td class="high">41.65</td>
+<td class="low">38.00</td>
+<td align="center">3.65</td>
+<td>3,803</td>
+<td>1.5113</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">89</td>
+<td align="center" class="name"><a href="/q/bc?s=2382">2382 廣達</a></td>
+<td>84.70</td>
+<td class="up" style="text-align:center">△3.60</td>
+<td>+4.44%</td>
+<td class="high">84.80</td>
+<td class="high">81.20</td>
+<td align="center">3.60</td>
+<td>16,895</td>
+<td>14.1129</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">90</td>
+<td align="center" class="name"><a href="/q/bc?s=2059">2059 川湖</a></td>
+<td>293.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">295.00</td>
+<td class="low">291.50</td>
+<td align="center">3.50</td>
+<td>125</td>
+<td>0.3663</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">91</td>
+<td align="center" class="name"><a href="/q/bc?s=4137">4137 麗豐-KY</a></td>
+<td>201.50</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+1.26%</td>
+<td class="high">201.50</td>
+<td class="low">198.00</td>
+<td align="center">3.50</td>
+<td>104</td>
+<td>0.2079</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">92</td>
+<td align="center" class="name"><a href="/q/bc?s=2474">2474 可成</a></td>
+<td>203.50</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-1.93%</td>
+<td class="low">207.00</td>
+<td class="low">203.50</td>
+<td align="center">3.50</td>
+<td>5,096</td>
+<td>10.4527</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">93</td>
+<td align="center" class="name"><a href="/q/bc?s=2388">2388 威盛</a></td>
+<td>59.10</td>
+<td class="up" style="text-align:center">△0.40</td>
+<td>+0.68%</td>
+<td class="high">60.50</td>
+<td class="low">57.00</td>
+<td align="center">3.50</td>
+<td>11,948</td>
+<td>7.0623</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">94</td>
+<td align="center" class="name"><a href="/q/bc?s=3515">3515 華擎</a></td>
+<td>158.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">159.00</td>
+<td class="low">155.50</td>
+<td align="center">3.50</td>
+<td>289</td>
+<td>0.4534</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">95</td>
+<td align="center" class="name"><a href="/q/bc?s=5283">5283 禾聯碩</a></td>
+<td>130.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+1.56%</td>
+<td class="high">130.00</td>
+<td class="low">126.50</td>
+<td align="center">3.50</td>
+<td>574</td>
+<td>0.7389</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">96</td>
+<td align="center" class="name"><a href="/q/bc?s=9958">9958 世紀鋼</a></td>
+<td>110.00</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.46%</td>
+<td class="high">112.00</td>
+<td class="low">108.50</td>
+<td align="center">3.50</td>
+<td>5,226</td>
+<td>5.7677</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">97</td>
+<td align="center" class="name"><a href="/q/bc?s=4977">4977 眾達-KY</a></td>
+<td>120.00</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+1.27%</td>
+<td class="high">120.50</td>
+<td class="low">117.00</td>
+<td align="center">3.50</td>
+<td>993</td>
+<td>1.1837</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">98</td>
+<td align="center" class="name"><a href="/q/bc?s=4912">4912 聯德控股-KY</a></td>
+<td>117.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+2.63%</td>
+<td class="high">118.00</td>
+<td class="high">114.50</td>
+<td align="center">3.50</td>
+<td>369</td>
+<td>0.4295</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">99</td>
+<td align="center" class="name"><a href="/q/bc?s=6176">6176 瑞儀</a></td>
+<td>116.50</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+1.30%</td>
+<td class="high">117.50</td>
+<td class="low">114.00</td>
+<td align="center">3.50</td>
+<td>4,556</td>
+<td>5.2841</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">100</td>
+<td align="center" class="name"><a href="/q/bc?s=2615">2615 萬海</a></td>
+<td>54.60</td>
+<td class="down" style="text-align:center">▽2.50</td>
+<td>-4.38%</td>
+<td class="high">57.30</td>
+<td class="low">53.80</td>
+<td align="center">3.50</td>
+<td>89,912</td>
+<td>49.6443</td>
+</tr></tbody></table>
+</td></tr>
+</tbody></table>
+<hr><table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr bgcolor="#fec003">
+<td colspan="2">
+<table border="0" cellpadding="2" height="23" width="100%">
+<tbody><tr>
+<td class="tt" width="205">資料日期：110 / 01 / 05   14 : 00</td><td align="center" class="ttt" width="205">上市成交價排行</td>
+<td width="205">
+<div align="right" class="tt"><a href="?t=pri&amp;e=TWO&amp;n=100">上櫃成交價排行</a></div>
+</td></tr>
+</tbody></table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#fff0c1"><th nowrap="nowrap">名次</th><th nowrap="nowrap">股票代號/名稱</th><th nowrap="nowrap">成交價</th><th nowrap="nowrap">  漲跌  </th><th nowrap="nowrap"> 漲跌幅 </th><th nowrap="nowrap">最高</th><th nowrap="nowrap">最低</th><th nowrap="nowrap">價差</th><th nowrap="nowrap">成交張數</th><th nowrap="nowrap">成交值(億)</th></tr><tr align="right" bgcolor="#ffffff">
+<td align="center">1</td>
+<td align="center" class="name"><a href="/q/bc?s=3008">3008 大立光</a></td>
+<td>3315.00</td>
+<td class="down" style="text-align:center">▽35.00</td>
+<td>-1.04%</td>
+<td class="high">3360.00</td>
+<td class="low">3270.00</td>
+<td align="center">90.00</td>
+<td>786</td>
+<td>26.0180</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">2</td>
+<td align="center" class="name"><a href="/q/bc?s=6415">6415 矽力-KY</a></td>
+<td>2405.00</td>
+<td class="down" style="text-align:center">▽5.00</td>
+<td>-0.21%</td>
+<td class="high">2460.00</td>
+<td class="low">2390.00</td>
+<td align="center">70.00</td>
+<td>275</td>
+<td>6.6555</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">3</td>
+<td align="center" class="name"><a href="/q/bc?s=5269">5269 祥碩</a></td>
+<td>1715.00</td>
+<td class="up" style="text-align:center">△90.00</td>
+<td>+5.54%</td>
+<td class="high">1715.00</td>
+<td class="high">1635.00</td>
+<td align="center">80.00</td>
+<td>1,341</td>
+<td>22.5019</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">4</td>
+<td align="center" class="name"><a href="/q/bc?s=6409">6409 旭隼</a></td>
+<td>1080.00</td>
+<td class="down" style="text-align:center">▽25.00</td>
+<td>-2.26%</td>
+<td class="equal">1105.00</td>
+<td class="low">1060.00</td>
+<td align="center">45.00</td>
+<td>129</td>
+<td>1.3858</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">5</td>
+<td align="center" class="name"><a href="/q/bc?s=1590">1590 亞德客-KY</a></td>
+<td>923.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+0.98%</td>
+<td class="high">943.00</td>
+<td class="low">909.00</td>
+<td align="center">34.00</td>
+<td>937</td>
+<td>8.6692</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">6</td>
+<td align="center" class="name"><a href="/q/bc?s=2454">2454 聯發科</a></td>
+<td>797.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+0.63%</td>
+<td class="high">804.00</td>
+<td class="low">775.00</td>
+<td align="center">29.00</td>
+<td>9,166</td>
+<td>72.6304</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">7</td>
+<td align="center" class="name"><a href="/q/bc?s=3661">3661 世芯-KY</a></td>
+<td>726.00</td>
+<td class="up" style="text-align:center">△43.00</td>
+<td>+6.30%</td>
+<td class="high">738.00</td>
+<td class="low">669.00</td>
+<td align="center">69.00</td>
+<td>11,120</td>
+<td>78.6169</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">8</td>
+<td align="center" class="name"><a href="/q/bc?s=6669">6669 緯穎</a></td>
+<td>694.00</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.14%</td>
+<td class="high">699.00</td>
+<td class="low">688.00</td>
+<td align="center">11.00</td>
+<td>701</td>
+<td>4.8539</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">9</td>
+<td align="center" class="name"><a href="/q/bc?s=8454">8454 富邦媒</a></td>
+<td>648.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+0.47%</td>
+<td class="high">652.00</td>
+<td class="equal">645.00</td>
+<td align="center">7.00</td>
+<td>168</td>
+<td>1.0890</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">10</td>
+<td align="center" class="name"><a href="/q/bc?s=2207">2207 和泰車</a></td>
+<td>642.00</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-0.62%</td>
+<td class="equal">646.00</td>
+<td class="low">640.00</td>
+<td align="center">6.00</td>
+<td>232</td>
+<td>1.4895</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">11</td>
+<td align="center" class="name"><a href="/q/bc?s=3406">3406 玉晶光</a></td>
+<td>574.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+0.53%</td>
+<td class="high">577.00</td>
+<td class="low">569.00</td>
+<td align="center">8.00</td>
+<td>1,872</td>
+<td>10.7298</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">12</td>
+<td align="center" class="name"><a href="/q/bc?s=2330">2330 台積電</a></td>
+<td>542.00</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+1.12%</td>
+<td class="high">542.00</td>
+<td class="low">535.00</td>
+<td align="center">7.00</td>
+<td>34,234</td>
+<td>184.3484</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">13</td>
+<td align="center" class="name"><a href="/q/bc?s=2327">2327 國巨</a></td>
+<td>528.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+1.54%</td>
+<td class="high">537.00</td>
+<td class="low">518.00</td>
+<td align="center">19.00</td>
+<td>12,967</td>
+<td>68.5421</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">14</td>
+<td align="center" class="name"><a href="/q/bc?s=3533">3533 嘉澤</a></td>
+<td>483.50</td>
+<td class="down" style="text-align:center">▽7.00</td>
+<td>-1.43%</td>
+<td class="high">505.00</td>
+<td class="low">478.00</td>
+<td align="center">27.00</td>
+<td>934</td>
+<td>4.5393</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">15</td>
+<td align="center" class="name"><a href="/q/bc?s=6531">6531 愛普</a></td>
+<td>437.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+1.16%</td>
+<td class="high">450.00</td>
+<td class="low">426.00</td>
+<td align="center">24.00</td>
+<td>3,599</td>
+<td>15.7817</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">16</td>
+<td align="center" class="name"><a href="/q/bc?s=4968">4968 立積</a></td>
+<td>423.50</td>
+<td class="up" style="text-align:center">△18.00</td>
+<td>+4.44%</td>
+<td class="high">423.50</td>
+<td class="low">400.50</td>
+<td align="center">23.00</td>
+<td>7,601</td>
+<td>31.5431</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">17</td>
+<td align="center" class="name"><a href="/q/bc?s=1476">1476 儒鴻</a></td>
+<td>421.00</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+0.60%</td>
+<td class="high">423.00</td>
+<td class="low">415.00</td>
+<td align="center">8.00</td>
+<td>1,046</td>
+<td>4.3809</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">18</td>
+<td align="center" class="name"><a href="/q/bc?s=2049">2049 上銀</a></td>
+<td>413.00</td>
+<td class="up" style="text-align:center">△29.00</td>
+<td>+7.55%</td>
+<td class="high">420.00</td>
+<td class="high">396.00</td>
+<td align="center">24.00</td>
+<td>7,200</td>
+<td>29.5802</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">19</td>
+<td align="center" class="name"><a href="/q/bc?s=3443">3443 創意</a></td>
+<td>399.50</td>
+<td class="up" style="text-align:center">△27.00</td>
+<td>+7.25%</td>
+<td class="high">402.50</td>
+<td class="low">370.00</td>
+<td align="center">32.50</td>
+<td>18,191</td>
+<td>70.9927</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">20</td>
+<td align="center" class="name"><a href="/q/bc?s=2379">2379 瑞昱</a></td>
+<td>387.00</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-0.39%</td>
+<td class="low">387.50</td>
+<td class="low">383.00</td>
+<td align="center">4.50</td>
+<td>3,773</td>
+<td>14.5172</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">21</td>
+<td align="center" class="name"><a href="/q/bc?s=6533">6533 晶心科</a></td>
+<td>364.50</td>
+<td class="up" style="text-align:center">△12.00</td>
+<td>+3.40%</td>
+<td class="high">364.50</td>
+<td class="low">336.00</td>
+<td align="center">28.50</td>
+<td>4,343</td>
+<td>15.1453</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">22</td>
+<td align="center" class="name"><a href="/q/bc?s=3034">3034 聯詠</a></td>
+<td>359.50</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-1.10%</td>
+<td class="low">362.00</td>
+<td class="low">355.00</td>
+<td align="center">7.00</td>
+<td>4,028</td>
+<td>14.4045</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">23</td>
+<td align="center" class="name"><a href="/q/bc?s=2395">2395 研華</a></td>
+<td>343.50</td>
+<td class="down" style="text-align:center">▽5.50</td>
+<td>-1.58%</td>
+<td class="high">349.50</td>
+<td class="low">339.00</td>
+<td align="center">10.50</td>
+<td>1,376</td>
+<td>4.7122</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">24</td>
+<td align="center" class="name"><a href="/q/bc?s=8464">8464 億豐</a></td>
+<td>325.50</td>
+<td class="up" style="text-align:center">△3.50</td>
+<td>+1.09%</td>
+<td class="high">327.50</td>
+<td class="low">319.50</td>
+<td align="center">8.00</td>
+<td>495</td>
+<td>1.6013</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">25</td>
+<td align="center" class="name"><a href="/q/bc?s=2345">2345 智邦</a></td>
+<td>297.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-1.16%</td>
+<td class="high">302.50</td>
+<td class="low">295.00</td>
+<td align="center">7.50</td>
+<td>3,841</td>
+<td>11.4324</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">26</td>
+<td align="center" class="name"><a href="/q/bc?s=3563">3563 牧德</a></td>
+<td>297.50</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.17%</td>
+<td class="high">297.50</td>
+<td class="low">294.50</td>
+<td align="center">3.00</td>
+<td>257</td>
+<td>0.7610</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">27</td>
+<td align="center" class="name"><a href="/q/bc?s=1256">1256 鮮活果汁-KY</a></td>
+<td>297.00</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.34%</td>
+<td class="low">297.00</td>
+<td class="low">296.00</td>
+<td align="center">1.00</td>
+<td>8</td>
+<td>0.0237</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">28</td>
+<td align="center" class="name"><a href="/q/bc?s=2059">2059 川湖</a></td>
+<td>293.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">295.00</td>
+<td class="low">291.50</td>
+<td align="center">3.50</td>
+<td>125</td>
+<td>0.3663</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">29</td>
+<td align="center" class="name"><a href="/q/bc?s=6756">6756 威鋒電子</a></td>
+<td>286.50</td>
+<td class="up" style="text-align:center">△25.00</td>
+<td>+9.56%</td>
+<td class="highend_reverse">287.50</td>
+<td class="low">257.00</td>
+<td align="center">30.50</td>
+<td>2,613</td>
+<td>7.1850</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">30</td>
+<td align="center" class="name"><a href="/q/bc?s=2308">2308 台達電</a></td>
+<td>276.50</td>
+<td class="up" style="text-align:center">△11.50</td>
+<td>+4.34%</td>
+<td class="high">283.00</td>
+<td class="high">269.50</td>
+<td align="center">13.50</td>
+<td>17,956</td>
+<td>49.7485</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">31</td>
+<td align="center" class="name"><a href="/q/bc?s=9921">9921 巨大</a></td>
+<td>276.00</td>
+<td class="up" style="text-align:center">△1.00</td>
+<td>+0.36%</td>
+<td class="high">282.00</td>
+<td class="low">273.50</td>
+<td align="center">8.50</td>
+<td>1,214</td>
+<td>3.3716</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">32</td>
+<td align="center" class="name"><a href="/q/bc?s=6491">6491 晶碩</a></td>
+<td>273.50</td>
+<td class="down" style="text-align:center">▽8.50</td>
+<td>-3.01%</td>
+<td class="low">280.00</td>
+<td class="low">266.50</td>
+<td align="center">13.50</td>
+<td>1,288</td>
+<td>3.5052</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">33</td>
+<td align="center" class="name"><a href="/q/bc?s=2912">2912 統一超</a></td>
+<td>272.00</td>
+<td class="up" style="text-align:center">△3.50</td>
+<td>+1.30%</td>
+<td class="high">272.00</td>
+<td class="equal">268.50</td>
+<td align="center">3.50</td>
+<td>1,652</td>
+<td>4.4802</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">34</td>
+<td align="center" class="name"><a href="/q/bc?s=3665">3665 貿聯-KY</a></td>
+<td>265.50</td>
+<td class="down" style="text-align:center">▽2.00</td>
+<td>-0.75%</td>
+<td class="high">277.50</td>
+<td class="low">264.00</td>
+<td align="center">13.50</td>
+<td>7,399</td>
+<td>20.1229</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">35</td>
+<td align="center" class="name"><a href="/q/bc?s=3653">3653 健策</a></td>
+<td>261.50</td>
+<td class="up" style="text-align:center">△8.50</td>
+<td>+3.36%</td>
+<td class="high">263.50</td>
+<td class="low">252.00</td>
+<td align="center">11.50</td>
+<td>2,886</td>
+<td>7.4786</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">36</td>
+<td align="center" class="name"><a href="/q/bc?s=2227">2227 裕日車</a></td>
+<td>260.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">261.00</td>
+<td class="low">259.00</td>
+<td align="center">2.00</td>
+<td>104</td>
+<td>0.2703</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">37</td>
+<td align="center" class="name"><a href="/q/bc?s=6414">6414 樺漢</a></td>
+<td>258.00</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+1.57%</td>
+<td class="high">261.00</td>
+<td class="low">253.00</td>
+<td align="center">8.00</td>
+<td>2,244</td>
+<td>5.7815</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">38</td>
+<td align="center" class="name"><a href="/q/bc?s=2357">2357 華碩</a></td>
+<td>253.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+0.80%</td>
+<td class="high">253.00</td>
+<td class="low">250.50</td>
+<td align="center">2.50</td>
+<td>1,944</td>
+<td>4.8970</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">39</td>
+<td align="center" class="name"><a href="/q/bc?s=2247">2247 汎德永業</a></td>
+<td>252.00</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.40%</td>
+<td class="equal">253.00</td>
+<td class="low">251.50</td>
+<td align="center">1.50</td>
+<td>159</td>
+<td>0.4006</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">40</td>
+<td align="center" class="name"><a href="/q/bc?s=9914">9914 美利達</a></td>
+<td>242.00</td>
+<td class="up" style="text-align:center">△4.50</td>
+<td>+1.89%</td>
+<td class="high">242.00</td>
+<td class="low">237.00</td>
+<td align="center">5.00</td>
+<td>1,185</td>
+<td>2.8474</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">41</td>
+<td align="center" class="name"><a href="/q/bc?s=8341">8341 日友</a></td>
+<td>233.50</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.21%</td>
+<td class="high">236.00</td>
+<td class="low">229.50</td>
+<td align="center">6.50</td>
+<td>232</td>
+<td>0.5406</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">42</td>
+<td align="center" class="name"><a href="/q/bc?s=2492">2492 華新科</a></td>
+<td>233.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+1.30%</td>
+<td class="high">236.50</td>
+<td class="low">228.00</td>
+<td align="center">8.50</td>
+<td>11,625</td>
+<td>27.1166</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">43</td>
+<td align="center" class="name"><a href="/q/bc?s=6230">6230 超眾</a></td>
+<td>223.50</td>
+<td class="up" style="text-align:center">△9.50</td>
+<td>+4.44%</td>
+<td class="high">229.50</td>
+<td class="high">217.00</td>
+<td align="center">12.50</td>
+<td>1,438</td>
+<td>3.2340</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">44</td>
+<td align="center" class="name"><a href="/q/bc?s=3023">3023 信邦</a></td>
+<td>220.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+0.92%</td>
+<td class="high">221.00</td>
+<td class="low">217.00</td>
+<td align="center">4.00</td>
+<td>566</td>
+<td>1.2414</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">45</td>
+<td align="center" class="name"><a href="/q/bc?s=2404">2404 漢唐</a></td>
+<td>219.00</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-0.23%</td>
+<td class="high">220.00</td>
+<td class="low">218.00</td>
+<td align="center">2.00</td>
+<td>1,030</td>
+<td>2.2550</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">46</td>
+<td align="center" class="name"><a href="/q/bc?s=3413">3413 京鼎</a></td>
+<td>218.50</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.46%</td>
+<td class="low">218.50</td>
+<td class="low">214.50</td>
+<td align="center">4.00</td>
+<td>1,646</td>
+<td>3.5657</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">47</td>
+<td align="center" class="name"><a href="/q/bc?s=8046">8046 南電</a></td>
+<td>209.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+4.50%</td>
+<td class="high">216.50</td>
+<td class="low">197.00</td>
+<td align="center">19.50</td>
+<td>40,181</td>
+<td>83.4136</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">48</td>
+<td align="center" class="name"><a href="/q/bc?s=2231">2231 為升</a></td>
+<td>206.00</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+0.73%</td>
+<td class="high">210.00</td>
+<td class="equal">204.50</td>
+<td align="center">5.50</td>
+<td>1,173</td>
+<td>2.4258</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">49</td>
+<td align="center" class="name"><a href="/q/bc?s=2474">2474 可成</a></td>
+<td>203.50</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-1.93%</td>
+<td class="low">207.00</td>
+<td class="low">203.50</td>
+<td align="center">3.50</td>
+<td>5,096</td>
+<td>10.4527</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">50</td>
+<td align="center" class="name"><a href="/q/bc?s=4137">4137 麗豐-KY</a></td>
+<td>201.50</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+1.26%</td>
+<td class="high">201.50</td>
+<td class="low">198.00</td>
+<td align="center">3.50</td>
+<td>104</td>
+<td>0.2079</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">51</td>
+<td align="center" class="name"><a href="/q/bc?s=9910">9910 豐泰</a></td>
+<td>197.50</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.25%</td>
+<td class="high">198.00</td>
+<td class="low">195.00</td>
+<td align="center">3.00</td>
+<td>890</td>
+<td>1.7492</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">52</td>
+<td align="center" class="name"><a href="/q/bc?s=6271">6271 同欣電</a></td>
+<td>193.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+2.66%</td>
+<td class="high">193.00</td>
+<td class="low">186.00</td>
+<td align="center">7.00</td>
+<td>6,525</td>
+<td>12.4110</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">53</td>
+<td align="center" class="name"><a href="/q/bc?s=1477">1477 聚陽</a></td>
+<td>190.00</td>
+<td class="down" style="text-align:center">▽3.00</td>
+<td>-1.55%</td>
+<td class="low">192.50</td>
+<td class="low">189.50</td>
+<td align="center">3.00</td>
+<td>1,355</td>
+<td>2.5822</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">54</td>
+<td align="center" class="name"><a href="/q/bc?s=3138">3138 耀登</a></td>
+<td>189.50</td>
+<td class="ceil" style="text-align:center">▲17.00</td>
+<td>+9.86%</td>
+<td class="highend_reverse">189.50</td>
+<td class="high">182.00</td>
+<td align="center">7.50</td>
+<td>3,134</td>
+<td>5.8736</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">55</td>
+<td align="center" class="name"><a href="/q/bc?s=4551">4551 智伸科</a></td>
+<td>186.00</td>
+<td class="up" style="text-align:center">△5.50</td>
+<td>+3.05%</td>
+<td class="high">190.50</td>
+<td class="low">179.00</td>
+<td align="center">11.50</td>
+<td>2,742</td>
+<td>5.0989</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">56</td>
+<td align="center" class="name"><a href="/q/bc?s=6504">6504 南六</a></td>
+<td>184.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">187.00</td>
+<td class="equal">184.00</td>
+<td align="center">3.00</td>
+<td>257</td>
+<td>0.4745</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">57</td>
+<td align="center" class="name"><a href="/q/bc?s=1707">1707 葡萄王</a></td>
+<td>182.50</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+0.83%</td>
+<td class="high">184.00</td>
+<td class="high">181.50</td>
+<td align="center">2.50</td>
+<td>586</td>
+<td>1.0692</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">58</td>
+<td align="center" class="name"><a href="/q/bc?s=2360">2360 致茂</a></td>
+<td>180.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+1.69%</td>
+<td class="high">180.00</td>
+<td class="low">173.50</td>
+<td align="center">6.50</td>
+<td>911</td>
+<td>1.6177</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">59</td>
+<td align="center" class="name"><a href="/q/bc?s=6670">6670 復盛應用</a></td>
+<td>175.50</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">176.00</td>
+<td class="low">174.00</td>
+<td align="center">2.00</td>
+<td>99</td>
+<td>0.1734</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">60</td>
+<td align="center" class="name"><a href="/q/bc?s=2428">2428 興勤</a></td>
+<td>172.50</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+4.86%</td>
+<td class="high">174.00</td>
+<td class="equal">164.50</td>
+<td align="center">9.50</td>
+<td>2,687</td>
+<td>4.5739</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">61</td>
+<td align="center" class="name"><a href="/q/bc?s=6706">6706 惠特</a></td>
+<td>170.00</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.58%</td>
+<td class="equal">171.00</td>
+<td class="low">166.00</td>
+<td align="center">5.00</td>
+<td>1,224</td>
+<td>2.0659</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">62</td>
+<td align="center" class="name"><a href="/q/bc?s=8016">8016 矽創</a></td>
+<td>167.00</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+2.45%</td>
+<td class="high">167.50</td>
+<td class="low">162.50</td>
+<td align="center">5.00</td>
+<td>5,773</td>
+<td>9.5660</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">63</td>
+<td align="center" class="name"><a href="/q/bc?s=5871">5871 中租-KY</a></td>
+<td>166.00</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-0.90%</td>
+<td class="high">168.00</td>
+<td class="low">165.50</td>
+<td align="center">2.50</td>
+<td>1,629</td>
+<td>2.7053</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">64</td>
+<td align="center" class="name"><a href="/q/bc?s=8081">8081 致新</a></td>
+<td>164.50</td>
+<td class="up" style="text-align:center">△4.50</td>
+<td>+2.81%</td>
+<td class="high">165.50</td>
+<td class="equal">160.00</td>
+<td align="center">5.50</td>
+<td>991</td>
+<td>1.6201</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">65</td>
+<td align="center" class="name"><a href="/q/bc?s=8422">8422 可寧衛</a></td>
+<td>164.50</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="equal">164.50</td>
+<td class="low">163.50</td>
+<td align="center">1.00</td>
+<td>142</td>
+<td>0.2330</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">66</td>
+<td align="center" class="name"><a href="/q/bc?s=2383">2383 台光電</a></td>
+<td>159.00</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+1.60%</td>
+<td class="high">160.50</td>
+<td class="equal">156.50</td>
+<td align="center">4.00</td>
+<td>4,136</td>
+<td>6.5778</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">67</td>
+<td align="center" class="name"><a href="/q/bc?s=4766">4766 南寶</a></td>
+<td>158.50</td>
+<td class="up" style="text-align:center">△1.00</td>
+<td>+0.63%</td>
+<td class="high">158.50</td>
+<td class="low">156.50</td>
+<td align="center">2.00</td>
+<td>72</td>
+<td>0.1133</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">68</td>
+<td align="center" class="name"><a href="/q/bc?s=3130">3130 一零四</a></td>
+<td>158.50</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="equal">158.50</td>
+<td class="equal">158.50</td>
+<td align="center">0.00</td>
+<td>0</td>
+<td>0.0000</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">69</td>
+<td align="center" class="name"><a href="/q/bc?s=3515">3515 華擎</a></td>
+<td>158.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">159.00</td>
+<td class="low">155.50</td>
+<td align="center">3.50</td>
+<td>289</td>
+<td>0.4534</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">70</td>
+<td align="center" class="name"><a href="/q/bc?s=3708">3708 上緯投控</a></td>
+<td>157.50</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+1.29%</td>
+<td class="high">163.00</td>
+<td class="high">156.50</td>
+<td align="center">6.50</td>
+<td>4,323</td>
+<td>6.8596</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">71</td>
+<td align="center" class="name"><a href="/q/bc?s=8462">8462 柏文</a></td>
+<td>155.50</td>
+<td class="down" style="text-align:center">▽3.00</td>
+<td>-1.89%</td>
+<td class="low">157.50</td>
+<td class="low">155.50</td>
+<td align="center">2.00</td>
+<td>87</td>
+<td>0.1355</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">72</td>
+<td align="center" class="name"><a href="/q/bc?s=4536">4536 拓凱</a></td>
+<td>155.50</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">157.50</td>
+<td class="low">154.00</td>
+<td align="center">3.50</td>
+<td>200</td>
+<td>0.3117</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">73</td>
+<td align="center" class="name"><a href="/q/bc?s=2439">2439 美律</a></td>
+<td>148.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">148.50</td>
+<td class="low">146.50</td>
+<td align="center">2.00</td>
+<td>801</td>
+<td>1.1819</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">74</td>
+<td align="center" class="name"><a href="/q/bc?s=4439">4439 冠星-KY</a></td>
+<td>148.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">149.50</td>
+<td class="equal">148.00</td>
+<td align="center">1.50</td>
+<td>12</td>
+<td>0.0179</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">75</td>
+<td align="center" class="name"><a href="/q/bc?s=2723">2723 美食-KY</a></td>
+<td>146.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+2.10%</td>
+<td class="high">149.50</td>
+<td class="low">141.00</td>
+<td align="center">8.50</td>
+<td>1,793</td>
+<td>2.6188</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">76</td>
+<td align="center" class="name"><a href="/q/bc?s=6213">6213 聯茂</a></td>
+<td>145.50</td>
+<td class="up" style="text-align:center">△5.50</td>
+<td>+3.93%</td>
+<td class="high">147.50</td>
+<td class="equal">140.00</td>
+<td align="center">7.50</td>
+<td>5,844</td>
+<td>8.4656</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">77</td>
+<td align="center" class="name"><a href="/q/bc?s=6582">6582 申豐</a></td>
+<td>145.00</td>
+<td class="down" style="text-align:center">▽3.00</td>
+<td>-2.03%</td>
+<td class="low">147.50</td>
+<td class="low">145.00</td>
+<td align="center">2.50</td>
+<td>646</td>
+<td>0.9416</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">78</td>
+<td align="center" class="name"><a href="/q/bc?s=2458">2458 義隆</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+2.14%</td>
+<td class="high">143.50</td>
+<td class="low">139.00</td>
+<td align="center">4.50</td>
+<td>7,607</td>
+<td>10.7894</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">79</td>
+<td align="center" class="name"><a href="/q/bc?s=4961">4961 天鈺</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+5.93%</td>
+<td class="high">144.00</td>
+<td class="low">133.00</td>
+<td align="center">11.00</td>
+<td>26,034</td>
+<td>36.0953</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">80</td>
+<td align="center" class="name"><a href="/q/bc?s=1558">1558 伸興</a></td>
+<td>142.50</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+1.06%</td>
+<td class="high">143.00</td>
+<td class="equal">141.00</td>
+<td align="center">2.00</td>
+<td>218</td>
+<td>0.3100</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">81</td>
+<td align="center" class="name"><a href="/q/bc?s=1537">1537 廣隆</a></td>
+<td>141.00</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.36%</td>
+<td class="high">141.00</td>
+<td class="equal">140.50</td>
+<td align="center">0.50</td>
+<td>103</td>
+<td>0.1449</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">82</td>
+<td align="center" class="name"><a href="/q/bc?s=3532">3532 台勝科</a></td>
+<td>140.00</td>
+<td class="up" style="text-align:center">△1.50</td>
+<td>+1.08%</td>
+<td class="high">140.00</td>
+<td class="low">137.00</td>
+<td align="center">3.00</td>
+<td>1,431</td>
+<td>1.9881</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">83</td>
+<td align="center" class="name"><a href="/q/bc?s=3530">3530 晶相光</a></td>
+<td>139.00</td>
+<td class="ceil" style="text-align:center">▲12.50</td>
+<td>+9.88%</td>
+<td class="highend_reverse">139.00</td>
+<td class="low">125.50</td>
+<td align="center">13.50</td>
+<td>10,463</td>
+<td>14.1589</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">84</td>
+<td align="center" class="name"><a href="/q/bc?s=1232">1232 大統益</a></td>
+<td>139.00</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-0.36%</td>
+<td class="high">140.50</td>
+<td class="low">138.00</td>
+<td align="center">2.50</td>
+<td>198</td>
+<td>0.2760</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">85</td>
+<td align="center" class="name"><a href="/q/bc?s=8499">8499 鼎炫-KY</a></td>
+<td>139.00</td>
+<td class="up" style="text-align:center">△2.50</td>
+<td>+1.83%</td>
+<td class="high">139.50</td>
+<td class="low">136.00</td>
+<td align="center">3.50</td>
+<td>151</td>
+<td>0.2073</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">86</td>
+<td align="center" class="name"><a href="/q/bc?s=6451">6451 訊芯-KY</a></td>
+<td>136.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">138.50</td>
+<td class="low">133.50</td>
+<td align="center">5.00</td>
+<td>4,244</td>
+<td>5.7795</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">87</td>
+<td align="center" class="name"><a href="/q/bc?s=6278">6278 台表科</a></td>
+<td>134.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-2.54%</td>
+<td class="equal">138.00</td>
+<td class="low">133.00</td>
+<td align="center">5.00</td>
+<td>10,893</td>
+<td>14.6559</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">88</td>
+<td align="center" class="name"><a href="/q/bc?s=6743">6743 安普新</a></td>
+<td>133.00</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+4.72%</td>
+<td class="high">135.00</td>
+<td class="low">126.00</td>
+<td align="center">9.00</td>
+<td>1,676</td>
+<td>2.2026</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">89</td>
+<td align="center" class="name"><a href="/q/bc?s=2707">2707 晶華</a></td>
+<td>133.00</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-1.12%</td>
+<td class="low">134.00</td>
+<td class="low">133.00</td>
+<td align="center">1.00</td>
+<td>298</td>
+<td>0.3969</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">90</td>
+<td align="center" class="name"><a href="/q/bc?s=3376">3376 新日興</a></td>
+<td>132.50</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-1.12%</td>
+<td class="equal">134.00</td>
+<td class="low">132.00</td>
+<td align="center">2.00</td>
+<td>894</td>
+<td>1.1872</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">91</td>
+<td align="center" class="name"><a href="/q/bc?s=2377">2377 微星</a></td>
+<td>130.00</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-2.62%</td>
+<td class="low">132.50</td>
+<td class="low">129.50</td>
+<td align="center">3.00</td>
+<td>3,836</td>
+<td>5.0060</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">92</td>
+<td align="center" class="name"><a href="/q/bc?s=5283">5283 禾聯碩</a></td>
+<td>130.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+1.56%</td>
+<td class="high">130.00</td>
+<td class="low">126.50</td>
+<td align="center">3.50</td>
+<td>574</td>
+<td>0.7389</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">93</td>
+<td align="center" class="name"><a href="/q/bc?s=2727">2727 王品</a></td>
+<td>129.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+4.03%</td>
+<td class="high">130.00</td>
+<td class="high">124.50</td>
+<td align="center">5.50</td>
+<td>1,217</td>
+<td>1.5545</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">94</td>
+<td align="center" class="name"><a href="/q/bc?s=5215">5215 科嘉-KY</a></td>
+<td>128.50</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.77%</td>
+<td class="high">130.00</td>
+<td class="low">127.50</td>
+<td align="center">2.50</td>
+<td>314</td>
+<td>0.4042</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">95</td>
+<td align="center" class="name"><a href="/q/bc?s=4763">4763 材料-KY</a></td>
+<td>126.00</td>
+<td class="down" style="text-align:center">▽0.50</td>
+<td>-0.40%</td>
+<td class="high">127.50</td>
+<td class="low">125.00</td>
+<td align="center">2.50</td>
+<td>157</td>
+<td>0.1978</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">96</td>
+<td align="center" class="name"><a href="/q/bc?s=6715">6715 嘉基</a></td>
+<td>126.00</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-1.18%</td>
+<td class="low">126.50</td>
+<td class="low">125.50</td>
+<td align="center">1.00</td>
+<td>51</td>
+<td>0.0643</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">97</td>
+<td align="center" class="name"><a href="/q/bc?s=008201">008201 BP上證50</a></td>
+<td>125.70</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="equal">125.70</td>
+<td class="low">122.20</td>
+<td align="center">3.50</td>
+<td>0</td>
+<td>0.0000</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">98</td>
+<td align="center" class="name"><a href="/q/bc?s=0050">0050 元大台灣50</a></td>
+<td>124.60</td>
+<td class="up" style="text-align:center">△0.25</td>
+<td>+0.20%</td>
+<td class="high">124.65</td>
+<td class="low">123.75</td>
+<td align="center">0.90</td>
+<td>4,712</td>
+<td>5.8531</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">99</td>
+<td align="center" class="name"><a href="/q/bc?s=6416">6416 瑞祺電通</a></td>
+<td>123.50</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-0.80%</td>
+<td class="high">125.00</td>
+<td class="low">123.00</td>
+<td align="center">2.00</td>
+<td>297</td>
+<td>0.3680</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">100</td>
+<td align="center" class="name"><a href="/q/bc?s=6269">6269 台郡</a></td>
+<td>123.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="equal">123.00</td>
+<td class="low">121.00</td>
+<td align="center">2.00</td>
+<td>2,818</td>
+<td>3.4387</td>
+</tr></tbody></table>
+</td></tr>
+</tbody></table>
+<hr><table align="center" border="0" cellpadding="0" cellspacing="0" width="750">
+<tbody><tr bgcolor="#fec003">
+<td colspan="2">
+<table border="0" cellpadding="2" height="23" width="100%">
+<tbody><tr>
+<td class="tt" width="205">資料日期：110 / 01 / 05   14 : 00</td><td align="center" class="ttt" width="205">上市成交值排行</td>
+<td width="205">
+<div align="right" class="tt"><a href="?t=amt&amp;e=TWO&amp;n=100">上櫃成交值排行</a></div>
+</td></tr>
+</tbody></table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+<tbody><tr bgcolor="#fff0c1"><th nowrap="nowrap">名次</th><th nowrap="nowrap">股票代號/名稱</th><th nowrap="nowrap">成交價</th><th nowrap="nowrap">  漲跌  </th><th nowrap="nowrap"> 漲跌幅 </th><th nowrap="nowrap">最高</th><th nowrap="nowrap">最低</th><th nowrap="nowrap">價差</th><th nowrap="nowrap">成交張數</th><th nowrap="nowrap">成交值(億)</th></tr><tr align="right" bgcolor="#ffffff">
+<td align="center">1</td>
+<td align="center" class="name"><a href="/q/bc?s=2317">2317 鴻海</a></td>
+<td>104.00</td>
+<td class="up" style="text-align:center">△4.10</td>
+<td>+4.10%</td>
+<td class="high">105.00</td>
+<td class="high">101.00</td>
+<td align="center">4.00</td>
+<td>231,444</td>
+<td>238.9451</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">2</td>
+<td align="center" class="name"><a href="/q/bc?s=2603">2603 長榮</a></td>
+<td>45.50</td>
+<td class="up" style="text-align:center">△0.75</td>
+<td>+1.68%</td>
+<td class="high">45.50</td>
+<td class="low">43.15</td>
+<td align="center">2.35</td>
+<td>532,105</td>
+<td>236.7825</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">3</td>
+<td align="center" class="name"><a href="/q/bc?s=2330">2330 台積電</a></td>
+<td>542.00</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+1.12%</td>
+<td class="high">542.00</td>
+<td class="low">535.00</td>
+<td align="center">7.00</td>
+<td>34,234</td>
+<td>184.3484</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">4</td>
+<td align="center" class="name"><a href="/q/bc?s=2303">2303 聯電</a></td>
+<td>46.35</td>
+<td class="up" style="text-align:center">△0.80</td>
+<td>+1.76%</td>
+<td class="high">46.35</td>
+<td class="low">44.55</td>
+<td align="center">1.80</td>
+<td>201,963</td>
+<td>91.4640</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">5</td>
+<td align="center" class="name"><a href="/q/bc?s=8046">8046 南電</a></td>
+<td>209.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+4.50%</td>
+<td class="high">216.50</td>
+<td class="low">197.00</td>
+<td align="center">19.50</td>
+<td>40,181</td>
+<td>83.4136</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">6</td>
+<td align="center" class="name"><a href="/q/bc?s=3661">3661 世芯-KY</a></td>
+<td>726.00</td>
+<td class="up" style="text-align:center">△43.00</td>
+<td>+6.30%</td>
+<td class="high">738.00</td>
+<td class="low">669.00</td>
+<td align="center">69.00</td>
+<td>11,120</td>
+<td>78.6169</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">7</td>
+<td align="center" class="name"><a href="/q/bc?s=3037">3037 欣興</a></td>
+<td>94.30</td>
+<td class="up" style="text-align:center">△3.80</td>
+<td>+4.20%</td>
+<td class="high">94.30</td>
+<td class="low">88.50</td>
+<td align="center">5.80</td>
+<td>80,272</td>
+<td>73.8754</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">8</td>
+<td align="center" class="name"><a href="/q/bc?s=2454">2454 聯發科</a></td>
+<td>797.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+0.63%</td>
+<td class="high">804.00</td>
+<td class="low">775.00</td>
+<td align="center">29.00</td>
+<td>9,166</td>
+<td>72.6304</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">9</td>
+<td align="center" class="name"><a href="/q/bc?s=3443">3443 創意</a></td>
+<td>399.50</td>
+<td class="up" style="text-align:center">△27.00</td>
+<td>+7.25%</td>
+<td class="high">402.50</td>
+<td class="low">370.00</td>
+<td align="center">32.50</td>
+<td>18,191</td>
+<td>70.9927</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">10</td>
+<td align="center" class="name"><a href="/q/bc?s=2327">2327 國巨</a></td>
+<td>528.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+1.54%</td>
+<td class="high">537.00</td>
+<td class="low">518.00</td>
+<td align="center">19.00</td>
+<td>12,967</td>
+<td>68.5421</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">11</td>
+<td align="center" class="name"><a href="/q/bc?s=2308">2308 台達電</a></td>
+<td>276.50</td>
+<td class="up" style="text-align:center">△11.50</td>
+<td>+4.34%</td>
+<td class="high">283.00</td>
+<td class="high">269.50</td>
+<td align="center">13.50</td>
+<td>17,956</td>
+<td>49.7485</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">12</td>
+<td align="center" class="name"><a href="/q/bc?s=2615">2615 萬海</a></td>
+<td>54.60</td>
+<td class="down" style="text-align:center">▽2.50</td>
+<td>-4.38%</td>
+<td class="high">57.30</td>
+<td class="low">53.80</td>
+<td align="center">3.50</td>
+<td>89,912</td>
+<td>49.6443</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">13</td>
+<td align="center" class="name"><a href="/q/bc?s=2002">2002 中鋼</a></td>
+<td>26.00</td>
+<td class="up" style="text-align:center">△1.05</td>
+<td>+4.21%</td>
+<td class="high">26.40</td>
+<td class="high">25.10</td>
+<td align="center">1.30</td>
+<td>183,687</td>
+<td>47.5646</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">14</td>
+<td align="center" class="name"><a href="/q/bc?s=2014">2014 中鴻</a></td>
+<td>17.80</td>
+<td class="up" style="text-align:center">△1.30</td>
+<td>+7.88%</td>
+<td class="highend_reverse">18.15</td>
+<td class="high">16.75</td>
+<td align="center">1.40</td>
+<td>237,401</td>
+<td>42.1482</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">15</td>
+<td align="center" class="name"><a href="/q/bc?s=2344">2344 華邦電</a></td>
+<td>28.45</td>
+<td class="up" style="text-align:center">△0.45</td>
+<td>+1.61%</td>
+<td class="high">28.85</td>
+<td class="high">28.10</td>
+<td align="center">0.75</td>
+<td>145,892</td>
+<td>41.4590</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">16</td>
+<td align="center" class="name"><a href="/q/bc?s=3711">3711 日月光投控</a></td>
+<td>86.60</td>
+<td class="up" style="text-align:center">△2.70</td>
+<td>+3.22%</td>
+<td class="high">87.00</td>
+<td class="low">83.60</td>
+<td align="center">3.40</td>
+<td>44,448</td>
+<td>38.0155</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">17</td>
+<td align="center" class="name"><a href="/q/bc?s=4961">4961 天鈺</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△8.00</td>
+<td>+5.93%</td>
+<td class="high">144.00</td>
+<td class="low">133.00</td>
+<td align="center">11.00</td>
+<td>26,034</td>
+<td>36.0953</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">18</td>
+<td align="center" class="name"><a href="/q/bc?s=5243">5243 乙盛-KY</a></td>
+<td>69.60</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">75.50</td>
+<td class="equal">69.60</td>
+<td align="center">5.90</td>
+<td>46,897</td>
+<td>34.0350</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">19</td>
+<td align="center" class="name"><a href="/q/bc?s=4968">4968 立積</a></td>
+<td>423.50</td>
+<td class="up" style="text-align:center">△18.00</td>
+<td>+4.44%</td>
+<td class="high">423.50</td>
+<td class="low">400.50</td>
+<td align="center">23.00</td>
+<td>7,601</td>
+<td>31.5431</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">20</td>
+<td align="center" class="name"><a href="/q/bc?s=3481">3481 群創</a></td>
+<td>14.00</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.44%</td>
+<td class="high">14.50</td>
+<td class="low">13.90</td>
+<td align="center">0.60</td>
+<td>212,823</td>
+<td>29.9433</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">21</td>
+<td align="center" class="name"><a href="/q/bc?s=2049">2049 上銀</a></td>
+<td>413.00</td>
+<td class="up" style="text-align:center">△29.00</td>
+<td>+7.55%</td>
+<td class="high">420.00</td>
+<td class="high">396.00</td>
+<td align="center">24.00</td>
+<td>7,200</td>
+<td>29.5802</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">22</td>
+<td align="center" class="name"><a href="/q/bc?s=1536">1536 和大</a></td>
+<td>120.50</td>
+<td class="up" style="text-align:center">△6.00</td>
+<td>+5.24%</td>
+<td class="high">125.00</td>
+<td class="high">118.00</td>
+<td align="center">7.00</td>
+<td>24,272</td>
+<td>29.4083</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">23</td>
+<td align="center" class="name"><a href="/q/bc?s=2393">2393 億光</a></td>
+<td>48.70</td>
+<td class="up" style="text-align:center">△2.30</td>
+<td>+4.96%</td>
+<td class="high">49.90</td>
+<td class="high">46.85</td>
+<td align="center">3.05</td>
+<td>57,472</td>
+<td>27.8178</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">24</td>
+<td align="center" class="name"><a href="/q/bc?s=2492">2492 華新科</a></td>
+<td>233.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+1.30%</td>
+<td class="high">236.50</td>
+<td class="low">228.00</td>
+<td align="center">8.50</td>
+<td>11,625</td>
+<td>27.1166</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">25</td>
+<td align="center" class="name"><a href="/q/bc?s=3008">3008 大立光</a></td>
+<td>3315.00</td>
+<td class="down" style="text-align:center">▽35.00</td>
+<td>-1.04%</td>
+<td class="high">3360.00</td>
+<td class="low">3270.00</td>
+<td align="center">90.00</td>
+<td>786</td>
+<td>26.0180</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">26</td>
+<td align="center" class="name"><a href="/q/bc?s=2408">2408 南亞科</a></td>
+<td>90.50</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-0.22%</td>
+<td class="high">94.50</td>
+<td class="low">88.80</td>
+<td align="center">5.70</td>
+<td>28,096</td>
+<td>25.8779</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">27</td>
+<td align="center" class="name"><a href="/q/bc?s=5269">5269 祥碩</a></td>
+<td>1715.00</td>
+<td class="up" style="text-align:center">△90.00</td>
+<td>+5.54%</td>
+<td class="high">1715.00</td>
+<td class="high">1635.00</td>
+<td align="center">80.00</td>
+<td>1,341</td>
+<td>22.5019</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">28</td>
+<td align="center" class="name"><a href="/q/bc?s=2478">2478 大毅</a></td>
+<td>89.40</td>
+<td class="up" style="text-align:center">△5.40</td>
+<td>+6.43%</td>
+<td class="high">91.60</td>
+<td class="low">83.70</td>
+<td align="center">7.90</td>
+<td>23,035</td>
+<td>20.4970</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">29</td>
+<td align="center" class="name"><a href="/q/bc?s=3665">3665 貿聯-KY</a></td>
+<td>265.50</td>
+<td class="down" style="text-align:center">▽2.00</td>
+<td>-0.75%</td>
+<td class="high">277.50</td>
+<td class="low">264.00</td>
+<td align="center">13.50</td>
+<td>7,399</td>
+<td>20.1229</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">30</td>
+<td align="center" class="name"><a href="/q/bc?s=00637L">00637L 元大滬深300正2</a></td>
+<td>28.97</td>
+<td class="up" style="text-align:center">△0.46</td>
+<td>+1.61%</td>
+<td class="high">28.98</td>
+<td class="low">28.12</td>
+<td align="center">0.86</td>
+<td>63,428</td>
+<td>18.1226</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">31</td>
+<td align="center" class="name"><a href="/q/bc?s=2337">2337 旺宏</a></td>
+<td>40.50</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-0.98%</td>
+<td class="high">41.25</td>
+<td class="low">40.20</td>
+<td align="center">1.05</td>
+<td>40,912</td>
+<td>16.6147</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">32</td>
+<td align="center" class="name"><a href="/q/bc?s=6531">6531 愛普</a></td>
+<td>437.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+1.16%</td>
+<td class="high">450.00</td>
+<td class="low">426.00</td>
+<td align="center">24.00</td>
+<td>3,599</td>
+<td>15.7817</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">33</td>
+<td align="center" class="name"><a href="/q/bc?s=1314">1314 中石化</a></td>
+<td>11.60</td>
+<td class="up" style="text-align:center">△0.05</td>
+<td>+0.43%</td>
+<td class="high">12.10</td>
+<td class="low">11.50</td>
+<td align="center">0.60</td>
+<td>132,347</td>
+<td>15.6275</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">34</td>
+<td align="center" class="name"><a href="/q/bc?s=3437">3437 榮創</a></td>
+<td>36.60</td>
+<td class="ceil" style="text-align:center">▲3.30</td>
+<td>+9.91%</td>
+<td class="highend_reverse">36.60</td>
+<td class="high">35.00</td>
+<td align="center">1.60</td>
+<td>42,286</td>
+<td>15.3166</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">35</td>
+<td align="center" class="name"><a href="/q/bc?s=3189">3189 景碩</a></td>
+<td>85.80</td>
+<td class="up" style="text-align:center">△0.80</td>
+<td>+0.94%</td>
+<td class="high">86.60</td>
+<td class="low">83.80</td>
+<td align="center">2.80</td>
+<td>17,682</td>
+<td>15.1518</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">36</td>
+<td align="center" class="name"><a href="/q/bc?s=6533">6533 晶心科</a></td>
+<td>364.50</td>
+<td class="up" style="text-align:center">△12.00</td>
+<td>+3.40%</td>
+<td class="high">364.50</td>
+<td class="low">336.00</td>
+<td align="center">28.50</td>
+<td>4,343</td>
+<td>15.1453</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">37</td>
+<td align="center" class="name"><a href="/q/bc?s=2609">2609 陽明</a></td>
+<td>32.00</td>
+<td class="down" style="text-align:center">▽0.15</td>
+<td>-0.47%</td>
+<td class="low">32.00</td>
+<td class="low">30.00</td>
+<td align="center">2.00</td>
+<td>48,783</td>
+<td>15.1396</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">38</td>
+<td align="center" class="name"><a href="/q/bc?s=2409">2409 友達</a></td>
+<td>14.00</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-1.41%</td>
+<td class="equal">14.20</td>
+<td class="low">13.80</td>
+<td align="center">0.40</td>
+<td>105,790</td>
+<td>14.7423</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">39</td>
+<td align="center" class="name"><a href="/q/bc?s=6278">6278 台表科</a></td>
+<td>134.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-2.54%</td>
+<td class="equal">138.00</td>
+<td class="low">133.00</td>
+<td align="center">5.00</td>
+<td>10,893</td>
+<td>14.6559</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">40</td>
+<td align="center" class="name"><a href="/q/bc?s=2379">2379 瑞昱</a></td>
+<td>387.00</td>
+<td class="down" style="text-align:center">▽1.50</td>
+<td>-0.39%</td>
+<td class="low">387.50</td>
+<td class="low">383.00</td>
+<td align="center">4.50</td>
+<td>3,773</td>
+<td>14.5172</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">41</td>
+<td align="center" class="name"><a href="/q/bc?s=3034">3034 聯詠</a></td>
+<td>359.50</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-1.10%</td>
+<td class="low">362.00</td>
+<td class="low">355.00</td>
+<td align="center">7.00</td>
+<td>4,028</td>
+<td>14.4045</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">42</td>
+<td align="center" class="name"><a href="/q/bc?s=3530">3530 晶相光</a></td>
+<td>139.00</td>
+<td class="ceil" style="text-align:center">▲12.50</td>
+<td>+9.88%</td>
+<td class="highend_reverse">139.00</td>
+<td class="low">125.50</td>
+<td align="center">13.50</td>
+<td>10,463</td>
+<td>14.1589</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">43</td>
+<td align="center" class="name"><a href="/q/bc?s=2382">2382 廣達</a></td>
+<td>84.70</td>
+<td class="up" style="text-align:center">△3.60</td>
+<td>+4.44%</td>
+<td class="high">84.80</td>
+<td class="high">81.20</td>
+<td align="center">3.60</td>
+<td>16,895</td>
+<td>14.1129</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">44</td>
+<td align="center" class="name"><a href="/q/bc?s=1802">1802 台玻</a></td>
+<td>20.60</td>
+<td class="down" style="text-align:center">▽0.85</td>
+<td>-3.96%</td>
+<td class="high">21.65</td>
+<td class="low">20.05</td>
+<td align="center">1.60</td>
+<td>65,011</td>
+<td>13.5932</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">45</td>
+<td align="center" class="name"><a href="/q/bc?s=2201">2201 裕隆</a></td>
+<td>48.85</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-4.03%</td>
+<td class="equal">50.90</td>
+<td class="low">48.30</td>
+<td align="center">2.60</td>
+<td>27,178</td>
+<td>13.4516</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">46</td>
+<td align="center" class="name"><a href="/q/bc?s=4938">4938 和碩</a></td>
+<td>66.80</td>
+<td class="down" style="text-align:center">▽1.20</td>
+<td>-1.76%</td>
+<td class="low">67.90</td>
+<td class="low">66.60</td>
+<td align="center">1.30</td>
+<td>19,373</td>
+<td>12.9722</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">47</td>
+<td align="center" class="name"><a href="/q/bc?s=3545">3545 敦泰</a></td>
+<td>87.90</td>
+<td class="down" style="text-align:center">▽2.80</td>
+<td>-3.09%</td>
+<td class="high">91.50</td>
+<td class="low">86.30</td>
+<td align="center">5.20</td>
+<td>14,670</td>
+<td>12.9663</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">48</td>
+<td align="center" class="name"><a href="/q/bc?s=3006">3006 晶豪科</a></td>
+<td>63.40</td>
+<td class="down" style="text-align:center">▽2.60</td>
+<td>-3.94%</td>
+<td class="low">65.80</td>
+<td class="low">63.20</td>
+<td align="center">2.60</td>
+<td>20,110</td>
+<td>12.9488</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">49</td>
+<td align="center" class="name"><a href="/q/bc?s=6209">6209 今國光</a></td>
+<td>40.55</td>
+<td class="up" style="text-align:center">△1.45</td>
+<td>+3.71%</td>
+<td class="high">42.45</td>
+<td class="low">39.00</td>
+<td align="center">3.45</td>
+<td>31,795</td>
+<td>12.8533</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">50</td>
+<td align="center" class="name"><a href="/q/bc?s=6271">6271 同欣電</a></td>
+<td>193.00</td>
+<td class="up" style="text-align:center">△5.00</td>
+<td>+2.66%</td>
+<td class="high">193.00</td>
+<td class="low">186.00</td>
+<td align="center">7.00</td>
+<td>6,525</td>
+<td>12.4110</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">51</td>
+<td align="center" class="name"><a href="/q/bc?s=4906">4906 正文</a></td>
+<td>32.50</td>
+<td class="up" style="text-align:center">△1.80</td>
+<td>+5.86%</td>
+<td class="high">33.30</td>
+<td class="high">30.85</td>
+<td align="center">2.45</td>
+<td>38,257</td>
+<td>12.2776</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">52</td>
+<td align="center" class="name"><a href="/q/bc?s=1513">1513 中興電</a></td>
+<td>48.65</td>
+<td class="down" style="text-align:center">▽0.45</td>
+<td>-0.92%</td>
+<td class="high">49.80</td>
+<td class="low">48.10</td>
+<td align="center">1.70</td>
+<td>24,953</td>
+<td>12.2345</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">53</td>
+<td align="center" class="name"><a href="/q/bc?s=6288">6288 聯嘉</a></td>
+<td>35.50</td>
+<td class="up" style="text-align:center">△0.40</td>
+<td>+1.14%</td>
+<td class="high">37.40</td>
+<td class="high">35.30</td>
+<td align="center">2.10</td>
+<td>33,407</td>
+<td>12.0504</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">54</td>
+<td align="center" class="name"><a href="/q/bc?s=6257">6257 矽格</a></td>
+<td>48.25</td>
+<td class="up" style="text-align:center">△2.15</td>
+<td>+4.66%</td>
+<td class="high">48.30</td>
+<td class="equal">46.10</td>
+<td align="center">2.20</td>
+<td>25,091</td>
+<td>11.8692</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">55</td>
+<td align="center" class="name"><a href="/q/bc?s=2355">2355 敬鵬</a></td>
+<td>36.55</td>
+<td class="up" style="text-align:center">△1.70</td>
+<td>+4.88%</td>
+<td class="high">37.85</td>
+<td class="high">35.10</td>
+<td align="center">2.75</td>
+<td>31,380</td>
+<td>11.4621</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">56</td>
+<td align="center" class="name"><a href="/q/bc?s=2345">2345 智邦</a></td>
+<td>297.50</td>
+<td class="down" style="text-align:center">▽3.50</td>
+<td>-1.16%</td>
+<td class="high">302.50</td>
+<td class="low">295.00</td>
+<td align="center">7.50</td>
+<td>3,841</td>
+<td>11.4324</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">57</td>
+<td align="center" class="name"><a href="/q/bc?s=2458">2458 義隆</a></td>
+<td>143.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+2.14%</td>
+<td class="high">143.50</td>
+<td class="low">139.00</td>
+<td align="center">4.50</td>
+<td>7,607</td>
+<td>10.7894</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">58</td>
+<td align="center" class="name"><a href="/q/bc?s=3406">3406 玉晶光</a></td>
+<td>574.00</td>
+<td class="up" style="text-align:center">△3.00</td>
+<td>+0.53%</td>
+<td class="high">577.00</td>
+<td class="low">569.00</td>
+<td align="center">8.00</td>
+<td>1,872</td>
+<td>10.7298</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">59</td>
+<td align="center" class="name"><a href="/q/bc?s=2368">2368 金像電</a></td>
+<td>52.90</td>
+<td class="up" style="text-align:center">△1.00</td>
+<td>+1.93%</td>
+<td class="high">53.20</td>
+<td class="low">51.20</td>
+<td align="center">2.00</td>
+<td>19,943</td>
+<td>10.4607</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">60</td>
+<td align="center" class="name"><a href="/q/bc?s=2474">2474 可成</a></td>
+<td>203.50</td>
+<td class="down" style="text-align:center">▽4.00</td>
+<td>-1.93%</td>
+<td class="low">207.00</td>
+<td class="low">203.50</td>
+<td align="center">3.50</td>
+<td>5,096</td>
+<td>10.4527</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">61</td>
+<td align="center" class="name"><a href="/q/bc?s=6456">6456 GIS-KY</a></td>
+<td>121.50</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+3.40%</td>
+<td class="high">121.50</td>
+<td class="low">116.50</td>
+<td align="center">5.00</td>
+<td>8,360</td>
+<td>9.9892</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">62</td>
+<td align="center" class="name"><a href="/q/bc?s=2034">2034 允強</a></td>
+<td>29.30</td>
+<td class="up" style="text-align:center">△1.10</td>
+<td>+3.90%</td>
+<td class="high">29.70</td>
+<td class="low">28.10</td>
+<td align="center">1.60</td>
+<td>33,599</td>
+<td>9.8484</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">63</td>
+<td align="center" class="name"><a href="/q/bc?s=2340">2340 光磊</a></td>
+<td>25.75</td>
+<td class="down" style="text-align:center">▽2.05</td>
+<td>-7.37%</td>
+<td class="low">26.60</td>
+<td class="low">25.65</td>
+<td align="center">0.95</td>
+<td>37,282</td>
+<td>9.7131</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">64</td>
+<td align="center" class="name"><a href="/q/bc?s=0056">0056 元大高股息</a></td>
+<td>30.02</td>
+<td class="up" style="text-align:center">△0.08</td>
+<td>+0.27%</td>
+<td class="high">30.04</td>
+<td class="low">29.87</td>
+<td align="center">0.17</td>
+<td>32,183</td>
+<td>9.6532</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">65</td>
+<td align="center" class="name"><a href="/q/bc?s=8016">8016 矽創</a></td>
+<td>167.00</td>
+<td class="up" style="text-align:center">△4.00</td>
+<td>+2.45%</td>
+<td class="high">167.50</td>
+<td class="low">162.50</td>
+<td align="center">5.00</td>
+<td>5,773</td>
+<td>9.5660</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">66</td>
+<td align="center" class="name"><a href="/q/bc?s=2332">2332 友訊</a></td>
+<td>28.85</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-1.37%</td>
+<td class="high">30.65</td>
+<td class="low">28.55</td>
+<td align="center">2.10</td>
+<td>32,133</td>
+<td>9.4917</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">67</td>
+<td align="center" class="name"><a href="/q/bc?s=2455">2455 全新</a></td>
+<td>120.00</td>
+<td class="up" style="text-align:center">△2.00</td>
+<td>+1.69%</td>
+<td class="high">121.00</td>
+<td class="low">116.00</td>
+<td align="center">5.00</td>
+<td>8,036</td>
+<td>9.4860</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">68</td>
+<td align="center" class="name"><a href="/q/bc?s=00677U">00677U 富邦VIX</a></td>
+<td>4.03</td>
+<td class="up" style="text-align:center">△0.07</td>
+<td>+1.77%</td>
+<td class="high">4.12</td>
+<td class="high">4.00</td>
+<td align="center">0.12</td>
+<td>230,915</td>
+<td>9.3980</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">69</td>
+<td align="center" class="name"><a href="/q/bc?s=4956">4956 光鋐</a></td>
+<td>25.45</td>
+<td class="up" style="text-align:center">△1.40</td>
+<td>+5.82%</td>
+<td class="high">26.15</td>
+<td class="high">24.50</td>
+<td align="center">1.65</td>
+<td>36,025</td>
+<td>9.1084</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">70</td>
+<td align="center" class="name"><a href="/q/bc?s=2354">2354 鴻準</a></td>
+<td>56.10</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.90%</td>
+<td class="high">56.70</td>
+<td class="equal">55.60</td>
+<td align="center">1.10</td>
+<td>16,173</td>
+<td>9.0806</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">71</td>
+<td align="center" class="name"><a href="/q/bc?s=8011">8011 台通</a></td>
+<td>28.20</td>
+<td class="up" style="text-align:center">△1.20</td>
+<td>+4.44%</td>
+<td class="high">29.10</td>
+<td class="high">27.05</td>
+<td align="center">2.05</td>
+<td>32,153</td>
+<td>9.0556</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">72</td>
+<td align="center" class="name"><a href="/q/bc?s=1301">1301 台塑</a></td>
+<td>95.00</td>
+<td class="down" style="text-align:center">▽1.70</td>
+<td>-1.76%</td>
+<td class="high">96.80</td>
+<td class="low">94.50</td>
+<td align="center">2.30</td>
+<td>9,363</td>
+<td>8.9204</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">73</td>
+<td align="center" class="name"><a href="/q/bc?s=2481">2481 強茂</a></td>
+<td>54.70</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">55.10</td>
+<td class="low">52.90</td>
+<td align="center">2.20</td>
+<td>16,152</td>
+<td>8.7190</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">74</td>
+<td align="center" class="name"><a href="/q/bc?s=1590">1590 亞德客-KY</a></td>
+<td>923.00</td>
+<td class="up" style="text-align:center">△9.00</td>
+<td>+0.98%</td>
+<td class="high">943.00</td>
+<td class="low">909.00</td>
+<td align="center">34.00</td>
+<td>937</td>
+<td>8.6692</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">75</td>
+<td align="center" class="name"><a href="/q/bc?s=1447">1447 力鵬</a></td>
+<td>10.15</td>
+<td class="up" style="text-align:center">△0.25</td>
+<td>+2.53%</td>
+<td class="high">10.65</td>
+<td class="high">9.97</td>
+<td align="center">0.68</td>
+<td>84,545</td>
+<td>8.6432</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">76</td>
+<td align="center" class="name"><a href="/q/bc?s=2610">2610 華航</a></td>
+<td>11.35</td>
+<td class="down" style="text-align:center">▽0.35</td>
+<td>-2.99%</td>
+<td class="equal">11.70</td>
+<td class="low">11.15</td>
+<td align="center">0.55</td>
+<td>75,038</td>
+<td>8.5104</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">77</td>
+<td align="center" class="name"><a href="/q/bc?s=2353">2353 宏碁</a></td>
+<td>24.15</td>
+<td class="up" style="text-align:center">△0.40</td>
+<td>+1.68%</td>
+<td class="high">24.40</td>
+<td class="low">23.70</td>
+<td align="center">0.70</td>
+<td>35,192</td>
+<td>8.4919</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">78</td>
+<td align="center" class="name"><a href="/q/bc?s=6213">6213 聯茂</a></td>
+<td>145.50</td>
+<td class="up" style="text-align:center">△5.50</td>
+<td>+3.93%</td>
+<td class="high">147.50</td>
+<td class="equal">140.00</td>
+<td align="center">7.50</td>
+<td>5,844</td>
+<td>8.4656</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">79</td>
+<td align="center" class="name"><a href="/q/bc?s=3605">3605 宏致</a></td>
+<td>46.70</td>
+<td class="up" style="text-align:center">△0.25</td>
+<td>+0.54%</td>
+<td class="high">48.85</td>
+<td class="low">45.40</td>
+<td align="center">3.45</td>
+<td>17,671</td>
+<td>8.3620</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">80</td>
+<td align="center" class="name"><a href="/q/bc?s=2324">2324 仁寶</a></td>
+<td>21.55</td>
+<td class="up" style="text-align:center">△0.75</td>
+<td>+3.61%</td>
+<td class="high">21.80</td>
+<td class="equal">20.80</td>
+<td align="center">1.00</td>
+<td>38,596</td>
+<td>8.2478</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">81</td>
+<td align="center" class="name"><a href="/q/bc?s=8215">8215 明基材</a></td>
+<td>30.70</td>
+<td class="ceil" style="text-align:center">▲2.75</td>
+<td>+9.84%</td>
+<td class="highend_reverse">30.70</td>
+<td class="high">28.35</td>
+<td align="center">2.35</td>
+<td>27,404</td>
+<td>8.1871</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">82</td>
+<td align="center" class="name"><a href="/q/bc?s=2606">2606 裕民</a></td>
+<td>37.15</td>
+<td class="up" style="text-align:center">△0.45</td>
+<td>+1.23%</td>
+<td class="high">38.25</td>
+<td class="equal">36.70</td>
+<td align="center">1.55</td>
+<td>21,731</td>
+<td>8.1189</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">83</td>
+<td align="center" class="name"><a href="/q/bc?s=2313">2313 華通</a></td>
+<td>44.95</td>
+<td class="up" style="text-align:center">△0.35</td>
+<td>+0.78%</td>
+<td class="high">45.30</td>
+<td class="low">44.05</td>
+<td align="center">1.25</td>
+<td>17,965</td>
+<td>8.0504</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">84</td>
+<td align="center" class="name"><a href="/q/bc?s=3704">3704 合勤控</a></td>
+<td>40.35</td>
+<td class="down" style="text-align:center">▽0.40</td>
+<td>-0.98%</td>
+<td class="low">40.55</td>
+<td class="low">39.25</td>
+<td align="center">1.30</td>
+<td>19,567</td>
+<td>7.7999</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">85</td>
+<td align="center" class="name"><a href="/q/bc?s=2375">2375 凱美</a></td>
+<td>97.70</td>
+<td class="up" style="text-align:center">△0.20</td>
+<td>+0.21%</td>
+<td class="high">99.50</td>
+<td class="low">95.80</td>
+<td align="center">3.70</td>
+<td>7,811</td>
+<td>7.6288</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">86</td>
+<td align="center" class="name"><a href="/q/bc?s=3653">3653 健策</a></td>
+<td>261.50</td>
+<td class="up" style="text-align:center">△8.50</td>
+<td>+3.36%</td>
+<td class="high">263.50</td>
+<td class="low">252.00</td>
+<td align="center">11.50</td>
+<td>2,886</td>
+<td>7.4786</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">87</td>
+<td align="center" class="name"><a href="/q/bc?s=2023">2023 燁輝</a></td>
+<td>14.00</td>
+<td class="up" style="text-align:center">△0.15</td>
+<td>+1.08%</td>
+<td class="high">14.60</td>
+<td class="low">13.80</td>
+<td align="center">0.80</td>
+<td>52,567</td>
+<td>7.4751</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">88</td>
+<td align="center" class="name"><a href="/q/bc?s=4976">4976 佳凌</a></td>
+<td>74.00</td>
+<td class="down" style="text-align:center">▽0.20</td>
+<td>-0.27%</td>
+<td class="high">76.10</td>
+<td class="low">73.60</td>
+<td align="center">2.50</td>
+<td>9,916</td>
+<td>7.4130</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">89</td>
+<td align="center" class="name"><a href="/q/bc?s=4958">4958 臻鼎-KY</a></td>
+<td>119.00</td>
+<td class="flat" style="text-align:center">　0.00</td>
+<td>+0.00%</td>
+<td class="high">120.00</td>
+<td class="low">118.00</td>
+<td align="center">2.00</td>
+<td>6,227</td>
+<td>7.4003</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">90</td>
+<td align="center" class="name"><a href="/q/bc?s=2351">2351 順德</a></td>
+<td>96.70</td>
+<td class="down" style="text-align:center">▽1.00</td>
+<td>-1.02%</td>
+<td class="high">102.00</td>
+<td class="low">95.40</td>
+<td align="center">6.60</td>
+<td>7,506</td>
+<td>7.3729</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">91</td>
+<td align="center" class="name"><a href="/q/bc?s=2027">2027 大成鋼</a></td>
+<td>30.90</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.32%</td>
+<td class="high">31.80</td>
+<td class="low">30.80</td>
+<td align="center">1.00</td>
+<td>23,559</td>
+<td>7.3705</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">92</td>
+<td align="center" class="name"><a href="/q/bc?s=1309">1309 台達化</a></td>
+<td>37.50</td>
+<td class="down" style="text-align:center">▽1.15</td>
+<td>-2.98%</td>
+<td class="high">39.50</td>
+<td class="low">37.25</td>
+<td align="center">2.25</td>
+<td>19,227</td>
+<td>7.3254</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">93</td>
+<td align="center" class="name"><a href="/q/bc?s=2006">2006 東和鋼鐵</a></td>
+<td>37.75</td>
+<td class="up" style="text-align:center">△0.80</td>
+<td>+2.17%</td>
+<td class="high">37.90</td>
+<td class="low">36.60</td>
+<td align="center">1.30</td>
+<td>19,369</td>
+<td>7.2572</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">94</td>
+<td align="center" class="name"><a href="/q/bc?s=00632R">00632R 元大台灣50反1</a></td>
+<td>6.87</td>
+<td class="down" style="text-align:center">▽0.02</td>
+<td>-0.29%</td>
+<td class="high">6.92</td>
+<td class="low">6.87</td>
+<td align="center">0.05</td>
+<td>105,148</td>
+<td>7.2474</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">95</td>
+<td align="center" class="name"><a href="/q/bc?s=6756">6756 威鋒電子</a></td>
+<td>286.50</td>
+<td class="up" style="text-align:center">△25.00</td>
+<td>+9.56%</td>
+<td class="highend_reverse">287.50</td>
+<td class="low">257.00</td>
+<td align="center">30.50</td>
+<td>2,613</td>
+<td>7.1850</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">96</td>
+<td align="center" class="name"><a href="/q/bc?s=2456">2456 奇力新</a></td>
+<td>111.00</td>
+<td class="up" style="text-align:center">△0.50</td>
+<td>+0.45%</td>
+<td class="high">113.00</td>
+<td class="low">109.00</td>
+<td align="center">4.00</td>
+<td>6,429</td>
+<td>7.1568</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">97</td>
+<td align="center" class="name"><a href="/q/bc?s=1101">1101 台泥</a></td>
+<td>43.10</td>
+<td class="down" style="text-align:center">▽0.10</td>
+<td>-0.23%</td>
+<td class="high">43.40</td>
+<td class="low">43.00</td>
+<td align="center">0.40</td>
+<td>16,544</td>
+<td>7.1369</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">98</td>
+<td align="center" class="name"><a href="/q/bc?s=2371">2371 大同</a></td>
+<td>26.15</td>
+<td class="down" style="text-align:center">▽0.65</td>
+<td>-2.43%</td>
+<td class="low">26.75</td>
+<td class="low">26.00</td>
+<td align="center">0.75</td>
+<td>26,978</td>
+<td>7.0693</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">99</td>
+<td align="center" class="name"><a href="/q/bc?s=2388">2388 威盛</a></td>
+<td>59.10</td>
+<td class="up" style="text-align:center">△0.40</td>
+<td>+0.68%</td>
+<td class="high">60.50</td>
+<td class="low">57.00</td>
+<td align="center">3.50</td>
+<td>11,948</td>
+<td>7.0623</td>
+</tr><tr align="right" bgcolor="#ffffff">
+<td align="center">100</td>
+<td align="center" class="name"><a href="/q/bc?s=2882">2882 國泰金</a></td>
+<td>42.10</td>
+<td class="up" style="text-align:center">△0.05</td>
+<td>+0.12%</td>
+<td class="high">42.20</td>
+<td class="low">41.80</td>
+<td align="center">0.40</td>
+<td>16,621</td>
+<td>6.9917</td>
+</tr></tbody></table>
+</td></tr>
+</tbody></table>
+<hr>
+    </div>
+</body>
+
+</html>
