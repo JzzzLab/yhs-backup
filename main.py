@@ -29,6 +29,8 @@ def rank100(tType, tseORotc, isTest=False):
         return str(BeautifulSoup(request, 'lxml').select('table')[2])
     request = requests.get(url.format(tType, tseORotc), headers=headers)
     request.encoding = 'Big5-hkscs'
+    print('status:', request.status_code)
+    print(len(request.text))
     return str(BeautifulSoup(request.text, 'lxml').select('table')[2])
 
 def mkdirs(path):
