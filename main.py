@@ -6,7 +6,7 @@ import json
 
 
 url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
-headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36'}
+headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
 
 chType = {    
     'tse': ['市-熱門股', '市-漲幅', '市-跌幅', '市-價差', '市-成交價', '市-成交值'], 
