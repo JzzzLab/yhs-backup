@@ -5,14 +5,19 @@ from shutil import rmtree, copytree
 import json
 
 
-url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
+#url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
 headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36'}
 
 chType = {    
-    'tse': ['市-熱門股', '市-漲幅', '市-跌幅', '市-價差', '市-成交價', '市-成交值'], 
-    'otc': ['櫃-熱門股', '櫃-漲幅', '櫃-跌幅', '櫃-價差', '櫃-成交價', '櫃-成交值']
+    'TAI': ['市-熱門股', '市-漲幅', '市-跌幅', '市-價差', '市-成交價', '市-成交值'], 
+    'TWO': ['櫃-熱門股', '櫃-漲幅', '櫃-跌幅', '櫃-價差', '櫃-成交價', '櫃-成交值']
 }
 tType = ['vol', 'up', 'down', 'pdis', 'pri', 'amt']
+
+api_tt = ["TAI", "TWO"]
+api_url = 'https://tw.stock.yahoo.com/_td/api/resource/StockServices.rank;exchange={};limit=100;offset=0;period=1D;sortBy={}'
+api_name = ["volume", "change-up", "change-down", "day-range", "price", "turnover"]
+api_sort = ["-volume", "-changePercent", "changePercent", "-dayHighLowDiff", "-price", "-turnoverK"]
 
 
 #TODO: crawl failed
@@ -47,14 +52,24 @@ def loadFile(path):
     with open(path, 'r', encoding='utf-8', newline='') as file:
         return file.read()
 
+def getAPI(t, s):
+    url = api_url.format(t, s)
+    return requests.get(url).text
+
 def get(tseORotc):
     allContent = ''
     todayHTML = f'{todayPath}/{tseORotc}.html'
 
     #get all table
-    for t, c in zip(tType, chType[tseORotc]):
-        allContent = allContent + rank100(t, tseORotc) + '\n<hr>'
-        print(f'[DEBUG]{c}')
+    #for t, c in zip(tType, chType[tseORotc]):
+    #    allContent = allContent + '<div>' + rank100(t, tseORotc) + '</div>\n<hr>'
+    #    print(f'[DEBUG]{c}')
+        
+    #get all table
+    for t in api_tt:
+        for e,s in enumerate(api_sort):
+            allContent = allContent + '<div>' + getAPI(t, s) + '</div>\n<hr>'
+            print(f'[DEBUG]{chType[t][e]}')
 
     #create tse.html & otc.html
     post = loadFile('./posts/post.html')
