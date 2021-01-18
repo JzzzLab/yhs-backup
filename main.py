@@ -22,9 +22,14 @@ api_sort = ["-volume", "-changePercent", "changePercent", "-dayHighLowDiff", "-p
 
 #TODO: crawl failed
 def getToday(): #'109/01/01'
-    path = url.format('vol', 'tse')
-    request = requests.get(path, headers=headers)
-    return BeautifulSoup(request.text, 'lxml').select('table')[2].text[10:23].replace(" ", '')
+    url = api_url.format('TAI', '-volume')
+    response = requests.get(url, headers=headers)
+    responseDict = json.loads(response.text)
+    rankTime = responseDict['rankTime']
+    ptime = datetime.strptime(rankTime, "%Y-%m-%dT%X+08:00")
+    stime = datetime.strftime(ptime, "%Y/%m/%d")
+    stime = stime.replace(stime[:4], str(int(stime[:4]) - 1911))
+    return stime
 
 def rank100(tType, tseORotc, isTest=False):
     if(isTest):
