@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 from os import makedirs
 from shutil import rmtree, copytree
 import json
-import datetime
+from datetime import datetime
 
 
 #url = 'https://tw.stock.yahoo.com/d/i/rank.php?t={}&e={}&n=100'
