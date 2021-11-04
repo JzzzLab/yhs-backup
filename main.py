@@ -16,7 +16,7 @@ chType = {
 tType = ['vol', 'up', 'down', 'pdis', 'pri', 'amt']
 
 api_tt = ["TAI", "TWO"]
-api_url = 'https://tw.stock.yahoo.com/_td/api/resource/StockServices.rank;exchange={};limit=100;offset=0;period=1D;sortBy={}'
+api_url = 'https://tw.stock.yahoo.com/_td-stock/api/resource/StockServices.rank;exchange={};limit=100;offset=0;period=1D;sortBy={}'
 api_name = ["volume", "change-up", "change-down", "day-range", "price", "turnover"]
 api_sort = ["-volume", "-changePercent", "changePercent", "-dayHighLowDiff", "-price", "-turnoverK"]
 
