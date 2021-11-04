@@ -24,6 +24,7 @@ api_sort = ["-volume", "-changePercent", "changePercent", "-dayHighLowDiff", "-p
 #TODO: crawl failed
 def getToday(): #'109/01/01'
     url = api_url.format('TAI', '-volume')
+    print('[DEBUG] ', url)
     response = requests.get(url, headers=headers)
     responseDict = json.loads(response.text)
     rankTime = responseDict['rankTime']
