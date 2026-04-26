@@ -17,7 +17,6 @@ tType = ['vol', 'up', 'down', 'pdis', 'pri', 'amt']
 
 api_tt = ["TAI", "TWO"]
 api_url = 'https://tw.stock.yahoo.com/_td-stock/api/resource/StockServices.rank;exchange={};limit=100;offset=0;period=1D;sortBy={}'
-api_name = ["volume", "change-up", "change-down", "day-range", "price", "turnover"]
 api_sort = ["-volume", "-changePercent", "changePercent", "-dayHighLowDiff", "-price", "-turnoverK"]
 
 
@@ -25,25 +24,11 @@ api_sort = ["-volume", "-changePercent", "changePercent", "-dayHighLowDiff", "-p
 def getToday(): #'109/01/01'
     url = api_url.format('TAI', '-volume')
     print('[DEBUG] ', url)
-    response = requests.get(url, headers=headers)
-    responseDict = json.loads(response.text)
-    rankTime = responseDict['rankTime']
+    rankTime = session.get(url, timeout=10).json()['rankTime']
     ptime = datetime.strptime(rankTime, "%Y-%m-%dT%X+08:00")
     stime = datetime.strftime(ptime, "%Y/%m/%d")
     stime = stime.replace(stime[:4], str(int(stime[:4]) - 1911))
     return stime
-
-def rank100(tType, tseORotc, isTest=False):
-    if(isTest):
-        request = ''
-        with open('./test/test-file.html', 'r', encoding='utf-8') as f:
-            request = f.read()
-        return str(BeautifulSoup(request, 'lxml').select('table')[2])
-    request = requests.get(url.format(tType, tseORotc), headers=headers)
-    request.encoding = 'Big5-hkscs'
-    print('status:', request.status_code)
-    print(len(request.text))
-    return str(BeautifulSoup(request.text, 'lxml').select('table')[2])
 
 def mkdirs(path):
     try:
@@ -61,16 +46,11 @@ def loadFile(path):
 
 def getAPI(t, s):
     url = api_url.format(t, s)
-    return requests.get(url).text
+    return session.get(url, timeout=20).text
 
 def get(tseORotc):
     allContent = ''
     todayHTML = f'{todayPath}/{tseORotc}.html'
-
-    #get all table
-    #for t, c in zip(tType, chType[tseORotc]):
-    #    allContent = allContent + '<div>' + rank100(t, tseORotc) + '</div>\n<hr>'
-    #    print(f'[DEBUG]{c}')
         
     #get all table
     for t in api_tt:
@@ -181,6 +161,9 @@ def renewSrcIndexAndSubdir(today):
 
 
 if __name__ == '__main__':
+
+    session = requests.Session()
+    session.headers.update(headers)
 
     today = getToday()
     todayPath = f'./src/{today}'
